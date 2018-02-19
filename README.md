@@ -1,2 +1,9 @@
 # rgllm.github.io
-My personal and simple website http://rgllm.com
+
+> :house: Personal website https://rgllm.com
+
+## TODO
+
+- http://nanobar.jacoborus.codes/
+- 
+
