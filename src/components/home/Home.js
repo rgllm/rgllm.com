@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./Home.css";
-import Typing from 'react-typing-animation';
 
 
 class Home extends React.Component {
@@ -11,28 +10,13 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div className="moving-letters">
-                <Typing 
-                    speed={100} 
-                    cursorClassName={"cursor"}
-                >
-                    <span className="ml11">Rogério Moreira</span>
-                    <br/>
-                    <br/>
-                    <Typing.Speed ms={50} />
-                    <div class="container">
-                    <ul>
-                        <li><a href="http://blog.rgllm.com">Blog</a></li>
-                        <li><a href="mailto:r@rgllm.com">Email</a></li>
-                        <li><a href="https://twitter.com/rgllm">Twitter</a></li>
-                        <li><a href="https://instagram.com/rgllm">Instagram</a></li>
-                        <li><a href="https://github.com/rgllm">Github</a></li>
-                        <li><a href="https://pt.linkedin.com/in/rgllm">LinkedIn</a></li>
-                    </ul>
-                    </div>
-                </Typing>
-
-            </div>
+                <main class="site-content">
+                    <section class="intro-title screen-height header-compensated center-vertically">
+                        <div class="section-inner fade-block">
+                            <h1 class="big-title graphics-title">Hi! My name is <span class="rgllm">Rogério</span>, and I’m a software engineer living in <span class="braga">Braga</span>. Currently taking my MSc. at <a href="https://www.uminho.pt" class="company">UMinho.</a></h1>
+                        </div>
+                    </section>
+                </main>
         );}
 
 }

@@ -10,9 +10,13 @@ class NotFound extends React.Component {
 
     render() {
       return( 
-      <div className="container-NotFound">
-          <span className="title-NotFound">Nothing exists here, yet! 🤫</span>
-    </div>
+      <main class="site-content">
+        <section class="intro-title screen-height header-compensated center-vertically">
+            <div class="section-inner fade-block">
+                <h1 class="big-title graphics-title">Nothing exists here, yet! 😉</h1>
+            </div>
+        </section>
+    </main>
   );}
 
 }
