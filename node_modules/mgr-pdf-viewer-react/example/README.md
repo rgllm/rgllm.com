@@ -1,0 +1,1 @@
+# mgr-pdf-viewer-react example
