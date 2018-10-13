@@ -1,14 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "./CV.css";
 import { Document } from 'react-pdf';
 
 
 class CV extends React.Component {
-    constructor() {
-      super();
-    }
-
     onDocumentComplete = (pages) => {
         console.log("PDF");
       }

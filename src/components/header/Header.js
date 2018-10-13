@@ -1,14 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "./Header.css";
 import { Link } from 'react-router-dom';
 
 
 class Header extends React.Component {
-    constructor() {
-      super();
-    }
-
     render() {
         return (
             <div className="home page-template page-template-parts">
