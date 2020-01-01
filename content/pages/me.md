@@ -1,6 +1,6 @@
 ---
 title: Me
-slug: me
+slug: about
 template: page
 ---
 
@@ -20,5 +20,5 @@ I've a background in Software Engineering but interest in areas like project man
 ## Open Source Projects
 
 - [Awesome Portugal Data](https://github.com/rgllm/awesome-portugal-data/) – a repository of portuguese open data
-- [Publish to Netlify](https://wordpress.org/plugins/publish-to-netlify/) – a WordPress plugin to deploy static sites using to Netlify
-- [xnatum](https://pypi.org/project/xnatum/) – a Python client to interact with XNAT (one of results of my Masters Dissertation)
+- [Publish to Netlify](https://wordpress.org/plugins/publish-to-netlify/) – a WordPress plugin to deploy static sites on Netlify
+- [xnatum](https://pypi.org/project/xnatum/) – a Python client to interact with XNA
