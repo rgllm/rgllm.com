@@ -1,17 +1,5 @@
-rgllm.com
-=============================
+# rgllm.com
 
-![Preview](preview.jpg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2cfd30b1-c723-4115-a6e6-9b5ccf549992/deploy-status)](https://app.netlify.com/sites/rgllmstaging/deploys)
 
-## System Preparation
-
-
-## Local Installation
-
-1. Clone this repo, or download it into a directory of your choice.
-2. Inside the directory, run `npm install`.
-3. Run `npm start`.
-
-## Build to prod
-
-1. Run `npm run build --prod`
+Rogério Moreira's personal website running on Gatsby, React, and Node.js.
