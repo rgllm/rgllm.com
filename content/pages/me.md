@@ -4,7 +4,7 @@ slug: me
 template: page
 ---
 
-I'm Rogério Moreira, a full stack developer. I currently work as a front-end developer, I do some open-source things and write here on my blog.
+I'm Rogério Moreira, a full-stack developer and open-source contributor. I currently work as a front-end developer, I do some open-source things and write on my blog.
 
 I've a background in Software Engineering but interest in areas like project management, entrepreneurship, and biomedicine. Always interested in new ventures.
 
