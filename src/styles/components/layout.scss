@@ -940,10 +940,8 @@ blockquote {
   }
 
   a {
-    font-weight: 400;
     color: darken($light, 30%);
-    display: block;
-    margin-right: 1.5rem;
+    transition: color 300ms ease;
 
     &:hover {
       color: $primary-color;
