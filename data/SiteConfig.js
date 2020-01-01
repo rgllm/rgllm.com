@@ -10,7 +10,7 @@ const config = {
   dateFormat: "MMMM Do, YYYY",
   siteDescription: "Rogério Moreira is a full stack developer.",
   siteRss: "/rss.xml",
-  googleAnalyticsID: "",
+  googleAnalyticsID: " UA-66789904-1",
   userEmail: "r@rgllm.com",
   userTwitter: "rgllm",
   menuLinks: [
