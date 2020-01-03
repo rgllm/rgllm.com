@@ -9,7 +9,7 @@ export default [
     icon: "🚀",
     title: "Publish to Netlify",
     path: "https://wordpress.org/plugins/publish-to-netlify/",
-    source: "https://wordpress.org/plugins/publish-to-netlify/",
+    source: "https://github.com/rgllm/wp-publish-to-netlify",
     description:
       "WordPress plugin to deploy static sites to Netlify"
   },
@@ -17,7 +17,7 @@ export default [
     icon: "🏥",
     title: "xnatum",
     path: "https://pypi.org/project/xnatum/",
-    source: "https://github.com/rgllm/xnatum",
+    source: "https://github.com/rgllm/xnatum/",
     description: "Python client to interact with XNAT"
   },
   {

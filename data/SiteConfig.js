@@ -8,15 +8,15 @@ const config = {
   pathPrefix: "",
   dateFromFormat: "YYYY-MM-DD",
   dateFormat: "MMMM Do, YYYY",
-  siteDescription: "Rogério Moreira is a full stack developer.",
+  siteDescription: "Rogério Moreira is a full-stack developer and open-source contributor.",
   siteRss: "/rss.xml",
-  googleAnalyticsID: "",
+  googleAnalyticsID: " UA-66789904-1",
   userEmail: "r@rgllm.com",
   userTwitter: "rgllm",
   menuLinks: [
     {
       name: "Me",
-      link: "/me/"
+      link: "/about/"
     },
     {
       name: "Articles",

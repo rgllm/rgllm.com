@@ -6,7 +6,7 @@ template: page
 
 ### Full-stack Developer
 
-Highly motivated and versatile full-stack developer passionate about about writing clean, efficient code and maintaining modern standards and security. With a background in Software Engineering but interest in areas like project management, entrepreneurship, and biomedicine. Always interested in new ventures.
+Highly motivated and versatile full-stack developer passionate about writing clean and efficient code, maintaining modern standards and security. With a background in Software Engineering but interest in areas like project management, entrepreneurship, and biomedicine. Always interested in new ventures.
 
 - [rgllm.com](https://rgllm.com)
 - [r@rgllm.com](mailto:r[AT]rgllm[DOT]com)
@@ -27,7 +27,7 @@ Highly motivated and versatile full-stack developer passionate about about writi
 
 **Pixelmatters** - _2018 - Present | Porto, Portugal_
 
-- Worked with design team to create beautiful user interfaces and intuitive user experiences
+- Creating beautiful user interfaces and intuitive user experiences
 
 #### Editor
 

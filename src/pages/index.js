@@ -18,15 +18,15 @@ export default class Index extends Component {
 
     return (
       <Layout>
-        <Helmet title={`${config.siteTitle} – Fullstack developer`} />
+        <Helmet title={`${config.siteTitle} – Full-stack developer`} />
         <SEO />
         <div className="container">
           <div className="lead">
             <div className="elevator">
               <h1>{`I'm Rogério`}</h1>
               <p>
-                Fullstack developer that writes about software
-                engineering, web development and sometimes my personal life too. 
+                Full-stack developer that writes about tech, software
+                engineering and web development.
               </p>
             </div>
             <img className="main-image" src={mefinger} alt="Rogério Moreira" />
