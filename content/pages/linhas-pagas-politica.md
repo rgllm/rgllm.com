@@ -4,8 +4,6 @@ slug: linhas-pagas/politica-privacidade
 template: page
 ---
 
-# Linhas Pagas - Política de Privacidade
-
 1. A aplicação não guarda qualquer tipo de credenciais dos utilizadores. O sistema operativo limita o acesso a estes dados, tornando-os acessíveis somente à aplicação.
 
 2. Em nenhum momento as credenciais dos utilizadores são comunicadas para outro(s) sistema(s) ou guardadas noutra localização, para além da descrita no ponto 1;
