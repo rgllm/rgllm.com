@@ -4,9 +4,9 @@ slug: linhas-pagas/politica-privacidade
 template: page
 ---
 
-1. A aplicação não guarda qualquer tipo de credenciais dos utilizadores. O sistema operativo limita o acesso a estes dados, tornando-os acessíveis somente à aplicação.
+1. A aplicação não guarda qualquer tipo de credenciais dos utilizadores e o sistema operativo limita o acesso a todos os dados do utilizador.
 
-2. Em nenhum momento as credenciais dos utilizadores são comunicadas para outro(s) sistema(s) ou guardadas noutra localização, para além da descrita no ponto 1;
+2. Em nenhum momento os dados dos utilizadores relativos à aplicação são comunicadas para outro(s) sistema(s) ou guardadas noutra localização.
 
 3. Durante o processo de submissão de uma linha paga não é guardado nenhum dado do utilizador, apenas os dados preenchidos no formulário;
 
