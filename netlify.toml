@@ -13,3 +13,7 @@ package = "@netlify/plugin-sitemap"
 
   [plugins.inputs]
   buildDir = "public"
+[[redirects]]
+  from = "/articles"
+  to = "/blog"
+  status = 301
