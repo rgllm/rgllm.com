@@ -4,5 +4,5 @@
   "stabilityDays": 3,
   "prCreation": "not-pending",
   "labels": ["Type: Chore"],
-  "baseBranches": ["develop"]
+  "baseBranches": ["development"]
 }
