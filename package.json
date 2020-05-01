@@ -69,7 +69,7 @@
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-import": "2.19.1",
     "eslint-plugin-jsx-a11y": "6.2.3",
-    "eslint-plugin-react": "7.17.0",
+    "eslint-plugin-react": "7.19.0",
     "prettier": "2.0.5",
     "remark-cli": "8.0.0",
     "remark-preset-lint-recommended": "4.0.0",
