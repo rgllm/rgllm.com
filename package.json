@@ -25,7 +25,7 @@
     "check": "npx npm-check-updates -u"
   },
   "dependencies": {
-    "eslint-utils": "1.4.3",
+    "eslint-utils": "2.0.0",
     "gatsby": "^2.21.7",
     "gatsby-image": "2.2.37",
     "gatsby-plugin-catch-links": "2.1.21",
