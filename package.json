@@ -49,7 +49,7 @@
     "gatsby-transformer-sharp": "2.3.9",
     "lodash": "4.17.15",
     "lodash.kebabcase": "4.1.1",
-    "moment": "2.24.0",
+    "moment": "2.25.3",
     "node-sass": "4.13.0",
     "prismjs": "1.17.1",
     "react": "16.12.0",
