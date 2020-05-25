@@ -1,6 +1,6 @@
 ---
 title: Linhas Pagas - Política de Privacidade
-slug: linhas-pagas/politica-privacidade
+slug: linhas-pagas-politica-privacidade
 template: page
 ---
 
