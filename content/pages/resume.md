@@ -17,7 +17,7 @@ Highly motivated and versatile full-stack developer passionate about writing cle
 - **Languages** - JavaScript, PHP, HTML5, CSS3, Bash, Python, Java, Ruby on Rails, Haskell
 - **Concepts** - RESTful API Design/Integration, MVC Architecture, CI/CD
 - **Tools/Environment** - Node.js, WordPress, Docker, Git, Webpack, Sass
-- **Frameworks/Libraries** - React, Bootstrap, Jest, React Native
+- **Frameworks/Libraries** - WordPress, React, Bootstrap, Jest, React Native
 - **Data** - SQL (MySQL, PostgreSQL), MongoDB, GraphQL, JSON
 - **Testing** - Unit, integration, and end-to-end testing
 

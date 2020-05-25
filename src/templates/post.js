@@ -6,25 +6,13 @@ import Layout from "../layout";
 import PostTags from "../components/PostTags";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
-import { formatDate, editOnGithub } from "../utils/global";
+import { formatDate } from "../utils/global";
 
 export default class PostTemplate extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      error: false
-    };
-  }
-
   render() {
-    const { error } = this.state;
     const { slug } = this.props.pageContext;
     const postNode = this.props.data.markdownRemark;
     const post = postNode.frontmatter;
-    const popular = postNode.frontmatter.categories.find(
-      category => category === "Popular"
-    );
     let thumbnail;
 
     if (!post.id) {
@@ -40,7 +28,6 @@ export default class PostTemplate extends Component {
     }
 
     const date = formatDate(post.date);
-    const githubLink = editOnGithub(post);
     const twitterShare = `http://twitter.com/share?text=${encodeURIComponent(
       post.title
     )}&url=${config.siteUrl}/${post.slug}/`;

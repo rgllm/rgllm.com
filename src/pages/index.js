@@ -14,7 +14,6 @@ export default class Index extends Component {
     const { data } = this.props;
 
     const latestPostEdges = data.latest.edges;
-    // const popularPostEdges = data.popular.edges
 
     return (
       <Layout>
