@@ -1,7 +1,7 @@
 [build]
   ignore = "git log -1 --pretty=%B | grep dependabot"
   publish = "public"
-  command = "yarn run build"
+  command = "yarn build"
 [build.environment]
   YARN_VERSION = "1.22.4"
   NODE_VERSION = "10.15.3"
