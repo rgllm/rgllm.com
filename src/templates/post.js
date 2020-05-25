@@ -42,7 +42,7 @@ export default class PostTemplate extends Component {
           <header
             className={`single-header ${!thumbnail ? "no-thumbnail" : ""}`}
           >
-            {thumbnail && <Img fixed={post.thumbnail.childImageSharp.fixed} />}
+            {thumbnail && <Img fluid={post.thumbnail.childImageSharp.fluid} />}
             <div className="flex">
               <h1>{post.title}</h1>
               <div className="post-meta">
