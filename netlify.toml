@@ -1,15 +1,7 @@
 [build.environment]
   YARN_VERSION = "1.22.4"
   NODE_VERSION = "10.15.3"
-[[plugins]]
-package = "@netlify/plugin-sitemap"
-[plugins.inputs]
-  buildDir = "public"
 [[redirects]]
   from = "/articles"
   to = "/blog"
-  status = 301
-[[redirects]]
-  from = "/linhas-pagas/politica-privacidade"
-  to = "/linhas-pagas-politica-privacidade"
   status = 301

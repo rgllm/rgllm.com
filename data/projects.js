@@ -19,11 +19,5 @@ export default [
     path: "https://pypi.org/project/xnatum/",
     source: "https://github.com/rgllm/xnatum/",
     description: "Python client to interact with XNAT"
-  },
-  {
-    icon: "🎓",
-    title: "UMinho Projects",
-    source: "https://github.com/rgllm/uminho/",
-    description: "My Software Engineering academic projects"
   }
 ];
