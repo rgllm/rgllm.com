@@ -9,6 +9,7 @@ import config from "../../data/SiteConfig";
 import { formatDate } from "../utils/global";
 
 export default class PostTemplate extends Component {
+
   render() {
     const { slug } = this.props.pageContext;
     const postNode = this.props.data.markdownRemark;
@@ -42,7 +43,7 @@ export default class PostTemplate extends Component {
           <header
             className={`single-header ${!thumbnail ? "no-thumbnail" : ""}`}
           >
-            {thumbnail && <Img fluid={post.thumbnail.childImageSharp.fluid} />}
+            {thumbnail && <Img fixed={post.thumbnail.childImageSharp.fixed} />}
             <div className="flex">
               <h1>{post.title}</h1>
               <div className="post-meta">
