@@ -98,7 +98,6 @@ export default class BlogPage extends Component {
               placeholder="Type here to filter posts..."
               onChange={this.handleChange}
             />
-            <div className="filter-count">{filterCount}</div>
           </div>
           <PostListing postEdges={filteredPosts} />
         </div>
@@ -135,6 +134,7 @@ export const pageQuery = graphql`
             }
             date
             template
+            link
           }
         }
       }

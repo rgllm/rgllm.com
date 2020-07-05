@@ -11,7 +11,6 @@ export default class Navigation extends Component {
         <div className="nav-container">
           <div className="brand">
             <Link to="/">
-              <img src={me} className="favicon" alt="Rogério Moreira" />
               <span className="text">Rogério Moreira</span>
             </Link>
           </div>

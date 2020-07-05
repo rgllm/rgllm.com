@@ -8,4 +8,5 @@ If you have questions, comments, ideas, proposals or you just want to say hi fee
 
 - **GitHub**: [rgllm](https://github.com/rgllm/)
 - **Twitter**: [rgllm](https://twitter.com/rgllm)
-- **Feed**: [Blog RSS](https://rgllm.com/rss.xml)
+- **LinkedIn**: [/in/rgllm](https://linkedin.com/in/rgllm/)
+- **Blog Feed**: [RSS](https://rgllm.com/rss.xml)

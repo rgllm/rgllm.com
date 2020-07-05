@@ -14,11 +14,11 @@ Highly motivated and versatile full-stack developer passionate about writing cle
 
 ## Technical Skills
 
-- **Languages** - JavaScript, PHP, HTML5, CSS3, Bash, Python, Java, Ruby on Rails, Haskell
-- **Concepts** - RESTful API Design/Integration, MVC Architecture, CI/CD
+- **Languages** - JavaScript, PHP, HTML5, CSS3, Bash, Python, Java, Haskell
+- **Concepts** - RESTful API Design/Integration, MVC Architecture, DevOps
 - **Tools/Environment** - Node.js, WordPress, Docker, Git, Webpack, Sass
-- **Frameworks/Libraries** - WordPress, React, Bootstrap, Jest, React Native
-- **Data** - SQL (MySQL, PostgreSQL), MongoDB, GraphQL, JSON
+- **Frameworks/Libraries** - GatsbyJS, WordPress, React, Bootstrap, Jest, React Native
+- **Data** - SQL (MySQL, PostgreSQL), MongoDB, GraphQL
 - **Testing** - Unit, integration, and end-to-end testing
 
 ## Experience
@@ -28,6 +28,13 @@ Highly motivated and versatile full-stack developer passionate about writing cle
 **Pixelmatters** - _2018 - Present | Porto, Portugal_
 
 - Creating beautiful user interfaces and intuitive user experiences
+
+#### WordPress/DevOps Developer 
+
+**OMinho** - _2015 - Present | Remote_
+
+- Responsible for all technology stack
+- Responsible for scaling the newspaper to one of the biggest in Portugal
 
 #### Editor
 

@@ -120,6 +120,7 @@ exports.createPages = ({ graphql, actions }) => {
                   frontmatter {
                     tags
                     categories
+                    link
                     template
                   }
                   fields {
@@ -152,7 +153,7 @@ exports.createPages = ({ graphql, actions }) => {
             });
           }
 
-          if (edge.node.frontmatter.template === "post") {
+          if (edge.node.frontmatter.template === "post" && !edge.node.frontmatter.link) {
             createPage({
               path: edge.node.fields.slug,
               component: postPage,

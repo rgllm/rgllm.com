@@ -8,16 +8,27 @@ export default class PostListing extends Component {
   getPostList() {
     const { postEdges } = this.props;
     const postList = postEdges.map(postEdge => {
-      return {
-        path: postEdge.node.fields.slug,
-        tags: postEdge.node.frontmatter.tags,
-        thumbnail: postEdge.node.frontmatter.thumbnail,
-        title: postEdge.node.frontmatter.title,
-        date: postEdge.node.fields.date,
-        excerpt: postEdge.node.excerpt,
-        timeToRead: postEdge.node.timeToRead,
-        categories: postEdge.node.frontmatter.categories
-      };
+      if ( postEdge.node.frontmatter.link ) {
+        return {
+          link: postEdge.node.frontmatter.link,
+          tags: postEdge.node.frontmatter.tags,
+          thumbnail: postEdge.node.frontmatter.thumbnail,
+          title: postEdge.node.frontmatter.title,
+          date: postEdge.node.fields.date,
+          categories: postEdge.node.frontmatter.categories
+        };
+      }
+      else {
+        return {
+          path: postEdge.node.fields.slug,
+          tags: postEdge.node.frontmatter.tags,
+          thumbnail: postEdge.node.frontmatter.thumbnail,
+          title: postEdge.node.frontmatter.title,
+          date: postEdge.node.fields.date,
+          excerpt: postEdge.node.excerpt,
+          categories: postEdge.node.frontmatter.categories
+        };
+      }
     });
     return postList;
   }
@@ -38,27 +49,45 @@ export default class PostListing extends Component {
           const date = formatDate(post.date);
           const newest = moment(post.date) > moment().subtract(1, "months");
 
-          return (
-            <Link to={post.path} key={post.title}>
-              <div className="each">
-                {thumbnail ? <Img fixed={thumbnail} /> : <div />}
-                <div className="each-list-item">
-                  <h2>{post.title}</h2>
-                  {!simple && <div className="excerpt">{date}</div>}
+          if( post.link ) {
+            return(
+              <a href={post.link} target="_blank" title={post.title} key={post.title}>
+                <div className="each">
+                  {thumbnail ? <Img fixed={thumbnail} /> : <div />}
+                  <div className="each-list-item">
+                    <h2>{post.title}</h2>
+                    {!simple && <div className="excerpt">{date}</div>}
+                  </div>
+                  <div className="alert">
+                    <div className="external">External</div>
+                  </div>
                 </div>
-                {newest && (
-                  <div className="alert">
-                    <div className="new">New!</div>
+              </a>
+            );
+          }
+          else {
+            return (
+              <Link to={post.path} key={post.title}>
+                <div className="each">
+                  {thumbnail ? <Img fixed={thumbnail} /> : <div />}
+                  <div className="each-list-item">
+                    <h2>{post.title}</h2>
+                    {!simple && <div className="excerpt">{date}</div>}
                   </div>
-                )}
-                {popular && !simple && !newest && (
-                  <div className="alert">
-                    <div className="popular">Popular</div>
-                  </div>
-                )}
-              </div>
-            </Link>
-          );
+                  {newest && (
+                    <div className="alert">
+                      <div className="new">New!</div>
+                    </div>
+                  )}
+                  {popular && !simple && !newest && (
+                    <div className="alert">
+                      <div className="popular">Popular</div>
+                    </div>
+                  )}
+                </div>
+              </Link>
+            );
+          }
         })}
       </section>
     );
