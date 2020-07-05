@@ -22,10 +22,11 @@ export default class Index extends Component {
         <div className="container">
           <div className="lead">
             <div className="elevator">
-              <h1>{`I'm Rogério`}</h1>
+              <h1>I'm Rogério</h1>
               <p>
-                Full-stack developer that writes about tech, software
-                engineering and web development.
+                Hi there 👋, I am a full-stack developer, living and working in Braga, Portugal 🇵🇹.
+                I contribute to <a href="https://github.com/rgllm/" target="_blank" title="rgllm Github">open-source</a> projects 🔨 and 
+                write about tech, software engineering and life ✍️. 
               </p>
             </div>
             <img className="main-image" src={mefinger} alt="Rogério Moreira" />
@@ -65,7 +66,6 @@ export const pageQuery = graphql`
             date
           }
           excerpt
-          timeToRead
           frontmatter {
             title
             tags
@@ -79,6 +79,7 @@ export const pageQuery = graphql`
             }
             date
             template
+            link
           }
         }
       }

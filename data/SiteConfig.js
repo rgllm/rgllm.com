@@ -15,11 +15,11 @@ const config = {
   userTwitter: "rgllm",
   menuLinks: [
     {
-      name: "Me",
+      name: "About",
       link: "/about/"
     },
     {
-      name: "Articles",
+      name: "Blog",
       link: "/blog/"
     },
     {

@@ -62,7 +62,6 @@ export default class BlogPage extends Component {
 
   render() {
     const { filteredPosts, searchTerm, currentCategories } = this.state;
-    const filterCount = filteredPosts.length;
     const categories = this.props.data.categories.group;
 
     return (
@@ -98,7 +97,6 @@ export default class BlogPage extends Component {
               placeholder="Type here to filter posts..."
               onChange={this.handleChange}
             />
-            <div className="filter-count">{filterCount}</div>
           </div>
           <PostListing postEdges={filteredPosts} />
         </div>
@@ -135,6 +133,7 @@ export const pageQuery = graphql`
             }
             date
             template
+            link
           }
         }
       }
