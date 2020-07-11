@@ -6,7 +6,11 @@ template: page
 
 ### Full-stack Developer
 
-Highly motivated and versatile full-stack developer passionate about writing clean and efficient code, maintaining modern standards and security. With a background in Software Engineering but interest in areas like project management, entrepreneurship, and biomedicine. Always interested in new ventures.
+Hello 👋 
+
+I’m Rogério, a multidisciplinary developer based in Braga, Portugal 🇵🇹
+
+I graduated from University of Minho, and I'm now on the Engineering team at Pixelmatters. I was born and raised in Braga, but I'm an FCPorto fan ⚽. I love football, traveling 🗺, reading 📕, and I'm passionate about everything tech-related. Focused on expanding my know-how in product development process and project management.
 
 - [rgllm.com](https://rgllm.com)
 - [r@rgllm.com](mailto:r[AT]rgllm[DOT]com)
@@ -27,12 +31,14 @@ Highly motivated and versatile full-stack developer passionate about writing cle
 
 **Pixelmatters** - _2018 - Present | Porto, Portugal_
 
-- Creating beautiful user interfaces and intuitive user experiences
+- Mainly working in the development of web applications and websites in various business domains.
+- Working with front-end frameworks such as React, GatsbyJS, and WordPress. 
 
-#### WordPress/DevOps Developer 
+#### Web Developer
 
 **OMinho** - _2015 - Present | Remote_
 
+- Maintaining and scaling one of the biggest Portuguese online newspapers
 - Responsible for all technology stack
 - Responsible for scaling the newspaper to one of the biggest in Portugal
 
@@ -45,7 +51,7 @@ Highly motivated and versatile full-stack developer passionate about writing cle
 ## Open Source Projects
 
 - [Awesome Portugal Data](https://github.com/rgllm/awesome-portugal-data/) – a repository of portuguese open data
-- [Publish to Netlify](https://wordpress.org/plugins/publish-to-netlify/) – a WordPress plugin to deploy static sites using to Netlify
+- [Publish to Netlify](https://wordpress.org/plugins/publish-to-netlify/) – a WordPress plugin to deploy static sites to Netlify
 - [xnatum](https://pypi.org/project/xnatum/) – a Python client to interact with XNAT (one of results of my Masters Dissertation)
 
 ## Education
