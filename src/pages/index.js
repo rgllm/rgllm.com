@@ -25,7 +25,7 @@ export default class Index extends Component {
               <h1>I'm Rogério</h1>
               <p>
                 Hi there 👋, I am a full-stack developer, living and working in Braga, Portugal 🇵🇹.
-                I contribute to <a href="https://github.com/rgllm/" target="_blank" title="rgllm Github">open-source</a> projects 🔨 and 
+                I contribute to <a href="https://github.com/rgllm/" rel="noreferrer" target="_blank" title="rgllm Github">open-source</a> projects 🔨 and 
                 write about tech, software engineering and life ✍️. 
               </p>
             </div>
@@ -35,7 +35,7 @@ export default class Index extends Component {
         <div className="container front-page">
           <section className="section">
             <h2>
-              Latest Articles
+              Latest Posts
               <Link to="/blog" className="view-all">
                 View all
               </Link>

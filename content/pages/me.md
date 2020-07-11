@@ -4,18 +4,20 @@ slug: about
 template: page
 ---
 
-I'm Rogério Moreira, a full-stack developer and open-source contributor. I currently work as a front-end developer, I do some open-source things and write on my blog.
+Hello 👋 
 
-I've a background in Software Engineering but interest in areas like project management, entrepreneurship, and biomedicine. Always interested in new ventures.
+I’m Rogério, a multidisciplinary developer based in Braga, Portugal 🇵🇹
+
+I graduated from University of Minho, and I'm now on the Engineering team at Pixelmatters. I was born and raised in Braga, but I'm an FCPorto fan ⚽. I love football, traveling 🗺, reading 📕, and I'm passionate about everything tech-related. Focused on expanding my know-how in product development process and project management.
 
 ![Me](../images/rogerio-full.jpg)
 
 ### Technical Skills
 
-- **Languages** - JavaScript, PHP, HTML5, CSS3, Bash, Python, Java, Haskell
+- **Languages** - JavaScript, PHP, HTML5, CSS3, Python
 - **Concepts** - RESTful API Design/Integration, MVC Architecture, DevOps
-- **Tools/Environment** - Node.js, WordPress, Docker, Git, Webpack, Sass
-- **Frameworks/Libraries** - GatsbyJS, WordPress, React, Bootstrap, Jest, React Native
+- **Tools/Environment** - Node.js, WordPress, Docker, Git, Webpack, SASS
+- **Frameworks/Libraries** - GatsbyJS, WordPress, React, Jest, React Native
 - **Data** - SQL (MySQL, PostgreSQL), MongoDB, GraphQL
 - **Testing** - Unit, integration, and end-to-end testing
 
