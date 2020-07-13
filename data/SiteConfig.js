@@ -3,7 +3,7 @@ const config = {
   siteTitleShort: "Rogério Moreira",
   siteTitleAlt: "Rogério Moreira",
   siteLogo: "/logos/logo-512.png",
-  siteUrl: "https://www.rgllm.com",
+  siteUrl: "rgllm.com",
   repo: "https://github.com/rgllm/rgllm/",
   pathPrefix: "",
   dateFromFormat: "YYYY-MM-DD",
