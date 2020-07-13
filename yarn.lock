@@ -6881,25 +6881,10 @@ gatsby-plugin-netlify@2.3.11:
     lodash "^4.17.15"
     webpack-assets-manifest "^3.1.1"
 
-<<<<<<< HEAD
-gatsby-plugin-offline@3.2.13:
-  version "3.2.13"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.2.13.tgz#49f49539d3ee552da30fe8bf0fb05721fc6e48da"
-  integrity sha512-3AXw3MFBJRHVInn+7rh14b5/rREgIuAVqg430B91c6nDTCLsxwd/TGbWvQvBDO35hXs3yuoluuTANcu++AEuIg==
-=======
-gatsby-plugin-nprogress@2.3.10:
-  version "2.3.10"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-2.3.10.tgz#58d8134550d4940b8ffa87445e1dd6a8dca67e56"
-  integrity sha512-iB20T8gLp4l1Zi+/ji6WDttIIvw160jwJmlQNYKxxPCe3+koBzQ9TZgxMJqI4uT5gXACpRIQx7c9Sg1YMJ3Mzg==
-  dependencies:
-    "@babel/runtime" "^7.10.3"
-    nprogress "^0.2.0"
-
 gatsby-plugin-offline@3.2.17:
   version "3.2.17"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.2.17.tgz#c9779d552c75f0be50a0921b77c248495fb91ce3"
   integrity sha512-+jy7dmK1S1PcjowkWlCRcxP6YL1kcCPxuH5hNrMC16k1eC8Wf5F4menc1yfCiixdoQzL+WOIY9Z7hhB1hE2nDA==
->>>>>>> 3b937f8986185701d4837400d69aecdafd9aa0ac
   dependencies:
     "@babel/runtime" "^7.10.3"
     cheerio "^1.0.0-rc.3"
