@@ -22,11 +22,10 @@ export default class Index extends Component {
         <div className="container">
           <div className="lead">
             <div className="elevator">
-              <h1>I'm Rogério</h1>
               <p>
-                Hi there 👋, I am a full-stack developer, living and working in Braga, Portugal 🇵🇹.
+                Hi there 👋. My name is Rogério and I am a full-stack developer living and working from Braga, Portugal 🇵🇹.
                 I contribute to <a href="https://github.com/rgllm/" rel="noreferrer" target="_blank" title="rgllm Github">open-source</a> projects 🔨 and 
-                write about tech, software engineering and life ✍️. 
+                write about tech and software engineering ✍️. 
               </p>
             </div>
             <img className="main-image" src={mefinger} alt="Rogério Moreira" />

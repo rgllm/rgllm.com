@@ -15,4 +15,4 @@ After reading this article [Every developer should have a blog. Here’s why, an
 
 "A blog is useful for many reasons. It can become a source of leads, it can be the place where, in the future, you might sell your products if you want to become an indie developer, or it can simply be the place where you have your audience and express your ideas."
 
-You can expect here content mainly about computers, software and the web and sometimes my personal life too. See you soon ✌️
+You can expect here content mainly about tech and software engineering.
