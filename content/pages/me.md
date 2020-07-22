@@ -17,7 +17,7 @@ I graduated from University of Minho, and I'm now on the Engineering team at Pix
 - **Languages** - JavaScript, PHP, HTML5, CSS3, Python
 - **Concepts** - RESTful API Design/Integration, MVC Architecture, DevOps
 - **Tools/Environment** - Node.js, WordPress, Docker, Git, Webpack, SASS
-- **Frameworks/Libraries** - GatsbyJS, WordPress, React, Jest, React Native
+- **Frameworks/Libraries** - Gatsby, WordPress, React, Jest, React Native
 - **Data** - SQL (MySQL, PostgreSQL), MongoDB, GraphQL
 - **Testing** - Unit, integration, and end-to-end testing
 
