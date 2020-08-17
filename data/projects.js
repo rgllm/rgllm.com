@@ -1,5 +1,11 @@
 export default [
   {
+    icon: "🎬",
+    title: "rgllm Gatsby Starter",
+    source: "https://github.com/rgllm/rgllm-gatsby-starter/",
+    description: "A starter theme for Gatsby with Typescript and Semantic Release support"
+  },
+  {
     icon: "🇵🇹",
     title: "Awesome Portugal Data",
     source: "https://github.com/rgllm/awesome-portugal-data/",
