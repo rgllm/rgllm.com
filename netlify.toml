@@ -5,3 +5,7 @@
   from = "/articles"
   to = "/blog"
   status = 301
+[[redirects]]
+  from = "/thesis.pdf"
+  to = "/msc-thesis.pdf"
+  status = 301

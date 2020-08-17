@@ -51,7 +51,7 @@ export default class PostListing extends Component {
 
           if( post.link ) {
             return(
-              <a href={post.link} target="_blank" title={post.title} key={post.title}>
+              <a href={post.link} target="_blank" rel="noreferrer" title={post.title} key={post.title} data-splitbee-event={`Clicked ${post.title}`}>
                 <div className="each">
                   {thumbnail ? <Img fixed={thumbnail} /> : <div />}
                   <div className="each-list-item">
