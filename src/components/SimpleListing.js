@@ -13,6 +13,7 @@ export default class SimpleListing extends Component {
               key={post.title}
               target="_blank"
               rel="noopener noreferrer"
+              data-splitbee-event={`Clicked ${post.title}`}
             >
               <div className="each">
                 <h2>

@@ -15,6 +15,7 @@ export default class ProjectListing extends Component {
                 href={project.source}
                 target="_blank"
                 rel="noopener noreferrer"
+                data-splitbee-event={`Clicked ${project.title}`}
               >
                 <div className="project-icon">{project.icon}</div>
                 <div className="project-title">{project.title}</div>
