@@ -13,15 +13,15 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "build": "gatsby build",
-    "clean": "rm -rf public && rm -rf .cache",
-    "lint:js": "eslint --ext .js,.jsx .",
-    "lint:md": "remark content/posts/",
+    "dev": "yarn start",
+		"build": "gatsby build",
+		"start": "gatsby develop -p 8100",
+		"clean": "rimraf .cache public",
+		"lint": "npm-run-all --parallel lint:*",
+		"lint:scripts": "prettier '**/*.{js,jsx}' --write'",
+    "lint:css": "stylelint './**/*.css' './**/*.scss'",
     "write-good": "write-good $(glob 'content/posts/*.md')",
-    "format:js": "prettier '**/*.{js,jsx}' --write",
-    "check": "npx npm-check-updates -u"
+    "commit": "git-cz"
   },
   "dependencies": {
     "eslint-utils": "1.4.3",
@@ -80,5 +80,10 @@
     "plugins": [
       "remark-preset-lint-recommended"
     ]
-  }
+  },
+  "config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	}
 }
