@@ -23,7 +23,7 @@ export default class Index extends Component {
           <div className="lead">
             <div className="elevator">
               <p>
-                Hi there 👋. My name is Rogério and I am a frontend developer living and working from Braga, Portugal 🇵🇹.
+                Hi there 👋. My name is Rogério and I am a Front-end Developer living and working from Braga, Portugal 🇵🇹.
                 I contribute to <a href="https://github.com/rgllm/" rel="noreferrer" target="_blank" title="rgllm Github">open-source</a> projects 🔨 and 
                 write about tech and software engineering ✍️. 
               </p>
