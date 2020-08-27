@@ -11,14 +11,17 @@
     "tech"
   ],
   "license": "MIT",
+  "engines": {
+    "node": ">= 10.13"
+  },
   "main": "n/a",
   "scripts": {
     "dev": "yarn start",
-		"build": "gatsby build",
-		"start": "gatsby develop -p 8100",
-		"clean": "rimraf .cache public",
-		"lint": "npm-run-all --parallel lint:*",
-		"lint:scripts": "prettier '**/*.{js,jsx}' --write'",
+    "build": "gatsby build",
+    "start": "gatsby develop -p 8100",
+    "clean": "rimraf .cache public",
+    "lint": "npm-run-all --parallel lint:*",
+    "lint:scripts": "prettier '**/*.{js,jsx}' --write'",
     "lint:css": "stylelint './**/*.css' './**/*.scss'",
     "write-good": "write-good $(glob 'content/posts/*.md')",
     "commit": "git-cz"
@@ -30,6 +33,7 @@
     "gatsby-plugin-catch-links": "2.3.11",
     "gatsby-plugin-feed": "2.5.11",
     "gatsby-plugin-google-analytics": "2.3.13",
+    "gatsby-plugin-google-fonts": "1.0.1",
     "gatsby-plugin-manifest": "2.4.23",
     "gatsby-plugin-netlify": "2.3.13",
     "gatsby-plugin-offline": "3.2.23",
@@ -62,7 +66,7 @@
   "devDependencies": {
     "babel-eslint": "10.0.3",
     "cli-glob": "0.1.0",
-    "eslint": "7.6.0",
+    "eslint": "7.7.0",
     "eslint-config-airbnb": "18.2.0",
     "eslint-config-prettier": "6.7.0",
     "eslint-plugin-import": "2.21.2",
@@ -82,8 +86,8 @@
     ]
   },
   "config": {
-		"commitizen": {
-			"path": "cz-conventional-changelog"
-		}
-	}
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
 }

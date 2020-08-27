@@ -17,15 +17,15 @@ export default class Index extends Component {
 
     return (
       <Layout>
-        <Helmet title={`${config.siteTitle} – Full-stack developer`} />
+        <Helmet title={`${config.siteTitle}`} />
         <SEO />
         <div className="container">
           <div className="lead">
             <div className="elevator">
               <p>
-                Hi there 👋. My name is Rogério and I am a full-stack developer living and working from Braga, Portugal 🇵🇹.
+                Hello 👋. My name is Rogério and I am a frontend developer living and working from Braga, Portugal 🇵🇹.
                 I contribute to <a href="https://github.com/rgllm/" rel="noreferrer" target="_blank" title="rgllm Github" data-splitbee-event={`Clicked homepage rgllm GitHub`}>open-source</a> projects 🔨 and 
-                write about tech and software engineering ✍️. 
+                write about tech, life and software engineering ✍️. 
               </p>
             </div>
             <img className="main-image" src={mefinger} alt="Rogério Moreira" />

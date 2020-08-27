@@ -7,6 +7,7 @@
 
 $x-small: 720px;
 $small: 800px;
+$sm: 1000px;
 $medium: 1200px;
 $large: 1300px;
 
@@ -16,7 +17,7 @@ $mobile: 620px;
 $tablet: $small;
 $desktop: $medium;
 
-$width: 800px;
+$width: $sm;
 
 /* Colors */
 
