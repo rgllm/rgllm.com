@@ -78,6 +78,15 @@ module.exports = {
         trackingId: config.googleAnalyticsID
       }
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto+Mono`,
+        ],
+        display: 'swap'
+      }
+    },
     "gatsby-plugin-sharp",
     `gatsby-transformer-sharp`,
     "gatsby-plugin-catch-links",

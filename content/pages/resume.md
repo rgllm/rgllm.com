@@ -4,21 +4,33 @@ slug: resume
 template: page
 ---
 
-I’m Rogério, a multidisciplinary developer based in Braga, Portugal. 🇵🇹
-I graduated in Software Engineering from University of Minho and I've been working with frontend since then. I love sports, traveling 🗺, reading 📕, and I'm passionate about everything tech-related. I'm currently focused on expanding my know-how in product development process and project management.
+I’m Rogério, a multidisciplinary developer based in Braga, Portugal 🇵🇹. I graduated from University of Minho and I've been working with Frontend since then. I love solving problems, software engineering, sports, traveling, reading, and I'm passionate about everything tech-related. Currently, focused on expanding my know-how in product development.
 
 - [rgllm.com](https://rgllm.com)
 - [r@rgllm.com](mailto:r[AT]rgllm[DOT]com)
+- [GitHub](https://github.com/rgllm/)
 - Braga, Portugal
 
 ## Technical Skills
 
-- **Languages** - JavaScript, PHP, HTML5, CSS3, Bash, Python, Java, Haskell
+- **Languages** - JavaScript, TypeScript, PHP, HTML5, CSS3, Python
 - **Concepts** - RESTful API Design/Integration, MVC Architecture, DevOps
-- **Tools/Environment** - Node.js, WordPress, Docker, Git, Webpack, Sass
-- **Frameworks/Libraries** - Gatsby, WordPress, React, Bootstrap, Jest, React Native
-- **Data** - SQL (MySQL, PostgreSQL), MongoDB, GraphQL
+- **Tools/Environment** - Node.js, Docker, Git, Webpack, SASS, CircleCI, GitHub Actions
+- **Frameworks/Libraries** - React, React Native, Gatsby, WordPress
+- **Data** - SQL (MySQL, PostgreSQL), GraphQL, MongoDB
 - **Testing** - Unit, integration, and end-to-end testing
+
+## Education
+
+### M.S in Software Engineering
+
+Expertise in Intelligent Systems (Artificial Intelligence) and Software Systems Engineering (Web Engineering and Software Design)
+
+**Universidade do Minho** - _2017 - 2019 | Braga, Portugal_
+
+### B.S  in Software Engineering
+
+**Universidade do Minho** - _2014 - 2017 | Braga, Portugal_
 
 ## Experience
 
@@ -27,7 +39,7 @@ I graduated in Software Engineering from University of Minho and I've been worki
 **Pixelmatters** - _2018 - Present | Porto, Portugal_
 
 - Mainly working in the development of web applications and websites in various business domains.
-- Working with front-end frameworks such as React, Gatsby, and WordPress. 
+- Working with front-end frameworks such as React, Gatsby, and WordPress.
 
 ### Web Developer
 
@@ -49,18 +61,6 @@ I graduated in Software Engineering from University of Minho and I've been worki
 - [Awesome Portugal Data](https://github.com/rgllm/awesome-portugal-data/) – a repository of portuguese open data
 - [Publish to Netlify](https://wordpress.org/plugins/publish-to-netlify/) – a WordPress plugin to deploy static sites to Netlify
 - [xnatum](https://pypi.org/project/xnatum/) – a Python client to interact with XNAT (one of results of my Masters Dissertation)
-
-## Education
-
-### M.S in Software Engineering
-
-Expertise in Intelligent Systems (Artificial Intelligence) and Software Systems Engineering (Web Engineering and Software Design)
-
-**Universidade do Minho** - _2017 - 2019 | Braga, Portugal_
-
-### B.S  in Software Engineering
-
-**Universidade do Minho** - _2014 - 2017 | Braga, Portugal_
 
 ## Talks
 
