@@ -4,7 +4,7 @@ slug: resume
 template: page
 ---
 
-I’m Rogério, a multidisciplinary developer based in Braga, Portugal 🇵🇹. I graduated from University of Minho and I've been working with Frontend since then. I love solving problems, software engineering, sports, traveling, reading, and I'm passionate about everything tech-related. Currently, focused on expanding my know-how in product development.
+Hello 👋. I’m Rogério, a software engineeer based in Braga, Portugal 🇵🇹. I graduated from University of Minho and I've been working with frontend since then. I love solving problems, software, sports, traveling, reading, and I'm passionate about everything tech-related. Currently, focused on expanding my know-how in product development.
 
 - [rgllm.com](https://rgllm.com)
 - [r@rgllm.com](mailto:r[AT]rgllm[DOT]com)
@@ -67,6 +67,12 @@ Expertise in Intelligent Systems (Artificial Intelligence) and Software Systems 
 - WordPress workshop for NEEGIUM [Event](https://www.facebook.com/events/429278770844403/)
 
 ## Publications
+
+A list of some of the articles I've written outside this website or I've contributed to.
+
+- [Identificado primeiro problema na aplicação Stayaway Covid. Código já está a ser escrutinado](https://visao.sapo.pt/exameinformatica/noticias-ei/software/2020-07-30-identificado-problema-aplicacao-stayaway-covid/)
+
+## Scientifc Publications
 
 - Building an imagining-based research platform for the implementation of experiments with brain connectivity data [See Publication](https://repositorium.sdum.uminho.pt/)
 
