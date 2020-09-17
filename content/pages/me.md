@@ -4,7 +4,7 @@ slug: about
 template: page
 ---
 
-Hello 👋. I’m Rogério, a multidisciplinary developer based in Braga, Portugal 🇵🇹. I graduated from University of Minho and I've been working with Frontend since then. I love solving problems, software engineering, sports, traveling, reading, and I'm passionate about everything tech-related. Currently, focused on expanding my know-how in product development.
+Hello 👋. I’m Rogério, a software engineeer based in Braga, Portugal 🇵🇹. I graduated from University of Minho and I've been working with frontend since then. I love solving problems, software, sports, traveling, reading, and I'm passionate about everything tech-related. Currently, focused on expanding my know-how in product development.
 
 ![Me](../images/rogerio-full.jpg)
 
@@ -32,6 +32,12 @@ I'm happy to hear your comments, feedback, suggestions, or just say hi!
 - **Frameworks/Libraries** - React, React Native, Gatsby, WordPress
 - **Data** - SQL (MySQL, PostgreSQL), GraphQL, MongoDB
 - **Testing** - Unit, integration, and end-to-end testing
+
+## Publications
+
+A list of some of the articles I've written outside this website or I've contributed to.
+
+- [Identificado primeiro problema na aplicação Stayaway Covid. Código já está a ser escrutinado](https://visao.sapo.pt/exameinformatica/noticias-ei/software/2020-07-30-identificado-problema-aplicacao-stayaway-covid/)
 
 ## Miscellaneous
 

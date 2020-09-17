@@ -8,9 +8,8 @@ const config = {
   pathPrefix: "",
   dateFromFormat: "YYYY-MM-DD",
   dateFormat: "MMMM Do, YYYY",
-  siteDescription: "Rogério Moreira is a frontend developer and open-source contributor.",
+  siteDescription: "Software engineer and open-source contributor.",
   siteRss: "/rss.xml",
-  googleAnalyticsID: " UA-66789904-1",
   userEmail: "r@rgllm.com",
   userTwitter: "rgllm",
   menuLinks: [
