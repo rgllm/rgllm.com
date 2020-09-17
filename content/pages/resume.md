@@ -72,7 +72,7 @@ A list of some of the articles I've written outside this website or I've contrib
 
 - [Identificado primeiro problema na aplicação Stayaway Covid. Código já está a ser escrutinado](https://visao.sapo.pt/exameinformatica/noticias-ei/software/2020-07-30-identificado-problema-aplicacao-stayaway-covid/)
 
-## Scientifc Publications
+## Scientific Publications
 
 - Building an imagining-based research platform for the implementation of experiments with brain connectivity data [See Publication](https://repositorium.sdum.uminho.pt/)
 
