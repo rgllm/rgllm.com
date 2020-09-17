@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Helmet from "react-helmet";
 import urljoin from "url-join";
 import config from "../../data/SiteConfig";
+import social from "../images/social.png";
 
 export default class SEO extends Component {
   render() {
@@ -25,7 +26,7 @@ export default class SEO extends Component {
     } else {
       title = config.siteTitle;
       description = config.siteDescription;
-      image = config.siteLogo;
+      image = social;
     }
 
     image = urljoin(config.siteUrl, image);
@@ -83,6 +84,7 @@ export default class SEO extends Component {
 
         <meta property="og:url" content={postSEO ? postURL : blogURL} />
         {postSEO && <meta property="og:type" content="article" />}
+        {!postSEO && <meta property="og:type" content="website" />}
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
