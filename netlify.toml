@@ -1,6 +1,6 @@
 [build.environment]
   YARN_VERSION = "1.22.4"
-  NODE_VERSION = "10.15.3"
+  NODE_VERSION = "12.10.0"
 [[redirects]]
   from = "/articles"
   to = "/blog"
