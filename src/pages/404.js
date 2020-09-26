@@ -28,7 +28,7 @@ export default class NotFoundPage extends Component {
         <div className="container">
           <div className="text-center">
             <h1>404</h1>
-            <p>Page Not Found</p>
+            <p>Not Found</p>
           </div>
         </div>
       </Layout>
