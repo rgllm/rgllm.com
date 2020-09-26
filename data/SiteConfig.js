@@ -4,7 +4,7 @@ const config = {
   siteTitleAlt: "Rogério Moreira",
   siteLogo: "/logos/logo-512.png",
   siteUrl: "https://www.rgllm.com",
-  repo: "https://github.com/rgllm/rgllm/",
+  repo: "https://github.com/rgllm/rgllm.com/",
   pathPrefix: "",
   dateFromFormat: "YYYY-MM-DD",
   dateFormat: "MMMM Do, YYYY",
