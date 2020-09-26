@@ -36,7 +36,7 @@ Expertise in Intelligent Systems (Artificial Intelligence) and Software Systems 
 
 ### Front-end Developer
 
-**Pixelmatters** - _2018 - Present | Porto, Portugal_
+**Pixelmatters** - _2018 - 2020 | Porto, Portugal_
 
 - Mainly working in the development of web applications and websites in various business domains.
 - Working with front-end frameworks such as React, Gatsby, and WordPress.
