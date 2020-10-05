@@ -36,6 +36,14 @@ Expertise in Intelligent Systems (Artificial Intelligence) and Software Systems 
 
 ### Front-end Developer
 
+**The Trainline** - _2020 - Present | Porto, Portugal_
+
+- Working as a Front-End Engineer (Mindera Contractor).
+
+**Mindera** - _2020 - Present | Porto, Portugal_
+
+- Working on the development Trainline as a Front-End Engineer.
+
 **Pixelmatters** - _2018 - 2020 | Porto, Portugal_
 
 - Mainly working in the development of web applications and websites in various business domains.
