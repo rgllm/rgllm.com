@@ -34,6 +34,18 @@ Expertise in Intelligent Systems (Artificial Intelligence) and Software Systems 
 
 ## Experience
 
+### Software Engineer
+
+**Trainline** - _2020 - Present | Porto, Portugal_
+
+- Working with front-end in the CRO team (Mindera Contractor).
+
+### Software Engineer
+
+**Mindera** - _2020 - Present | Porto, Portugal_
+
+- Working on the development of Trainline as a Front-End Engineer.
+
 ### Front-end Developer
 
 **Pixelmatters** - _2018 - 2020 | Porto, Portugal_
