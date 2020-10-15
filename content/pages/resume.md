@@ -73,6 +73,7 @@ Expertise in Intelligent Systems (Artificial Intelligence) and Software Systems 
 - [Awesome Portugal Data](https://github.com/rgllm/awesome-portugal-data/) – a repository of portuguese open data
 - [Publish to Netlify](https://wordpress.org/plugins/publish-to-netlify/) – a WordPress plugin to deploy static sites to Netlify
 - [xnatum](https://pypi.org/project/xnatum/) – a Python client to interact with XNAT (one of results of my Masters Dissertation)
+- [Serverless Portuguese Utils](https://github.com/rgllm/serverless-portuguese-utils) – a set of useful utils to validate Portuguse data using Cloudflare Workers.
 
 ## Talks
 
