@@ -25,5 +25,12 @@ export default [
     path: "https://pypi.org/project/xnatum/",
     source: "https://github.com/rgllm/xnatum/",
     description: "Python client to interact with XNAT"
+  },
+  {
+    icon: "☁️",
+    title: "Serverless Portuguese Utils",
+    path: "https://portuguese-utils.rgllm.workers.dev",
+    source: "https://github.com/rgllm/serverless-portuguese-utils/",
+    description: "A set of useful utils to validate Portuguese data using Cloudflare Workers."
   }
 ];
