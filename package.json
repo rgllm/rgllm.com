@@ -58,7 +58,7 @@
     "react-github-btn": "1.2.0",
     "react-helmet": "5.2.1",
     "react-typography": "0.16.19",
-    "sharp": "0.26.1",
+    "sharp": "0.26.2",
     "typography": "0.16.19",
     "url-join": "4.0.1"
   },
