@@ -61,12 +61,6 @@ Expertise in Intelligent Systems (Artificial Intelligence) and Software Systems 
 - Responsible for all technology stack
 - Responsible for scaling the newspaper to one of the biggest in Portugal
 
-### Editor
-
-**iClub** - _2014 - 2019_
-
-- Managing editorial team and writing content about tech and Apple.
-
 ## Open Source Projects
 
 - [rgllm Gatsby Starter](https://github.com/rgllm/rgllm-gatsby-starter) – a starter theme for Gatsby with Typescript and Semantic Release support
