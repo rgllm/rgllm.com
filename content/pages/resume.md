@@ -14,7 +14,7 @@ Hello 👋. I’m Rogério, a software engineeer based in Braga, Portugal 🇵�
 ## Technical Skills
 
 - **Languages** - JavaScript, TypeScript, PHP, HTML5, CSS3, Python
-- **Concepts** - RESTful API Design/Integration, MVC Architecture, DevOps
+- **Concepts** - RESTful API Design/Integration, DevOps
 - **Tools/Environment** - Node.js, Docker, Git, Webpack, SASS, CircleCI, GitHub Actions
 - **Frameworks/Libraries** - React, React Native, Gatsby, WordPress
 - **Data** - SQL (MySQL, PostgreSQL), GraphQL, MongoDB
@@ -28,7 +28,7 @@ Expertise in Intelligent Systems (Artificial Intelligence) and Software Systems 
 
 **Universidade do Minho** - _2017 - 2019 | Braga, Portugal_
 
-### B.S  in Software Engineering
+### B.S in Software Engineering
 
 **Universidade do Minho** - _2014 - 2017 | Braga, Portugal_
 
@@ -55,7 +55,7 @@ Expertise in Intelligent Systems (Artificial Intelligence) and Software Systems 
 
 ### Web Developer
 
-**OMinho** - _2015 - Present | Remote_
+**OMinho** - _2015 - Present | Remote | Freelancer_
 
 - Maintaining and scaling one of the biggest Portuguese online newspapers
 - Responsible for all technology stack
