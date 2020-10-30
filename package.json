@@ -24,7 +24,7 @@
 		"lint:scripts": "eslint --ext js,jsx,ts,tsx .",
 		"lint:styles": "stylelint ./**/*.{css,scss}",
     "write-good": "write-good $(glob 'content/posts/*.md')",
-    "commit": "git-cz"
+    "commit": "git add -A && git-cz"
   },
   "dependencies": {
     "eslint-utils": "1.4.3",
