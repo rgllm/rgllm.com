@@ -77,7 +77,8 @@
     "stylefmt": "6.0.3",
     "stylelint": "12.0.1",
     "stylelint-config-standard": "19.0.0",
-    "write-good": "1.0.2"
+    "write-good": "1.0.2",
+    "commitizen": "4.2.1"
   },
   "remarkConfig": {
     "plugins": [
