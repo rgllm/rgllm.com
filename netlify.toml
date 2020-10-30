@@ -9,3 +9,11 @@
   from = "/thesis.pdf"
   to = "/msc-thesis.pdf"
   status = 301
+[[redirects]]
+  from = "/curriculo.pdf"
+  to = "/cv.pdf"
+  status = 301
+[[redirects]]
+  from = "/curriculo"
+  to = "/resume"
+  status = 301

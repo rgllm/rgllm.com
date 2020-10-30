@@ -27,7 +27,7 @@ I'm happy to hear your comments, feedback, suggestions, or just say hi!
 ## Technical Skills
 
 - **Languages** - JavaScript, TypeScript, PHP, HTML5, CSS3, Python
-- **Concepts** - RESTful API Design/Integration, MVC Architecture, DevOps
+- **Concepts** - RESTful API Design/Integration, DevOps
 - **Tools/Environment** - Node.js, Docker, Git, Webpack, SASS, CircleCI, GitHub Actions
 - **Frameworks/Libraries** - React, React Native, Gatsby, WordPress
 - **Data** - SQL (MySQL, PostgreSQL), GraphQL, MongoDB
