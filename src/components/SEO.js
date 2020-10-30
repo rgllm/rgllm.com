@@ -81,8 +81,6 @@ export default class SEO extends Component {
         <script type="application/ld+json">
           {JSON.stringify(schemaOrgJSONLD)}
         </script>
-        <script async src="https://app.jalsaa.com/pixel/tTIHRrPmRmKln5VX" />
-
         <meta property="og:url" content={postSEO ? postURL : blogURL} />
         {postSEO && <meta property="og:type" content="article" />}
         {!postSEO && <meta property="og:type" content="website" />}
