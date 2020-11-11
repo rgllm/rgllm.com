@@ -12902,10 +12902,10 @@ rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-charts@2.0.0-beta.7:
-  version "2.0.0-beta.7"
-  resolved "https://registry.yarnpkg.com/react-charts/-/react-charts-2.0.0-beta.7.tgz#cc989d78f976dc70796af3af816874274f0c75be"
-  integrity sha512-iUspg9rnx7kD0H/wsK67HNUioOgKgJ8WRXr/Tk3EGP2qcFb9Vo7pjDk4oz1jH12TC+mqL+HFxNYraMkhWd6CUw==
+react-charts@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-charts/-/react-charts-2.0.1.tgz#dbb41501d3f7fd8e05420d8bdd4fcff3e2de4933"
+  integrity sha512-XIL5YXngt1DL3leS88Q/eQD0yTnDn2ohPeVGhMPnX5cN97ukarBVjCpnNeVJYg+F4TButEFpvRaWwhJp3bAmUg==
   dependencies:
     "@reach/observe-rect" "^1.1.0"
     d3-delaunay "^5.2.1"
