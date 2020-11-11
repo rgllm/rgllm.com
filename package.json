@@ -20,9 +20,9 @@
     "build": "gatsby build",
     "start": "gatsby develop -p 8100",
     "clean": "rimraf .cache public",
-		"lint": "npm-run-all --parallel lint:*",
-		"lint:scripts": "eslint --ext js,jsx,ts,tsx .",
-		"lint:styles": "stylelint ./**/*.{css,scss}",
+    "lint": "npm-run-all --parallel lint:*",
+    "lint:scripts": "eslint --ext js,jsx,ts,tsx .",
+    "lint:styles": "stylelint ./**/*.{css,scss}",
     "write-good": "write-good $(glob 'content/posts/*.md')",
     "commit": "git add -A && git-cz"
   },
@@ -51,12 +51,14 @@
     "lodash": "4.17.19",
     "lodash.kebabcase": "4.1.1",
     "moment": "2.29.1",
-    "node-sass": "5.0.0",
+    "node-sass": "4.14.1",
     "prismjs": "1.22.0",
     "react": "17.0.1",
+    "react-charts": "2.0.0-beta.7",
     "react-dom": "17.0.1",
     "react-github-btn": "1.2.0",
     "react-helmet": "5.2.1",
+    "react-resizable": "1.11.0",
     "react-typography": "0.16.19",
     "sharp": "0.26.2",
     "typography": "0.16.19",
@@ -65,6 +67,7 @@
   "devDependencies": {
     "babel-eslint": "10.0.3",
     "cli-glob": "0.1.0",
+    "commitizen": "4.2.2",
     "eslint": "7.13.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "6.15.0",
@@ -77,8 +80,7 @@
     "stylefmt": "6.0.3",
     "stylelint": "12.0.1",
     "stylelint-config-standard": "19.0.0",
-    "write-good": "1.0.2",
-    "commitizen": "4.2.2"
+    "write-good": "1.0.2"
   },
   "remarkConfig": {
     "plugins": [
