@@ -7,6 +7,7 @@ import CasosAtivosChart from '../components/CasoAtivosChart';
 import InternadosChart from '../components/InternadosChart';
 import buildinternadosCharObject from '../utils/buildinternadosCharObject';
 import CadeiasChart from '../components/CadeiasChart';
+import ObitosChart from '../components/ObitosChart';
 
 export default class Covid extends Component {
   constructor(props) {
@@ -31,14 +32,16 @@ export default class Covid extends Component {
     let internadosEnfermaria;
     let casosAtivos;
     let cadeiasTransmissao;
+    let obitos;
+    let recuperados;
     if(jsonData.data) {
       internadosUci = buildinternadosCharObject(jsonData.data, jsonData.internados_uci);
       internadosEnfermaria = buildinternadosCharObject(jsonData.data, jsonData.internados_enfermaria);
       casosAtivos = buildinternadosCharObject(jsonData.data, jsonData.ativos);
       cadeiasTransmissao = buildinternadosCharObject(jsonData.data, jsonData.cadeias_transmissao);
+      obitos = buildinternadosCharObject(jsonData.data, jsonData.obitos);
+      recuperados = buildinternadosCharObject(jsonData.data, jsonData.recuperados);
     }
-
-    console.log(jsonData);
     
     return (
       <Layout>
@@ -61,6 +64,14 @@ export default class Covid extends Component {
           <section className="section">
             <h2>Casos Ativos</h2>
             {jsonData.data && <CasosAtivosChart casosAtivos={casosAtivos} />}
+          </section>
+          <section className="section">
+            <h2>Óbitos por COVID-19 e Recuperados</h2>
+            {jsonData.data && <ObitosChart obitos={obitos} recuperados={recuperados} />}
+            <ul className="chart_label">
+              <li>Azul - Óbitos por COVID-19</li>
+              <li>Vermelho - Recuperados</li>
+            </ul>
           </section>
           <section className="section">
             <h2>Cadeias de Transmissão</h2>
