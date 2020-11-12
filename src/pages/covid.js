@@ -42,7 +42,7 @@ export default class Covid extends Component {
       obitos = buildinternadosCharObject(jsonData.data, jsonData.obitos);
       recuperados = buildinternadosCharObject(jsonData.data, jsonData.recuperados);
     }
-    
+
     return (
       <Layout>
         <Helmet title={`${config.siteTitle}`} />
