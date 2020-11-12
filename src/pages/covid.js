@@ -45,8 +45,10 @@ export default class Covid extends Component {
 
     return (
       <Layout>
-        <Helmet title={`${config.siteTitle}`} />
-        <SEO />
+        <Helmet>
+          <title>{`COVID-19 – ${config.siteTitle}`}</title>
+        </Helmet>
+        <SEO showThumbnailImage={false} customTitle={`COVID-19 – ${config.siteTitle}`} />
         <div className="container">
           <div className="lead">
             <h1>Gráficos COVID-19</h1>
