@@ -1,15 +1,76 @@
 {
-  "name": "nextjs",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "10.0.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
-  }
+	"name": "rgllm.com",
+	"version": "3.0.0",
+	"private": true,
+	"author": {
+		"name": "Rogério Moreira",
+		"email": "r@rgllm.com",
+		"url": "https://rgllm.com"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rgllm/rgllm.com.git"
+	},
+	"engines": {
+		"node": ">= 12.19",
+		"yarn": "1.22.10"
+	},
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "npm-run-all --parallel lint:*",
+		"lint:scripts": "eslint --ext js,jsx,ts,tsx .",
+		"lint:styles": "stylelint ./**/*.{css,scss}",
+		"commit": "git-cz"
+	},
+	"dependencies": {
+		"next": "10.0.0",
+		"react": "17.0.1",
+		"react-dom": "17.0.1"
+	},
+	"devDependencies": {
+		"@babel/core": "7.12.3",
+		"@commitlint/cli": "11.0.0",
+		"@commitlint/config-conventional": "11.0.0",
+		"babel-eslint": "^10.1.0",
+		"babel-loader": "8.1.0",
+		"babel-plugin-prismjs": "2.0.1",
+		"babel-preset-react-app": "10.0.0",
+		"commitizen": "4.2.2",
+		"cz-conventional-changelog": "3.3.0",
+		"eslint": "7.13.0",
+		"eslint-config-airbnb": "18.2.1",
+		"eslint-plugin-import": "2.22.1",
+		"eslint-plugin-jsx-a11y": "6.4.1",
+		"eslint-plugin-react": "7.21.5",
+		"eslint-plugin-react-hooks": "4.2.0",
+		"husky": "4.3.0",
+		"lint-staged": "10.5.1",
+		"npm-run-all": "4.1.5",
+		"postcss-100vh-fix": "0.1.1",
+		"postcss-flexbugs-fixes": "4.2.1",
+		"postcss-preset-env": "6.7.0",
+		"prettier": "2.1.2",
+		"react-refresh": "0.9.0",
+		"regenerator-runtime": "0.13.7",
+		"sass": "1.29.0",
+		"sass-loader": "10.0.5",
+		"semantic-release": "17.2.2",
+		"start-server-and-test": "1.11.5",
+		"stylelint": "13.7.2",
+		"stylelint-config-css-modules": "2.2.0",
+		"stylelint-config-prettier": "8.0.2",
+		"stylelint-config-recess-order": "2.3.0",
+		"stylelint-config-standard": "20.0.0",
+		"stylelint-prettier": "1.1.2",
+		"stylelint-scss": "3.18.0",
+		"webpack-notifier": "1.8.0"
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	}
 }
