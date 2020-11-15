@@ -5,7 +5,7 @@ import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
 import CasosAtivosChart from '../components/CasoAtivosChart';
 import InternadosChart from '../components/InternadosChart';
-import buildinternadosCharObject from '../utils/buildinternadosCharObject';
+import parseCovidApiData from '../utils/parseCovidApiData';
 import CadeiasChart from '../components/CadeiasChart';
 import ObitosChart from '../components/ObitosChart';
 
@@ -35,12 +35,12 @@ export default class Covid extends Component {
     let obitos;
     let recuperados;
     if(jsonData.data) {
-      internadosUci = buildinternadosCharObject(jsonData.data, jsonData.internados_uci);
-      internadosEnfermaria = buildinternadosCharObject(jsonData.data, jsonData.internados_enfermaria);
-      casosAtivos = buildinternadosCharObject(jsonData.data, jsonData.ativos);
-      cadeiasTransmissao = buildinternadosCharObject(jsonData.data, jsonData.cadeias_transmissao);
-      obitos = buildinternadosCharObject(jsonData.data, jsonData.obitos);
-      recuperados = buildinternadosCharObject(jsonData.data, jsonData.recuperados);
+      internadosUci = parseCovidApiData(jsonData.data, jsonData.internados_uci);
+      internadosEnfermaria = parseCovidApiData(jsonData.data, jsonData.internados_enfermaria);
+      casosAtivos = parseCovidApiData(jsonData.data, jsonData.ativos);
+      cadeiasTransmissao = parseCovidApiData(jsonData.data, jsonData.cadeias_transmissao);
+      obitos = parseCovidApiData(jsonData.data, jsonData.obitos);
+      recuperados = parseCovidApiData(jsonData.data, jsonData.recuperados);
     }
 
     return (

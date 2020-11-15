@@ -133,7 +133,6 @@ export const pageQuery = graphql`
             }
             date
             template
-            link
           }
         }
       }
