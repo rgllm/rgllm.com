@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-function buildinternadosCharObject(datas, internados) {
+function parseCovidApiData(datas, internados) {
   const chartData = [];
 
   if(datas && internados) {
@@ -21,4 +21,4 @@ function buildinternadosCharObject(datas, internados) {
   return chartData;
 }
 
-export default buildinternadosCharObject;
+export default parseCovidApiData;
