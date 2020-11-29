@@ -17,16 +17,21 @@
 		"yarn": "1.22.10"
 	},
 	"scripts": {
-		"dev": "next dev",
+		"start": "next dev",
 		"build": "next build",
-		"start": "next start",
+		"start:prod": "next start",
 		"lint": "npm-run-all --parallel lint:*",
 		"lint:scripts": "eslint --ext js,jsx,ts,tsx .",
 		"lint:styles": "stylelint ./**/*.{css,scss}",
 		"commit": "git-cz"
 	},
 	"dependencies": {
-		"next": "10.0.0",
+		"@chakra-ui/react": "^1.0.1",
+		"@emotion/react": "^11.1.1",
+		"@emotion/styled": "^11.0.0",
+		"framer-motion": "^2.9.4",
+		"next": "10.0.3",
+		"prismjs": "^1.22.0",
 		"react": "17.0.1",
 		"react-dom": "17.0.1"
 	},
@@ -41,7 +46,6 @@
 		"commitizen": "4.2.2",
 		"cz-conventional-changelog": "3.3.0",
 		"eslint": "7.13.0",
-		"eslint-config-airbnb": "18.2.1",
 		"eslint-plugin-import": "2.22.1",
 		"eslint-plugin-jsx-a11y": "6.4.1",
 		"eslint-plugin-react": "7.21.5",

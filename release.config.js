@@ -9,5 +9,5 @@ module.exports = {
       },
     ],
   ],
-  branches: ['main'],
+  branches: ['master'],
 };

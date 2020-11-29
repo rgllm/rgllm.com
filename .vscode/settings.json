@@ -8,6 +8,5 @@
 	},
 	"css.validate": false,
 	"less.validate": false,
-	"scss.validate": false,
-	"cssModules.camelCase": true
+	"scss.validate": false
 }

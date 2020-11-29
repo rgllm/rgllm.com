@@ -1,7 +1,27 @@
-import '../styles/globals.css'
+import { ThemeProvider, Global, css } from '@emotion/react';
+import { CSSReset } from '@chakra-ui/react';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+// eslint-disable-next-line import/no-unresolved
+import theme from '@/styles/theme';
+
+const App = ({ Component, pageProps }) => {
+  return (
+    <ThemeProvider theme={theme}>
+        <Global
+          styles={css`
+            html {
+              scroll-behavior: smooth;
+            }
+            #__next {
+              display: flex;
+              flex-direction: column;
+              min-height: 100vh;
+            }
+          `}
+        />
+        <CSSReset />
+        <Component {...pageProps} />
+    </ThemeProvider>
+  )
 }
-
-export default MyApp
+export default App
