@@ -13,8 +13,7 @@
 		"url": "git+https://github.com/rgllm/rgllm.com.git"
 	},
 	"engines": {
-		"node": ">= 12.19",
-		"yarn": "1.22.10"
+		"node": ">= 12.19"
 	},
 	"scripts": {
 		"start": "next dev",
