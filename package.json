@@ -22,7 +22,6 @@
 		"start:prod": "next start",
 		"lint": "npm-run-all --parallel lint:*",
 		"lint:scripts": "eslint --ext js,jsx,ts,tsx .",
-		"lint:styles": "stylelint ./**/*.{css,scss}",
 		"commit": "git-cz"
 	},
 	"dependencies": {
