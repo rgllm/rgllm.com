@@ -1,14 +1,13 @@
 import { ThemeProvider, Global, css } from '@emotion/react';
 import { CSSReset } from '@chakra-ui/react';
 
-// eslint-disable-next-line import/no-unresolved
 import theme from '@/styles/theme';
 
 const App = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
-        <Global
-          styles={css`
+      <Global
+        styles={css`
             html {
               scroll-behavior: smooth;
             }
@@ -18,10 +17,11 @@ const App = ({ Component, pageProps }) => {
               min-height: 100vh;
             }
           `}
-        />
-        <CSSReset />
-        <Component {...pageProps} />
+      />
+      <CSSReset />
+      <Component {...pageProps} />
     </ThemeProvider>
   )
 }
+
 export default App

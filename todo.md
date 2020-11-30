@@ -1,4 +1,5 @@
 # TODO LIST
 
 - import google fonts with next-google-fonts plugin
-- husky-rc "pre-push": "npm run lint"
+- dark mode (use color mode)
+- Head to component

@@ -1,10 +1,11 @@
-import React from 'react';
+import React from 'react'
+
+import Container from '@/components/Container'
 
 
-const Index = () => {
-  return (
-   <h1>rgllm</h1>
-  );
-};
+function Index() {
+  return <Container>
+  </Container>
+}
 
-export default Index;
+export default Index
