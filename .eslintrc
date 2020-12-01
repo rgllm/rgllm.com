@@ -111,6 +111,14 @@
 				[
 					"@/styles",
 					"./styles"
+				],
+				[
+					"@/lib",
+					"./lib"
+				],
+				[
+					"@/posts",
+					"./content/posts"
 				]
 			]
 		}

@@ -1,5 +1,4 @@
 import React from 'react';
-import NextLink from 'next/link';
 import { Icon, Flex, Link } from '@chakra-ui/react';
 import { FiTwitter, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 
@@ -22,28 +21,6 @@ const Footer = () => (
       <Link href="mailto:r@rgllm.com" title="Email" isExternal>
         <Icon as={FiMail} w={6} h={6}/>
       </Link>
-    </div>
-    <div>
-      <NextLink href="/uses" passHref>
-        <Link
-          fontSize="sm"
-          minWidth="100px"
-          mr={2}
-          title="Uses"
-        >
-          /uses
-        </Link>
-      </NextLink>
-      <NextLink href="/books" passHref>
-        <Link
-          fontSize="sm"
-          minWidth="100px"
-          mr={2}
-          title="Books"
-        >
-          /books
-        </Link>
-      </NextLink>
     </div>
   </Flex>
 );
