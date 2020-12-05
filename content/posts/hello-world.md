@@ -1,8 +1,7 @@
 ---
 title: 'Every developer should have a blog, so this is mine'
-date: 2020-01-01
-template: post
-excerpt: 'I've been thinking about having a blog for a long time. From time to time I see/discover something that I want to share and social networks are not the most appropriate place all the time.'
+date: '2020-01-01T00:00:00.322Z'
+excerpt: 'Why I created my blog.'
 ---
 
 I've been thinking about having a blog for a long time. From time to time I see/discover something that I want to share and social networks are not the most appropriate place all the time.

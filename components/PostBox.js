@@ -2,12 +2,8 @@ import React from 'react';
 import NextLink from 'next/link';
 import { Heading, Text, Flex, Box, Link } from '@chakra-ui/react';
 
-const BlogPost = (frontMatter) => {
-  const { title, excerpt } = frontMatter;
-
-  const slug = frontMatter.__resourcePath
-    .replace('blog/', '')
-    .replace('.mdx', '');
+const BlogPost = ( post ) => {
+  const { title, excerpt, slug } = post;
 
   return (
     <NextLink href={`blog/${slug}`} passHref>
@@ -28,6 +24,7 @@ const BlogPost = (frontMatter) => {
       </Link>
     </NextLink>
   );
+
 };
 
 export default BlogPost;
