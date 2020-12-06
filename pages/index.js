@@ -30,7 +30,7 @@ function Index({ allPosts }) {
         maxWidth="700px"
         textAlign="left"
       >
-        <Heading mb={4} as="h1" size="2xl" fontWeight="800">
+        <Heading mb={4} as="h1" size="2xl">
           Hey, I’m Rogério Moreira
         </Heading>
         <Text fontSize="1.25rem" lineHeight="1.5">

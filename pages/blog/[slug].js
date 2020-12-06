@@ -41,7 +41,7 @@ export default function Post({ post }) {
           maxWidth="700px"
           w="100%"
         >
-          <Heading letterSpacing="tight" mb={2} as="h1" size="2xl" fontWeight={800}>
+          <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
             {post.title}
           </Heading>
           <Flex
