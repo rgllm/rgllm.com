@@ -13,13 +13,13 @@ import {
 
 import Container from '@/components/Container';
 import PostBox from '@/components/PostBox';
+import { getAllPosts } from '@/lib/processPosts'
 
 const url = 'https://rgllm.com/blog';
 const title = 'Blog – Rogério Moreira';
 const description =
   'Thoughts on the software engineering, programming, tech, and my personal life.';
 
-import { getAllPosts } from '@/lib/processPosts'
 
 const Blog = ({ allPosts }) => {
   const [searchValue, setSearchValue] = useState('');
@@ -63,9 +63,7 @@ const Blog = ({ allPosts }) => {
               Blog
             </Heading>
             <Text color="black">
-              {`I've been writing online since 2014, mostly about web development and tech careers.
-                In total, I've written ${allPosts.length} articles on this site.
-                Use the search below to filter by title.`}
+              Thinking out loud about software engineering, product development and life in general.
             </Text>
             <InputGroup my={4} mr={4} w="100%">
               <Input

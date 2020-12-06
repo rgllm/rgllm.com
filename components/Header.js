@@ -1,12 +1,12 @@
 import React from 'react';
 import NextLink from 'next/link';
-import { Button, Flex, Box } from '@chakra-ui/react';
+import { Avatar, Button, Flex, Box, Text } from '@chakra-ui/react';
 
 const Header = () => {
   return(
     <Flex
       flexDirection="row"
-      justifyContent="flex-end"
+      justifyContent="space-between"
       alignItems="center"
       maxWidth="900px"
       width="100%"
@@ -17,6 +17,21 @@ const Header = () => {
       mb={8}
       mx="auto"
     >
+      <NextLink href="/" passHref>
+        <Flex flexDirection="row" alignItems="center" cursor="pointer">
+          <Avatar
+            size="sm"
+            name="Rogério Moreira"
+            src="/static/images/avatar.jpg"
+            mr={2}
+          />
+          <Text mr={2} as="span" fontSize="1.25rem" fontWeight="bold" >
+            Rogério Moreira
+          </Text>
+        </Flex>
+      </NextLink>
+
+
       <Box display="inline-block">
         <NextLink href="/" passHref>
           <Button as="a" variant="ghost" fontWeight="normal" p={[1, 4]}>
@@ -30,17 +45,7 @@ const Header = () => {
         </NextLink>
         <NextLink href="/blog" passHref>
           <Button as="a" variant="ghost" fontWeight="normal" p={[1, 4]}>
-            Blog
-          </Button>
-        </NextLink>
-        <NextLink href="/uses" passHref>
-          <Button as="a" variant="ghost" fontWeight="normal" p={[1, 4]}>
-            Uses
-          </Button>
-        </NextLink>
-        <NextLink href="/books" passHref>
-          <Button as="a" variant="ghost" fontWeight="normal" p={[1, 4]}>
-            Books
+            Writing
           </Button>
         </NextLink>
       </Box>

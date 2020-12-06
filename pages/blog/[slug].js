@@ -6,8 +6,7 @@ import {
   Heading,
   Text,
   Flex,
-  Stack,
-  Avatar
+  Stack
 } from '@chakra-ui/react';
 
 import { getPostBySlug, getAllPosts } from '@/lib/processPosts';
@@ -42,7 +41,7 @@ export default function Post({ post }) {
           maxWidth="700px"
           w="100%"
         >
-          <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
+          <Heading letterSpacing="tight" mb={2} as="h1" size="2xl" fontWeight={800}>
             {post.title}
           </Heading>
           <Flex
@@ -54,12 +53,6 @@ export default function Post({ post }) {
             mb={4}
           >
             <Flex align="center">
-              <Avatar
-                size="xs"
-                name="Rogério Moreira"
-                src="/static/images/avatar.jpg"
-                mr={2}
-              />
               <Text fontSize="sm" color="black">
                 {'Rogério Moreira / '}
                 {format(parseISO(post.date), 'MMMM dd, yyyy')}

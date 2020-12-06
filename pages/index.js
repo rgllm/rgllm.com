@@ -1,12 +1,19 @@
 import React from 'react';
 import NextLink from 'next/link';
-import { Stack, Flex, Heading, Text } from '@chakra-ui/react';
+import { Stack, Flex, Heading, Text, Icon } from '@chakra-ui/react';
+import { GiPortugal } from 'react-icons/gi';
+import { SiServerless } from 'react-icons/si';
+import { FaHospitalAlt } from 'react-icons/fa';
 
 import Container from '@/components/Container'
 import ProjectBox from '@/components/ProjectBox';
+import PostBox from '@/components/PostBox';
+import { getAllPosts } from '@/lib/processPosts'
 
 
-function Index() {
+function Index({ allPosts }) {
+  const latestThreePosts = allPosts.slice(0,3);
+
   return <Container>
     <Stack
       as="main"
@@ -23,11 +30,11 @@ function Index() {
         maxWidth="700px"
         textAlign="left"
       >
-        <Heading mb={2} as="h1" size="2xl">
+        <Heading mb={4} as="h1" size="2xl" fontWeight="800">
           Hey, I’m Rogério Moreira
         </Heading>
-        <Text>
-          I’m a developer, writer, and maker. I work at Mindera as a Software Engineer.
+        <Text fontSize="1.25rem" lineHeight="1.5">
+          I’m a software engineer, writer, and maker. I work at Mindera as a Software Engineer.
           You’ve found my personal slice of the internet – everything you want to know and more is here.
         </Text>
       </Flex>
@@ -43,6 +50,10 @@ function Index() {
             Latest Posts
           </Heading>
         </NextLink>
+        {!latestThreePosts.length && 'No posts found.'}
+        {latestThreePosts.map((post) => (
+          <PostBox key={post.title} {...post} />
+        ))}
       </Flex>
       <Flex
         flexDirection="column"
@@ -55,16 +66,43 @@ function Index() {
           Projects
         </Heading>
         <ProjectBox
+          icon={ <Icon
+            as={GiPortugal}
+            aria-label="Awesome Portugal Data"
+            color="black"
+            w="32px"
+            h="32px"
+            ml={2}
+            mr={4}
+          />}
           title="Awesome Portugal Data"
           description="Curated list of Portuguese datasets and open APIs."
           href="https://github.com/rgllm/awesome-portugal-data/"
         />
         <ProjectBox
+          icon={ <Icon
+            as={SiServerless}
+            aria-label="Serverless Portuguese Utils"
+            color="black"
+            w="32px"
+            h="32px"
+            ml={2}
+            mr={4}
+          />}
           title="Serverless Portuguese Utils"
           description="A set of useful utils to validate Portuguese data using Cloudflare Workers."
           href="https://github.com/rgllm/serverless-portuguese-utils/"
         />
         <ProjectBox
+          icon={ <Icon
+            as={FaHospitalAlt}
+            aria-label="XNATUM"
+            color="black"
+            w="32px"
+            h="32px"
+            ml={2}
+            mr={4}
+          />}
           title="XNATUM"
           description="Python client to interact with XNAT"
           href="https://pypi.org/project/xnatum/"
@@ -75,3 +113,17 @@ function Index() {
 }
 
 export default Index
+
+export async function getStaticProps() {
+  const allPosts = getAllPosts([
+    'title',
+    'date',
+    'slug',
+    'excerpt',
+    'content',
+  ])
+
+  return {
+    props: { allPosts },
+  }
+}

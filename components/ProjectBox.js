@@ -6,7 +6,7 @@ import {
   Text,
   Stack } from '@chakra-ui/react';
 
-const ProjectBox = ({ title, description, href }) => {
+const ProjectBox = ({ title, description, href, icon }) => {
   return (
     <Link
       mb={4}
@@ -26,13 +26,15 @@ const ProjectBox = ({ title, description, href }) => {
         borderRadius={4}
         p={4}
       >
+        {icon}
         <Stack>
           <Heading
             as="h4"
             size="md"
             fontWeight="bold"
-            mb={4}
             letterSpacing="tighter"
+            color="black"
+            mb="0"
           >
             {title}
           </Heading>
