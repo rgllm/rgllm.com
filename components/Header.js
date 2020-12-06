@@ -21,7 +21,7 @@ const Header = () => {
         <Flex flexDirection="row" alignItems="center" cursor="pointer">
           <Avatar
             size="sm"
-            bg="black"
+            bg="white"
             name="Rogério Moreira"
             src="/static/images/avatar.jpg"
             mr={2}
