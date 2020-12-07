@@ -6,7 +6,8 @@ import {
   Heading,
   Text,
   Flex,
-  Stack
+  Stack,
+  Image
 } from '@chakra-ui/react';
 
 import { getPostBySlug, getAllPosts } from '@/lib/processPosts';
@@ -60,6 +61,11 @@ export default function Post({ post }) {
             </Flex>
           </Flex>
         </Flex>
+        <Image
+          objectFit="cover"
+          src={post.image}
+          alt={post.title}
+        />
         <PostContent content={post.content} />
       </Stack>
     </Container>
@@ -72,6 +78,7 @@ export async function getStaticProps({ params }) {
     'date',
     'slug',
     'content',
+    'image',
   ])
   const content = await mdToHtml(post.content || '')
 

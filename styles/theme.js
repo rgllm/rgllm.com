@@ -22,6 +22,16 @@ const theme = extendTheme({
           textDecoration: 'none',
         },
       },
+    },
+    PostContent: {
+      styles: {
+        global: {
+          p: {
+            fontSize: 'sm',
+            lineHeight: '1.4',
+          },
+        },
+      }
     }
   },
 })

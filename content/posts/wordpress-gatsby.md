@@ -2,6 +2,7 @@
 title: 'From monolithic to headless: how and why you should adapt your WordPress stack'
 date: '2020-07-03T00:00:00.322Z'
 excerpt: 'How to adapt your WordPress stack to use a more headless approach with newer technologies.'
+image: '/static/images/wordpress-gatsby.png'
 ---
 
 Every dynamic website consists of two main parts: the backend and the frontend. The backend, which in marketing websites is commonly a Content Management System (CMS), allows the website owners to manage as much content as needed without handling code changes. The frontend displays all of that content for the website users.
