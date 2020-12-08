@@ -1,10 +1,8 @@
 import parse from 'html-react-parser';
-import { Box, useStyleConfig } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 
 export default function PostBody({ content }) {
-  const styles = useStyleConfig('PostContent', {});
-
   return (
-    <Box sx={styles}>{parse(content)}</Box>
+    <Box className="markdown-post">{parse(content)}</Box>
   )
 }

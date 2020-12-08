@@ -10,6 +10,7 @@ import {
   InputRightElement,
   Icon
 } from '@chakra-ui/react';
+import { RiSearchLine } from 'react-icons/ri';
 
 import Container from '@/components/Container';
 import PostBox from '@/components/PostBox';
@@ -60,19 +61,20 @@ const Blog = ({ allPosts }) => {
             maxWidth="700px"
           >
             <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
-              Blog
+              All Posts
             </Heading>
-            <Text color="black">
+            <Text color="gray.700">
               Thinking out loud about software engineering, product development and life in general.
             </Text>
             <InputGroup my={4} mr={4} w="100%">
               <Input
-                aria-label="Search articles"
+                aria-label="Search posts"
                 onChange={(e) => setSearchValue(e.target.value)}
-                placeholder="Search articles"
+                placeholder="Search posts"
+                borderColor="gray.300"
               />
               <InputRightElement>
-                <Icon name="search" color="gray.300" />
+                <Icon as={RiSearchLine} w={4} h={4} color="gray.300" />
               </InputRightElement>
             </InputGroup>
           </Flex>
@@ -83,7 +85,7 @@ const Blog = ({ allPosts }) => {
             maxWidth="700px"
             mt={8}
           >
-            {!filteredBlogPosts.length && 'No posts found.'}
+            {!filteredBlogPosts.length && 'No posts found for that search criteria.'}
             {filteredBlogPosts.map((post) => (
               <PostBox key={post.title} {...post} />
             ))}

@@ -66,6 +66,9 @@ const About = () => {
             </Text>
             <Divider color="gray.300" my="40px" />
             <Heading as="h4" fontSize="1.25rem" fontWeight="700" lineHeight="1.75rem">Projects</Heading>
+            <Link href="https://github.com/rgllm/awesome-portugal-data/">Awesome Portugal Data</Link>
+            <Link href="https://github.com/rgllm/serverless-portuguese-utils/">Serverless Portuguese Utils</Link>
+            <Link href="https://pypi.org/project/xnatum/">XNATUM</Link>
             <Text marginBottom="1.5rem" fontSize="1.125rem" lineHeight="1.75rem" mb="20px">Weekend hacks for fun and learning.</Text>
             <Divider color="gray.300" my="40px" />
             <Heading as="h4" fontSize="1.25rem" fontWeight="700" lineHeight="1.75rem">Speaking and interviews</Heading>

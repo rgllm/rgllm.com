@@ -17,22 +17,12 @@ const theme = extendTheme({
       baseStyle: {
         fontSize: '1.125rem',
         color: '#3b82f6',
-        fontWeight: '500',
+        fontWeight: '600',
         _hover: {
           textDecoration: 'none',
         },
       },
     },
-    PostContent: {
-      styles: {
-        global: {
-          p: {
-            fontSize: 'sm',
-            lineHeight: '1.4',
-          },
-        },
-      }
-    }
   },
 })
 

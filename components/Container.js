@@ -11,7 +11,7 @@ const Container = ({ children }) => {
       justifyContent="center"
       flexDirection="column"
       bg="white"
-      color="black"
+      color="gray.700"
       px={8}
     >
       <Header />

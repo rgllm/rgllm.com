@@ -14,7 +14,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Rogério Moreira</title>
+          <title>Rogério Moreira – Software Engineer, writer, maker.</title>
           <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
           <meta content="width=device-width, initial-scale=1" name="viewport" />
           <meta content="#ffffff" name="theme-color" />

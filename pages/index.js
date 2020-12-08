@@ -30,10 +30,10 @@ function Index({ allPosts }) {
         maxWidth="700px"
         textAlign="left"
       >
-        <Heading mb={4} as="h1" size="2xl">
+        <Heading mb={4} as="h1" fontSize="3rem">
           Hey, I’m Rogério Moreira
         </Heading>
-        <Text fontSize="1.25rem" lineHeight="1.5">
+        <Text fontSize="1.125rem" lineHeight="1.5">
           I’m a software engineer, writer, and maker. I work at Mindera as a Software Engineer.
           You’ve found my personal slice of the internet – everything you want to know and more is here.
         </Text>
@@ -46,7 +46,7 @@ function Index({ allPosts }) {
         mt={8}
       >
         <NextLink href="/blog" passHref>
-          <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={700} mr={4} cursor="pointer">
+          <Heading letterSpacing="tight" fontSize="2rem" fontWeight={700} mb={4} cursor="pointer">
             Latest Posts
           </Heading>
         </NextLink>
@@ -62,14 +62,14 @@ function Index({ allPosts }) {
         maxWidth="700px"
         width="100%"
       >
-        <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={700}>
+        <Heading letterSpacing="tight" mb={4} fontSize="2rem" fontWeight={700}>
           Projects
         </Heading>
         <ProjectBox
           icon={ <Icon
             as={GiPortugal}
             aria-label="Awesome Portugal Data"
-            color="black"
+            color="gray.700"
             w="32px"
             h="32px"
             ml={2}
@@ -83,7 +83,7 @@ function Index({ allPosts }) {
           icon={ <Icon
             as={SiServerless}
             aria-label="Serverless Portuguese Utils"
-            color="black"
+            color="gray.700"
             w="32px"
             h="32px"
             ml={2}
@@ -97,7 +97,7 @@ function Index({ allPosts }) {
           icon={ <Icon
             as={FaHospitalAlt}
             aria-label="XNATUM"
-            color="black"
+            color="gray.700"
             w="32px"
             h="32px"
             ml={2}

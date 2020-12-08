@@ -22,23 +22,23 @@ const ProjectBox = ({ title, description, href, icon }) => {
       <Flex
         align="center"
         border="1px solid"
-        borderColor="gray.200"
+        borderColor="gray.300"
         borderRadius={4}
         p={4}
       >
         {icon}
         <Stack>
           <Heading
-            as="h4"
-            size="md"
-            fontWeight="bold"
+            as="h3"
+            fontSize="1.25rem"
+            fontWeight={700}
             letterSpacing="tighter"
-            color="black"
+            color="gray.700"
             mb="0"
           >
             {title}
           </Heading>
-          <Text lineHeight="1.3">{description}</Text>
+          <Text fontSize="1.125rem" lineHeight="1.5" fontWeight={500}>{description}</Text>
         </Stack>
       </Flex>
     </Link>
