@@ -68,7 +68,7 @@
     "babel-eslint": "10.0.3",
     "cli-glob": "0.1.0",
     "commitizen": "4.2.2",
-    "eslint": "7.14.0",
+    "eslint": "7.15.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "7.0.0",
     "eslint-plugin-import": "2.22.1",
