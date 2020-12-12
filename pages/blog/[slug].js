@@ -54,7 +54,7 @@ export default function Post({ post }) {
             mb={4}
           >
             <Flex align="center">
-              <Text fontSize="sm" color="gray.700">
+              <Text fontSize="sm" color="gray.900">
                 {'Rogério Moreira / '}
                 {format(parseISO(post.date), 'MMMM dd, yyyy')}
               </Text>

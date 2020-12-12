@@ -33,7 +33,7 @@ const ProjectBox = ({ title, description, href, icon }) => {
             fontSize="1.25rem"
             fontWeight={700}
             letterSpacing="tighter"
-            color="gray.700"
+            color="gray.900"
             mb="0"
           >
             {title}

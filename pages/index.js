@@ -69,7 +69,7 @@ function Index({ allPosts }) {
           icon={ <Icon
             as={GiPortugal}
             aria-label="Awesome Portugal Data"
-            color="gray.700"
+            color="gray.900"
             w="32px"
             h="32px"
             ml={2}
@@ -83,7 +83,7 @@ function Index({ allPosts }) {
           icon={ <Icon
             as={SiServerless}
             aria-label="Serverless Portuguese Utils"
-            color="gray.700"
+            color="gray.900"
             w="32px"
             h="32px"
             ml={2}
@@ -97,7 +97,7 @@ function Index({ allPosts }) {
           icon={ <Icon
             as={FaHospitalAlt}
             aria-label="XNATUM"
-            color="gray.700"
+            color="gray.900"
             w="32px"
             h="32px"
             ml={2}

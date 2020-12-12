@@ -15,7 +15,7 @@ const BlogPost = ( post ) => {
             justifyContent="space-between"
             flexDirection={['column', 'row']}
           >
-            <Heading  as="h3" fontSize="1.25rem" fontWeight={700} mb={2} color="gray.700">
+            <Heading  as="h3" fontSize="1.25rem" fontWeight={700} mb={2} color="gray.900">
               {title}
             </Heading>
           </Flex>

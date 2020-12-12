@@ -26,7 +26,7 @@ const Header = () => {
             src="/static/images/avatar.jpg"
             mr={2}
           />
-          <Text mr={2} as="span" fontSize="1.10rem" fontWeight="bold" >
+          <Text mr={2} as="span" fontSize="1.06rem" fontWeight="bold" >
             Rogério Moreira
           </Text>
         </Flex>

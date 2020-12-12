@@ -63,7 +63,7 @@ const Blog = ({ allPosts }) => {
             <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
               All Posts
             </Heading>
-            <Text color="gray.700">
+            <Text color="gray.900">
               Thinking out loud about software engineering, product development and life in general.
             </Text>
             <InputGroup my={4} mr={4} w="100%">
@@ -72,6 +72,7 @@ const Blog = ({ allPosts }) => {
                 onChange={(e) => setSearchValue(e.target.value)}
                 placeholder="Search posts"
                 borderColor="gray.300"
+                focusBorderColor="gray.900"
               />
               <InputRightElement>
                 <Icon as={RiSearchLine} w={4} h={4} color="gray.300" />
