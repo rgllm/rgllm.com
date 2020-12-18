@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react';
 
 import Container from '@/components/Container';
-import AboutItem from '@/components/AboutItem';
+import Item from '@/components/Item';
 
 const url = 'https://rgllm.com/about';
 const title = 'About Me – Rogério Moreira';
@@ -69,22 +69,22 @@ const About = () => {
 
             <Heading as="h4" fontSize="1.25rem" fontWeight="700" lineHeight="1.75rem">Projects</Heading>
             <Text marginBottom="1.5rem" fontSize="1.125rem" lineHeight="1.75rem" mb="20px">Weekend hacks for fun and learning.</Text>
-            <AboutItem linkTitle="Awesome Portugal Data" linkUrl="https://github.com/rgllm/awesome-portugal-data/" description="Curated list of Portuguese datasets and open APIs."/>
-            <AboutItem linkTitle="Serverless Portuguese Utils" linkUrl="https://github.com/rgllm/serverless-portuguese-utils/" description="A set of useful utils to validate Portuguese data using Cloudflare Workers."/>
-            <AboutItem linkTitle="XNATUM" linkUrl="https://pypi.org/project/xnatum/" description="Python client to interact with XNAT"/>
+            <Item linkTitle="Awesome Portugal Data" linkUrl="https://github.com/rgllm/awesome-portugal-data/" description="Curated list of Portuguese datasets and open APIs."/>
+            <Item linkTitle="Serverless Portuguese Utils" linkUrl="https://github.com/rgllm/serverless-portuguese-utils/" description="A set of useful utils to validate Portuguese data using Cloudflare Workers."/>
+            <Item linkTitle="XNATUM" linkUrl="https://pypi.org/project/xnatum/" description="Python client to interact with XNAT"/>
             <Divider color="gray.300" my="40px" />
 
             <Heading as="h4" fontSize="1.25rem" fontWeight="700" lineHeight="1.75rem">Speaking and interviews</Heading>
             <Text marginBottom="1.5rem" fontSize="1.125rem" lineHeight="1.75rem" mb="20px">{'Some of the articles I\'ve written outside this website or I\'ve contributed to.'}</Text>
-            <AboutItem linkTitle="Identificado primeiro problema na aplicação Stayaway Covid. Código já está a ser escrutinado" linkUrl="https://visao.sapo.pt/exameinformatica/noticias-ei/software/2020-07-30-identificado-problema-aplicacao-stayaway-covid/" description="An interview I did about the Portuguese COVID tracking app"/>
-            <AboutItem linkTitle="WordPress workshop for NEEGIUM" linkUrl="https://www.facebook.com/events/429278770844403/" description="An introductory workshop about WordPress"/>
-            <AboutItem linkTitle="Building an imagining-based research platform for the implementation of experiments with brain connectivity data " linkUrl="https://repositorium.sdum.uminho.pt/" description="MSc. thesis dissertation"/>
+            <Item linkTitle="Identificado primeiro problema na aplicação Stayaway Covid. Código já está a ser escrutinado" linkUrl="https://visao.sapo.pt/exameinformatica/noticias-ei/software/2020-07-30-identificado-problema-aplicacao-stayaway-covid/" description="An interview I did about the Portuguese COVID tracking app"/>
+            <Item linkTitle="WordPress workshop for NEEGIUM" linkUrl="https://www.facebook.com/events/429278770844403/" description="An introductory workshop about WordPress"/>
+            <Item linkTitle="Building an imagining-based research platform for the implementation of experiments with brain connectivity data " linkUrl="https://repositorium.sdum.uminho.pt/" description="MSc. thesis dissertation"/>
             <Divider color="gray.300" my="40px" />
 
             <Heading as="h4" fontSize="1.25rem" fontWeight="700" lineHeight="1.75rem">Miscellaneous</Heading>
             <Text marginBottom="1.5rem" fontSize="1.125rem" lineHeight="1.75rem" mb="20px">{'Other pages on the site that don\'t fit anywhere else.'}</Text>
-            <AboutItem linkTitle="Books" linkUrl="https://rgllm.com/books" description="Books that I read or I'm currently reading"/>
-            <AboutItem linkTitle="/uses" linkUrl="https://rgllm.com/uses" description="Make sure to check out uses.tech for a list of everyone's /uses pages!"/>
+            <Item linkTitle="Books" linkUrl="/books" description="Books that I read or I'm currently reading"/>
+            <Item linkTitle="Uses" linkUrl="/uses" description="Make sure to check out uses.tech for a list of everyone's /uses pages!"/>
             <Divider color="gray.300" my="40px" />
           </Flex>
         </Stack>
