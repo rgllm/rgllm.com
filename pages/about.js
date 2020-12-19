@@ -90,7 +90,6 @@ const About = () => {
             <Heading as="h4" fontSize="1.25rem" fontWeight={600} lineHeight="1.75rem" color={colorMode === 'light' ? 'black' : 'white' }>Miscellaneous</Heading>
             <Text marginBottom="1.5rem" fontSize="1.125rem" lineHeight="1.75rem" mb="20px" color={colorMode === 'light' ? 'gray.900' : 'white'}>{'Other pages on the site that don\'t fit anywhere else.'}</Text>
             <Item linkTitle="Books" linkUrl="/books" description="Books that I read or I'm currently reading"/>
-            <Item linkTitle="Uses" linkUrl="/uses" description="Make sure to check out uses.tech for a list of everyone's /uses pages!"/>
             <Divider color={colorMode === 'light' ? 'gray.300' : 'white' } my="40px" />
           </Flex>
         </Stack>

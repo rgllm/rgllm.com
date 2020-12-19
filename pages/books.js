@@ -3,13 +3,14 @@
 import React from 'react';
 import { NextSeo } from 'next-seo';
 import {
+  UnorderedList,
+  useColorMode,
   Flex,
+  Heading,
   Link,
   ListItem,
-  Heading,
   Stack,
   Text,
-  UnorderedList,
 } from '@chakra-ui/react';
 
 import Container from '@/components/Container';
@@ -18,6 +19,8 @@ const url = 'https://rgllm.com/books';
 const title = 'Books – Rogério Moreira';
 
 const About = () => {
+  const { colorMode } = useColorMode();
+
   return (
     <>
       <NextSeo
@@ -48,7 +51,7 @@ const About = () => {
             <Heading mb={4} as="h1" fontSize="3rem">
               Books
             </Heading>
-            <Text marginBottom="1.5rem">
+            <Text marginBottom="1.5rem" color={colorMode === 'light' ? 'gray.900' : 'white'}>
               Some of the books (🇬🇧 and 🇵🇹) I’ve recently read. Each book is rated on a 5-star scale.
             </Text>
             <UnorderedList>
