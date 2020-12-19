@@ -1,8 +1,32 @@
-# rgllm.com
+<h1 align="center">
+  rgllm.com
+</h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b1d58c8f-9ffc-470d-b01b-552162fa1e03/deploy-status)](https://app.netlify.com/sites/rgllm/deploys) 
-[![DeepScan grade](https://deepscan.io/api/teams/6848/projects/8980/branches/114246/badge/grade.svg?token=a1fa0980263b30233c0ddf1e9c3ed778290db2ee)](https://deepscan.io/dashboard#view=project&tid=6848&pid=8980&bid=114246)
+<h3 align="center">
+  My personal slice of the internet.
+</h3>
 
-![](https://codescene.io/projects/6609/status.svg)
+<p align="center">
+  <a href="https://github.com/rgllm/rgllm.com/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="rgllm.com is released under the MIT license." />
+  </a>
+  <a href="https://twitter.com/intent/follow?screen_name=rgllm">
+    <img src="https://img.shields.io/twitter/follow/rgllm.svg?label=Follow%20@rgllm" alt="Follow @rgllm" />
+  </a>
+</p>
 
-Rogério Moreira's personal website running on Gatsby, React, and Node.js.
+## Running
+
+```
+$ git clone https://github.com/rgllm/rgllm.com
+$ cd rgllm.com
+$ yarn
+$ yarn start
+```
+
+## Built with
+
+- [Next.js](https://nextjs.org/)
+- [Vercel](https://vercel.com)
+- [Chakra UI](https://chakra-ui.com/)
+- [Renovate Bot](https://renovatebot.com)

@@ -1,95 +1,87 @@
 {
-  "name": "rgllm.com",
-  "description": "Personal website.",
-  "version": "1.0.0",
-  "author": "Rogério Moreira <r@rgllm.com>",
-  "repository": "git@github.com:rgllm/rgllm.com",
-  "keywords": [
-    "rogerio moreira",
-    "development",
-    "dev",
-    "tech"
-  ],
-  "license": "MIT",
-  "engines": {
-    "node": ">= 12.19",
-    "yarn": "1.22.10"
-  },
-  "scripts": {
-    "dev": "yarn start",
-    "build": "gatsby build",
-    "start": "gatsby develop -p 8100",
-    "clean": "rimraf .cache public",
-    "lint": "npm-run-all --parallel lint:*",
-    "lint:scripts": "eslint --ext js,jsx,ts,tsx .",
-    "lint:styles": "stylelint ./**/*.{css,scss}",
-    "write-good": "write-good $(glob 'content/posts/*.md')",
-    "commit": "git add -A && git-cz"
-  },
-  "dependencies": {
-    "eslint-utils": "1.4.3",
-    "gatsby": "2.25.3",
-    "gatsby-image": "2.4.21",
-    "gatsby-plugin-catch-links": "2.3.15",
-    "gatsby-plugin-feed": "2.6.0",
-    "gatsby-plugin-google-fonts": "1.0.1",
-    "gatsby-plugin-manifest": "2.5.2",
-    "gatsby-plugin-netlify": "2.4.0",
-    "gatsby-plugin-offline": "3.3.3",
-    "gatsby-plugin-react-helmet": "3.3.14",
-    "gatsby-plugin-sass": "2.4.2",
-    "gatsby-plugin-sharp": "2.7.1",
-    "gatsby-plugin-sitemap": "2.5.1",
-    "gatsby-plugin-typography": "2.5.13",
-    "gatsby-remark-autolink-headers": "2.4.1",
-    "gatsby-remark-copy-linked-files": "2.3.19",
-    "gatsby-remark-images": "3.4.2",
-    "gatsby-remark-prismjs": "3.6.0",
-    "gatsby-source-filesystem": "2.4.2",
-    "gatsby-transformer-remark": "2.9.2",
-    "gatsby-transformer-sharp": "2.5.21",
-    "lodash": "4.17.19",
-    "lodash.kebabcase": "4.1.1",
-    "moment": "2.29.1",
-    "node-sass": "4.14.1",
-    "prismjs": "1.22.0",
-    "react": "17.0.1",
-    "react-charts": "2.0.0-beta.7",
-    "react-dom": "17.0.1",
-    "react-github-btn": "1.2.0",
-    "react-helmet": "5.2.1",
-    "react-resizable": "1.11.0",
-    "react-typography": "0.16.19",
-    "sharp": "0.26.2",
-    "typography": "0.16.19",
-    "url-join": "4.0.1"
-  },
-  "devDependencies": {
-    "babel-eslint": "10.0.3",
-    "cli-glob": "0.1.0",
-    "commitizen": "4.2.2",
-    "eslint": "7.13.0",
-    "eslint-config-airbnb": "18.2.1",
-    "eslint-config-prettier": "6.15.0",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-jsx-a11y": "6.4.1",
-    "eslint-plugin-react": "7.21.5",
-    "prettier": "1.19.1",
-    "remark-cli": "9.0.0",
-    "remark-preset-lint-recommended": "5.0.0",
-    "stylefmt": "6.0.3",
-    "stylelint": "12.0.1",
-    "stylelint-config-standard": "19.0.0",
-    "write-good": "1.0.2"
-  },
-  "remarkConfig": {
-    "plugins": [
-      "remark-preset-lint-recommended"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  }
+	"name": "rgllm.com",
+	"version": "3.0.0",
+	"private": true,
+	"author": {
+		"name": "Rogério Moreira",
+		"email": "r@rgllm.com",
+		"url": "https://rgllm.com"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rgllm/rgllm.com.git"
+	},
+	"engines": {
+		"node": ">= 12.19"
+	},
+	"scripts": {
+		"start": "next dev",
+		"build": "next build",
+		"start:prod": "next start",
+		"lint": "npm-run-all --parallel lint:*",
+		"lint:scripts": "eslint --ext js,jsx,ts,tsx .",
+		"lint:fix": "eslint --fix --ext .js ./",
+		"commit": "git-cz"
+	},
+	"dependencies": {
+		"@chakra-ui/react": "^1.0.1",
+		"@emotion/react": "^11.1.1",
+		"@emotion/styled": "^11.0.0",
+		"date-fns": "^2.16.1",
+		"eslint-import-resolver-alias": "^1.1.2",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-react": "^7.21.5",
+		"framer-motion": "^2.9.4",
+		"gray-matter": "^4.0.2",
+		"html-react-parser": "^0.14.2",
+		"next": "10.0.3",
+		"next-seo": "^4.17.0",
+		"prismjs": "^1.22.0",
+		"react": "17.0.1",
+		"react-dom": "17.0.1",
+		"react-icons": "^4.1.0",
+		"remark": "^13.0.0",
+		"remark-html": "^13.0.1"
+	},
+	"devDependencies": {
+		"@babel/core": "7.12.3",
+		"@commitlint/cli": "11.0.0",
+		"@commitlint/config-conventional": "11.0.0",
+		"babel-eslint": "^10.1.0",
+		"babel-loader": "8.1.0",
+		"babel-plugin-prismjs": "2.0.1",
+		"babel-preset-react-app": "10.0.0",
+		"commitizen": "4.2.2",
+		"cz-conventional-changelog": "3.3.0",
+		"eslint": "^7.14.0",
+		"eslint-plugin-jsx-a11y": "6.4.1",
+		"eslint-plugin-react-hooks": "4.2.0",
+		"husky": "4.3.0",
+		"lint-staged": "10.5.1",
+		"npm-run-all": "4.1.5",
+		"postcss-100vh-fix": "0.1.1",
+		"postcss-flexbugs-fixes": "4.2.1",
+		"postcss-preset-env": "6.7.0",
+		"prettier": "2.1.2",
+		"react-refresh": "0.9.0",
+		"regenerator-runtime": "0.13.7",
+		"sass": "^1.30.0",
+		"sass-loader": "10.0.5",
+		"semantic-release": "17.2.2",
+		"start-server-and-test": "1.11.5",
+		"stylelint": "13.7.2",
+		"stylelint-config-css-modules": "2.2.0",
+		"stylelint-config-prettier": "8.0.2",
+		"stylelint-config-recess-order": "2.3.0",
+		"stylelint-config-standard": "20.0.0",
+		"stylelint-prettier": "1.1.2",
+		"stylelint-scss": "3.18.0",
+		"webpack-notifier": "1.8.0"
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	}
 }

@@ -1,0 +1,63 @@
+{
+	"name": "Rogério Moreira",
+	"description": "Software Engineer, writer, and maker.",
+	"short_name": "rgllm.com",
+	"icons": [
+		{
+			"src": "/static/favicons/favicon-72x72.png",
+			"type": "image/png",
+			"sizes": "72x72",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/static/favicons/favicon-96x96.png",
+			"type": "image/png",
+			"sizes": "96x96",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/static/favicons/favicon-128x128.png",
+			"type": "image/png",
+			"sizes": "128x128",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/static/favicons/favicon-144x144.png",
+			"type": "image/png",
+			"sizes": "144x144",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/static/favicons/favicon-152x152.png",
+			"type": "image/png",
+			"sizes": "152x152",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/static/favicons/favicon-192x192.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/static/favicons/favicon-384x384.png",
+			"type": "image/png",
+			"sizes": "384x384",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/static/favicons/favicon-512x512.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any maskable"
+		}
+	],
+	"scope": "/",
+	"start_url": "../../index.html",
+	"dir": "ltr",
+	"display": "standalone",
+	"theme_color": "#ffffff",
+	"background_color": "#ffffff",
+	"orientation": "portrait-primary",
+	"lang": "en-US"
+}

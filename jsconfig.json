@@ -1,21 +1,11 @@
 {
-  "compilerOptions": {
-    "target": "ES6",
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "baseUrl": "src",
-    "jsx": "react",
-    "paths": {
-      "*": ["*", "src/*"]
-    }
-  },
-  "typeAcquisition": {
-    "enable": true
-  },
-  "typingOptions": {
-    "enableAutoDiscovery": true
-  },
-  "compileOnSave": true,
-  "allowJS": true,
-  "include": ["src/**/*"]
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/components/*": ["components/*"],
+			"@/styles/*": ["styles/*"],
+			"@/lib/*": ["lib/*"],
+			"@/posts/*": ["content/posts/*"]
+		}
+	}
 }

@@ -1,0 +1,61 @@
+{
+	"cleanUrls": true,
+	"redirects": [
+		{
+			"source": "/cv.pdf",
+			"destination": "/static/cv.pdf"
+		},
+		{
+			"source": "/msc-thesis.pdf",
+			"destination": "/static/msc-thesis.pdf"
+		},
+		{
+			"source": "/curriculo.pdf",
+			"destination": "/cv.pdf"
+		},
+		{
+			"source": "/thesis.pdf",
+			"destination": "/msc-thesis.pdf"
+		},
+		{
+			"source": "/articles",
+			"destination": "/post"
+		},
+		{
+			"source": "/resume",
+			"destination": "/about"
+		},
+		{
+			"source": "/covid",
+			"destination": "/"
+		}
+	],
+	"headers": [
+		{
+			"source": "/service-worker.js",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=0, must-revalidate"
+				}
+			]
+		},
+		{
+			"source": "/(.*)",
+			"headers": [
+				{
+					"key": "X-Content-Type-Options",
+					"value": "nosniff"
+				},
+				{
+					"key": "X-Frame-Options",
+					"value": "DENY"
+				},
+				{
+					"key": "X-XSS-Protection",
+					"value": "1; mode=block"
+				}
+			]
+		}
+	]
+}
