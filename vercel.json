@@ -2,6 +2,14 @@
 	"cleanUrls": true,
 	"redirects": [
 		{
+			"source": "/cv.pdf",
+			"destination": "/static/cv.pdf"
+		},
+		{
+			"source": "/msc-thesis.pdf",
+			"destination": "/static/msc-thesis.pdf"
+		},
+		{
 			"source": "/curriculo.pdf",
 			"destination": "/cv.pdf"
 		},
