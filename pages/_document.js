@@ -20,6 +20,7 @@ class MyDocument extends Document {
           />
           <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
           <link href="/static/favicons/manifest.json" rel="manifest" />
+          <script async src="https://cdn.splitbee.io/sb.js"></script>
         </Head>
         <body>
           <ColorModeScript initialColorMode="light" />
