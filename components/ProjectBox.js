@@ -35,14 +35,14 @@ const ProjectBox = ({ title, description, href, icon }) => {
           <Heading
             as="h3"
             fontSize="1.25rem"
-            fontWeight={700}
+            fontWeight={600}
             letterSpacing="tighter"
             color={colorMode === 'light' ? 'gray.900' : 'white'}
             mb="0"
           >
             {title}
           </Heading>
-          <Text fontSize="1.125rem" lineHeight="1.5" fontWeight={500} color={colorMode === 'light' ? 'gray.900' : 'white'}>{description}</Text>
+          <Text fontSize="1.125rem" lineHeight="1.5" fontWeight={400} color={colorMode === 'light' ? 'gray.900' : 'white'}>{description}</Text>
         </Stack>
       </Flex>
     </Link>

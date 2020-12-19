@@ -47,7 +47,7 @@ const Index = ({ allPosts }) => {
         mt={8}
       >
         <NextLink href="/blog" passHref>
-          <Heading letterSpacing="tight" fontSize="2rem" fontWeight={700} mb={4} cursor="pointer" color={colorMode === 'light' ? 'black' : 'white' }>
+          <Heading letterSpacing="tight" fontSize="2rem" fontWeight={600} mb={4} cursor="pointer" color={colorMode === 'light' ? 'black' : 'white' }>
             Latest Posts
           </Heading>
         </NextLink>
@@ -63,7 +63,7 @@ const Index = ({ allPosts }) => {
         maxWidth="700px"
         width="100%"
       >
-        <Heading letterSpacing="tight" mb={4} fontSize="2rem" fontWeight={700} color={colorMode === 'light' ? 'black' : 'white' }>
+        <Heading letterSpacing="tight" mb={4} fontSize="2rem" fontWeight={600} color={colorMode === 'light' ? 'black' : 'white' }>
           Projects
         </Heading>
         <ProjectBox

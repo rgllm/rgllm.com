@@ -37,17 +37,17 @@ const Header = () => {
 
       <Box display="inline-block">
         <NextLink href="/" passHref>
-          <Button as="a" variant="ghost" fontWeight={500} p={[1, 4]}>
+          <Button as="a" variant="ghost" fontWeight={400} p={[1, 4]}>
             Home
           </Button>
         </NextLink>
         <NextLink href="/about" passHref>
-          <Button as="a" variant="ghost" fontWeight={500} p={[1, 4]}>
+          <Button as="a" variant="ghost" fontWeight={400} p={[1, 4]}>
             About
           </Button>
         </NextLink>
         <NextLink href="/blog" passHref>
-          <Button as="a" variant="ghost" fontWeight={500} p={[1, 4]}>
+          <Button as="a" variant="ghost" fontWeight={400} p={[1, 4]}>
             Blog
           </Button>
         </NextLink>

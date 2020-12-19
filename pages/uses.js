@@ -51,28 +51,28 @@ const About = () => {
             <Text marginBottom="1.5rem">
               {'Make sure to check out uses.tech for a list of everyone\'s /uses pages!'}
             </Text>
-            <Heading letterSpacing="tight" fontSize="2rem" fontWeight={700} mb={4} cursor="pointer">
+            <Heading letterSpacing="tight" fontSize="2rem" fontWeight={600} mb={4} cursor="pointer">
               Editor + Terminal
             </Heading>
             <UnorderedList>
               <ListItem fontSize="1.125rem">Visual Studio Code is my current editor of choice.</ListItem>
             </UnorderedList>
             <Divider color="gray.300" my="40px" />
-            <Heading letterSpacing="tight" fontSize="2rem" fontWeight={700} mb={4} cursor="pointer">
+            <Heading letterSpacing="tight" fontSize="2rem" fontWeight={600} mb={4} cursor="pointer">
               Desktop Apps
             </Heading>
             <UnorderedList>
               <ListItem fontSize="1.125rem">Meeter.</ListItem>
             </UnorderedList>
             <Divider color="gray.300" my="40px" />
-            <Heading letterSpacing="tight" fontSize="2rem" fontWeight={700} mb={4} cursor="pointer">
+            <Heading letterSpacing="tight" fontSize="2rem" fontWeight={600} mb={4} cursor="pointer">
               Desk Setup
             </Heading>
             <UnorderedList>
               <ListItem fontSize="1.125rem">MacBook Pro.</ListItem>
             </UnorderedList>
             <Divider color="gray.300" my="40px" />
-            <Heading letterSpacing="tight" fontSize="2rem" fontWeight={700} mb={4} cursor="pointer">
+            <Heading letterSpacing="tight" fontSize="2rem" fontWeight={600} mb={4} cursor="pointer">
               Other Gear
             </Heading>
             <UnorderedList>

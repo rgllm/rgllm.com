@@ -16,11 +16,11 @@ const BlogPost = ( post ) => {
             justifyContent="space-between"
             flexDirection={['column', 'row']}
           >
-            <Heading  as="h3" fontSize="1.25rem" fontWeight={700} mb={2} color={colorMode === 'light' ? 'gray.900' : 'white'}>
+            <Heading  as="h3" fontSize="1.25rem" fontWeight={600} mb={2} color={colorMode === 'light' ? 'gray.900' : 'white'}>
               {title}
             </Heading>
           </Flex>
-          <Text fontSize="1.125rem" lineHeight="1.5" fontWeight={500} color={colorMode === 'light' ? 'gray.900' : 'white'}>{excerpt}</Text>
+          <Text fontSize="1.125rem" lineHeight="1.5" fontWeight={400} color={colorMode === 'light' ? 'gray.900' : 'white'}>{excerpt}</Text>
         </Box>
       </Link>
     </NextLink>
