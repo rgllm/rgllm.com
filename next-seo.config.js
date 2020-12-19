@@ -1,6 +1,6 @@
 const title = 'Rogério Moreira – Software Engineer, writer, maker.';
 const description =
-  'Software engineer, writer, and maker living and working from Braga, Portugal.';
+  'Software engineer, writer, and maker living and working from Portugal.';
 
 const SEO = {
   title,
