@@ -1,8 +1,10 @@
 import React from 'react';
 import NextLink from 'next/link';
-import { Avatar, Button, Flex, Box, Text } from '@chakra-ui/react';
+import { Avatar, Button, useColorMode, Flex, Box, Text } from '@chakra-ui/react';
 
 const Header = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return(
     <Flex
       flexDirection="row"
@@ -10,27 +12,27 @@ const Header = () => {
       alignItems="center"
       maxWidth="900px"
       width="100%"
-      background="white"
       as="nav"
       p={8}
       mt={[0, 8]}
       mb={8}
       mx="auto"
     >
-      <NextLink href="/" passHref>
-        <Flex flexDirection="row" alignItems="center" cursor="pointer">
-          <Avatar
-            size="sm"
-            bg="white"
-            name="Rogério Moreira"
-            src="/static/images/avatar.jpg"
-            mr={2}
-          />
-          <Text  display={{ base: 'none', md: 'block' }} mr={2} as="span" fontSize="1.06rem" fontWeight="bold" >
+      <Flex flexDirection="row" alignItems="center" cursor="pointer">
+        <Avatar
+          size="sm"
+          bg={colorMode === 'light' ? 'white' : 'black'}
+          name="Rogério Moreira"
+          src="/static/images/avatar.jpg"
+          mr={2}
+          onClick={toggleColorMode}
+        />
+        <NextLink href="/" passHref>
+          <Text  display={{ base: 'none', md: 'block' }} mr={2} as="span" fontSize="1.06rem" fontWeight="bold" color={colorMode === 'light' ? 'gray.900' : 'white'}>
             Rogério Moreira
           </Text>
-        </Flex>
-      </NextLink>
+        </NextLink>
+      </Flex>
 
 
       <Box display="inline-block">

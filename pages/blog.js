@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { NextSeo } from 'next-seo';
 import {
-  Heading,
-  Text,
   Flex,
-  Stack,
+  Heading,
+  Icon,
   Input,
   InputGroup,
   InputRightElement,
-  Icon
+  Stack,
+  Text,
+  useColorMode
 } from '@chakra-ui/react';
 import { RiSearchLine } from 'react-icons/ri';
 
@@ -24,6 +25,7 @@ const description =
 
 const Blog = ({ allPosts }) => {
   const [searchValue, setSearchValue] = useState('');
+  const { colorMode } = useColorMode();
   const filteredBlogPosts = allPosts
     .sort(
       (a, b) =>
@@ -60,10 +62,10 @@ const Blog = ({ allPosts }) => {
             alignItems="flex-start"
             maxWidth="700px"
           >
-            <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
+            <Heading letterSpacing="tight" mb={2} as="h1" size="2xl" color={colorMode === 'light' ? '#171923' : 'white' }>
               All Posts
             </Heading>
-            <Text color="gray.900">
+            <Text color={colorMode === 'light' ? 'gray.900' : 'white' }>
               Thinking out loud about software engineering, product development and life in general.
             </Text>
             <InputGroup my={4} mr={4} w="100%">

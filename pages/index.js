@@ -1,6 +1,6 @@
 import React from 'react';
 import NextLink from 'next/link';
-import { Stack, Flex, Heading, Text, Icon } from '@chakra-ui/react';
+import { useColorMode, Stack, Flex, Heading, Text, Icon } from '@chakra-ui/react';
 import { GiPortugal } from 'react-icons/gi';
 import { SiServerless } from 'react-icons/si';
 import { FaHospitalAlt } from 'react-icons/fa';
@@ -11,8 +11,9 @@ import PostBox from '@/components/PostBox';
 import { getAllPosts } from '@/lib/processPosts'
 
 
-function Index({ allPosts }) {
+const Index = ({ allPosts }) => {
   const latestThreePosts = allPosts.slice(0,3);
+  const { colorMode } = useColorMode();
 
   return <Container>
     <Stack
@@ -30,10 +31,10 @@ function Index({ allPosts }) {
         maxWidth="700px"
         textAlign="left"
       >
-        <Heading mb={4} as="h1" fontSize="3rem">
+        <Heading mb={4} as="h1" fontSize="3rem" color={colorMode === 'light' ? 'black' : 'white' }>
           Hey, I’m Rogério Moreira
         </Heading>
-        <Text fontSize="1.125rem" lineHeight="1.5">
+        <Text fontSize="1.125rem" lineHeight="1.5" color={colorMode === 'light' ? 'black' : 'white' }>
           I’m a software engineer, writer, and maker. I work at Mindera as a Software Engineer.
           You’ve found my personal slice of the internet – everything you want to know and more is here.
         </Text>
@@ -46,7 +47,7 @@ function Index({ allPosts }) {
         mt={8}
       >
         <NextLink href="/blog" passHref>
-          <Heading letterSpacing="tight" fontSize="2rem" fontWeight={700} mb={4} cursor="pointer">
+          <Heading letterSpacing="tight" fontSize="2rem" fontWeight={700} mb={4} cursor="pointer" color={colorMode === 'light' ? 'black' : 'white' }>
             Latest Posts
           </Heading>
         </NextLink>
@@ -62,14 +63,14 @@ function Index({ allPosts }) {
         maxWidth="700px"
         width="100%"
       >
-        <Heading letterSpacing="tight" mb={4} fontSize="2rem" fontWeight={700}>
+        <Heading letterSpacing="tight" mb={4} fontSize="2rem" fontWeight={700} color={colorMode === 'light' ? 'black' : 'white' }>
           Projects
         </Heading>
         <ProjectBox
           icon={ <Icon
             as={GiPortugal}
             aria-label="Awesome Portugal Data"
-            color="gray.900"
+            color={colorMode === 'light' ? 'gray.900' : 'white'}
             w="32px"
             h="32px"
             ml={2}
@@ -83,7 +84,7 @@ function Index({ allPosts }) {
           icon={ <Icon
             as={SiServerless}
             aria-label="Serverless Portuguese Utils"
-            color="gray.900"
+            color={colorMode === 'light' ? 'gray.900' : 'white'}
             w="32px"
             h="32px"
             ml={2}
@@ -97,7 +98,7 @@ function Index({ allPosts }) {
           icon={ <Icon
             as={FaHospitalAlt}
             aria-label="XNATUM"
-            color="gray.900"
+            color={colorMode === 'light' ? 'gray.900' : 'white'}
             w="32px"
             h="32px"
             ml={2}

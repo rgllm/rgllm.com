@@ -4,9 +4,13 @@ import {
   Link,
   Heading,
   Text,
-  Stack } from '@chakra-ui/react';
+  Stack,
+  useColorMode
+} from '@chakra-ui/react';
 
 const ProjectBox = ({ title, description, href, icon }) => {
+  const { colorMode } = useColorMode();
+
   return (
     <Link
       mb={4}
@@ -14,7 +18,7 @@ const ProjectBox = ({ title, description, href, icon }) => {
       title={title}
       isExternal
       _hover={{
-        boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.05)',
+        boxShadow: colorMode === 'light' ? '0px 4px 20px rgba(0, 0, 0, 0.05)' : '0px 4px 20px rgba(#fff, 0.05)',
         textDecoration: 'none'
       }}
       width="100%"
@@ -22,7 +26,7 @@ const ProjectBox = ({ title, description, href, icon }) => {
       <Flex
         align="center"
         border="1px solid"
-        borderColor="gray.300"
+        borderColor={colorMode === 'light' ? 'gray.300' : 'white'}
         borderRadius={4}
         p={4}
       >
@@ -33,12 +37,12 @@ const ProjectBox = ({ title, description, href, icon }) => {
             fontSize="1.25rem"
             fontWeight={700}
             letterSpacing="tighter"
-            color="gray.900"
+            color={colorMode === 'light' ? 'gray.900' : 'white'}
             mb="0"
           >
             {title}
           </Heading>
-          <Text fontSize="1.125rem" lineHeight="1.5" fontWeight={500}>{description}</Text>
+          <Text fontSize="1.125rem" lineHeight="1.5" fontWeight={500} color={colorMode === 'light' ? 'gray.900' : 'white'}>{description}</Text>
         </Stack>
       </Flex>
     </Link>

@@ -1,5 +1,10 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { ColorModeScript } from '@chakra-ui/react';
 class MyDocument extends Document {
+  static getInitialProps(ctx) {
+    return Document.getInitialProps(ctx)
+  }
+
   render() {
     return (
       <Html lang="en">
@@ -15,6 +20,7 @@ class MyDocument extends Document {
           <link href="/static/favicons/manifest.json" rel="manifest" />
         </Head>
         <body>
+          <ColorModeScript initialColorMode="light" />
           <Main />
           <NextScript />
         </body>
