@@ -1,6 +1,6 @@
-import React from 'react';
-import NextLink from 'next/link';
 import { Heading, Text, Flex, Box, Link, useColorMode } from '@chakra-ui/react';
+import NextLink from 'next/link';
+import React from 'react';
 
 const BlogPost = ( post ) => {
   const { title, excerpt, slug } = post;

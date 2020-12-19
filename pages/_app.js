@@ -1,11 +1,11 @@
-import Head from 'next/head';
-import { Global, css } from '@emotion/react';
 import { CSSReset, ChakraProvider, ColorModeProvider } from '@chakra-ui/react';
 import { DefaultSeo } from 'next-seo';
+import { Global, css } from '@emotion/react';
+import Head from 'next/head';
 
+import '@/styles/components/PostContent.scss';
 import SEO from '../next-seo.config';
 import theme from '@/styles/theme';
-import '@/styles/components/PostContent.scss';
 
 const App = ({ Component, pageProps }) => {
   return (

@@ -1,10 +1,10 @@
 import React from 'react';
 import {
   Flex,
-  Link,
   Heading,
-  Text,
+  Link,
   Stack,
+  Text,
   useColorMode
 } from '@chakra-ui/react';
 

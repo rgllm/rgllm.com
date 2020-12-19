@@ -1,6 +1,6 @@
-import React from 'react';
 import { Box, Icon, Flex, Link, useColorMode } from '@chakra-ui/react';
 import { FiTwitter, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
+import React from 'react';
 
 const Footer = () => {
   const { colorMode } = useColorMode();

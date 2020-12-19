@@ -1,6 +1,6 @@
-import React from 'react';
-import NextLink from 'next/link';
 import { Avatar, Button, useColorMode, Flex, Box, Text } from '@chakra-ui/react';
+import NextLink from 'next/link';
+import React from 'react';
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();

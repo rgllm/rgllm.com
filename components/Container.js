@@ -1,8 +1,8 @@
-import React from 'react';
 import { Flex, useColorMode } from '@chakra-ui/react';
+import React from 'react';
 
-import Header from './Header';
 import Footer from './Footer';
+import Header from './Header';
 
 const Container = ({ children }) => {
   const { colorMode } = useColorMode();

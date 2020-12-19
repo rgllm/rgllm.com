@@ -1,5 +1,5 @@
-import React from 'react';
 import { NextSeo, ArticleJsonLd } from 'next-seo';
+import React from 'react';
 
 const BlogSeo = ({ title, excerpt, date, url, image }) => {
   const formatedDate = new Date(date).toISOString();
