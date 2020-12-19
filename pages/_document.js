@@ -1,5 +1,6 @@
 import { ColorModeScript } from '@chakra-ui/react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import GoogleFonts from 'next-google-fonts';
 class MyDocument extends Document {
   static getInitialProps(ctx) {
     return Document.getInitialProps(ctx)
@@ -8,6 +9,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
+        <GoogleFonts href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
         <Head>
           <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
           <meta content="#ffffff" name="theme-color" />
