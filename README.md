@@ -15,8 +15,18 @@
   </a>
 </p>
 
-## Overview
-
 ## Running
 
+```
+$ git clone https://github.com/rgllm/rgllm.com
+$ cd rgllm.com
+$ yarn
+$ yarn start
+```
+
 ## Built with
+
+- [Next.js](https://nextjs.org/)
+- [Vercel](https://vercel.com)
+- [Chakra UI](https://chakra-ui.com/)
+- [Renovate Bot](https://renovatebot.com)
