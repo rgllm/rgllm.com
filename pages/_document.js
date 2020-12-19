@@ -20,6 +20,8 @@ class MyDocument extends Document {
           />
           <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
           <link href="/static/favicons/manifest.json" rel="manifest" />
+          <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin=""/>
+          <link rel="preconnect" href="https://cdn.splitbee.io/" crossOrigin=""/>
           <script async src="https://cdn.splitbee.io/sb.js"></script>
         </Head>
         <body>
