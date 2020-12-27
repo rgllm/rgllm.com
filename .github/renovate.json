@@ -3,6 +3,6 @@
 	"semanticCommits": true,
 	"stabilityDays": 3,
 	"prCreation": "not-pending",
-	"labels": ["Type: Chore"],
-	"baseBranches": ["develop"]
+	"labels": ["Renovate"],
+	"baseBranches": ["main"]
 }
