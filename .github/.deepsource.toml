@@ -8,7 +8,3 @@ enabled = true
   plugins = ["react"]
   style_guide = "airbnb"
   environment = ["nodejs"]
-
-[[transformers]]
-name = "prettier"
-enabled = true
