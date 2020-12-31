@@ -7,7 +7,8 @@ import {
   Text,
   Flex,
   Stack,
-  Image
+  Image,
+  useColorMode,
 } from '@chakra-ui/react';
 
 import { getPostBySlug, getAllPosts } from '@/lib/processPosts';
@@ -17,7 +18,8 @@ import PostContent from '@/components/PostContent';
 import PostSeo from '@/components/PostSeo';
 
 export default function Post({ post }) {
-  const router = useRouter()
+  const router = useRouter();
+  const { colorMode } = useColorMode();
 	
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -54,7 +56,7 @@ export default function Post({ post }) {
             mb={4}
           >
             <Flex align="center">
-              <Text fontSize="sm" color="gray.900">
+              <Text fontSize="sm" color={colorMode === 'light' ? 'gray.900' : 'white'}>
                 {'Rogério Moreira / '}
                 {format(parseISO(post.date), 'MMMM dd, yyyy')}
               </Text>
