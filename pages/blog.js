@@ -66,7 +66,7 @@ const Blog = ({ allPosts }) => {
               All Posts
             </Heading>
             <Text color={colorMode === 'light' ? 'gray.900' : 'white' }>
-              Thinking out loud about software engineering, product development and life in general.
+              {'Thinking out loud about software engineering, product development and life in general. No writer can generate profound insights on a fixed schedule, so you won\'t find here frequent updates.'}
             </Text>
             <InputGroup my={4} mr={4} w="100%">
               <Input
