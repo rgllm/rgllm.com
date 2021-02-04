@@ -5803,10 +5803,10 @@ html-dom-parser@1.0.0:
     domhandler "4.0.0"
     htmlparser2 "6.0.0"
 
-html-react-parser@1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-1.2.3.tgz#f6de79a696f439371c410ad674d67d156de4688b"
-  integrity sha512-grtFTiAIwX41C8rSXaDVeqJ9TjFWVr/xOtkGQOkNHdlS1OwQzb/+qf3B0V7RQTVjnUGbtGiio6pyHZ3/IY00lQ==
+html-react-parser@1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-1.2.4.tgz#812ed948722a29da641e1662a9b6eaec80f8d5de"
+  integrity sha512-56JaGqDmYSRKGTJw8lxfiFrfwYLHnyz3qaq/A0/RivjlguOEOMPvt5WuD1zAtAz9/Cr2OZZk2eGDOJUcAKLHcw==
   dependencies:
     html-dom-parser "1.0.0"
     react-property "1.0.1"
