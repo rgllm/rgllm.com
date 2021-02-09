@@ -81,7 +81,7 @@ const About = () => {
 
             <Heading as="h4" fontSize="1.25rem" fontWeight={600} lineHeight="1.75rem" color={colorMode === 'light' ? 'black' : 'white' }>Speaking and interviews</Heading>
             <Text marginBottom="1.5rem" fontSize="1.125rem" lineHeight="1.75rem" mb="20px" color={colorMode === 'light' ? 'gray.900' : 'white'}>{'Some of the articles I\'ve written outside this website or I\'ve contributed to.'}</Text>
-            <Item linkTitle="Identificado primeiro problema na aplicação Stayaway Covid. Código já está a ser escrutinado" linkUrl="https://visao.sapo.pt/exameinformatica/noticias-ei/software/2020-07-30-identificado-problema-aplicacao-stayaway-covid/" description="An interview I did about the Portuguese COVID tracking app"/>
+            <Item linkTitle="Identificado primeiro problema na aplicação Stayaway Covid. Código já está a ser escrutinado" linkUrl="https://visao.sapo.pt/exameinformatica/noticias-ei/software/2020-07-30-identificado-problema-aplicacao-stayaway-covid/" description="An interview I did about the Portuguese COVID tracing app"/>
             <Item linkTitle="WordPress workshop for NEEGIUM" linkUrl="https://www.facebook.com/events/429278770844403/" description="An introductory workshop about WordPress"/>
             <Item linkTitle="Building an imagining-based research platform for the implementation of experiments with brain connectivity data " linkUrl="https://repositorium.sdum.uminho.pt/" description="MSc. thesis dissertation"/>
             
