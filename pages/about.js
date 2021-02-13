@@ -60,10 +60,10 @@ const About = () => {
               👋 I’m a software engineer, writer, and maker, currently living in Braga, Portugal.
             </Text>
             <Text marginBottom="1.5rem" color={colorMode === 'light' ? 'gray.900' : 'white'}>
-              Right now I work for <Link href="https://mindera.com">Mindera</Link> where I help developing <Link href="https://trainline.com">Trainline</Link>, the biggest rail-ticketing company in Europe.  Before, I worked at <Link href="https://pixelmatters.com">Pixelmatters</Link> in the development of web applications and websites in various business domains, including some US based companies like Rubrik and DocSend.
+              Right now I work for <Link href="https://mindera.com">Mindera</Link> where I help developing <Link href="https://trainline.com">Trainline</Link>, the biggest rail-ticketing company in Europe.  Before, I worked at <Link href="https://pixelmatters.com">Pixelmatters</Link> in the development of web applications and websites in various business domains with US-based companies like Rubrik and DocSend.
             </Text>
             <Text marginBottom="1.5rem" color={colorMode === 'light' ? 'gray.900' : 'white'}>
-              I also help maintaining and scaling <Link href="https://ominho.pt">OMinho</Link> one of the biggest Portuguese online newspapers and ocasionally write about tech and Apple at <Link href="https://iclub.pt">iClub</Link>.
+              I also help to maintain <Link href="https://ominho.pt">OMinho</Link> one of the biggest Portuguese online newspapers and ocasionally write about tech and Apple at <Link href="https://iclub.pt">iClub</Link>.
             </Text>
             <Text marginBottom="1.5rem" color={colorMode === 'light' ? 'gray.900' : 'white'}>
               You can find me on <Link href="https://twitter.com/rgllm">Twitter</Link> where I talk about development or on  <Link href="https://github.com/rgllm">GitHub</Link> where I’m building in the open, or on <Link href="https://linkedin.com/in/rgllm">LinkedIn</Link> if you want to know more about me.
