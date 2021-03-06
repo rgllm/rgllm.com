@@ -32,7 +32,7 @@
 		"eslint-import-resolver-alias": "1.1.2",
 		"eslint-plugin-import": "2.22.1",
 		"eslint-plugin-react": "7.22.0",
-		"framer-motion": "3.7.0",
+		"framer-motion": "3.10.0",
 		"gray-matter": "4.0.2",
 		"html-react-parser": "1.2.4",
 		"next": "10.0.7",
