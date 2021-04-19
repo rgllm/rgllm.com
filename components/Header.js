@@ -26,6 +26,8 @@ const Header = () => {
           src="/static/images/avatar.jpg"
           mr={2}
           onClick={toggleColorMode}
+          htmlHeight="32px"
+          htmlWidth="32px"
         />
         <NextLink href="/" passHref>
           <Text  display={{ base: 'none', md: 'block' }} mr={2} as="span" fontSize="1.06rem" fontWeight="bold" color={colorMode === 'light' ? 'gray.900' : 'white'}>
