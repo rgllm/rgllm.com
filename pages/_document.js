@@ -23,6 +23,8 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin="" />
           <link rel="preconnect" href="https://cdn.splitbee.io/" crossOrigin="" />
           <script async src="https://cdn.splitbee.io/sb.js"></script>
+          <script async defer src="https://itsyou.rgllm.com/latest.js"></script>
+          <noscript><img src="https://itsyou.rgllm.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
         </Head>
         <body>
           <ColorModeScript initialColorMode="light" />
