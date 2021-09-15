@@ -40,7 +40,8 @@
 		"react-dom": "17.0.2",
 		"react-icons": "4.3.1",
 		"remark": "13.0.0",
-		"remark-html": "13.0.2"
+		"remark-html": "13.0.2",
+		"kbar": "^0.1.0-beta.1"
 	},
 	"devDependencies": {
 		"@babel/core": "7.16.0",

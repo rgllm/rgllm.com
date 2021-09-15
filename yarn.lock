@@ -5152,10 +5152,22 @@ jsonparse@^1.2.0:
     array-includes "^3.1.2"
     object.assign "^4.1.2"
 
+<<<<<<< HEAD
 jsx-ast-utils@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-3.2.1.tgz#720b97bfe7d901b927d87c3773637ae8ea48781b"
   integrity sha512-uP5vu8xfy2F9A6LGC22KO7e2/vGTS1MhP+18f++ZNlf0Ohaxbc9nIEwHAsejlJKyzfZzU5UIhe5ItYkitcZnZA==
+=======
+kbar@^0.1.0-beta.1:
+  version "0.1.0-beta.1"
+  resolved "https://registry.yarnpkg.com/kbar/-/kbar-0.1.0-beta.1.tgz#44a0c4af61ab5f96eface6b5170bae403eebb4a5"
+  integrity sha512-0qSjczuEhqS/CcN2MibfgLRQTTAkl0Rpjh2H/B+foNUNXJ5BkFdQ0vBV66OV+zviNJLKnPLcyLrmEpLNTI0Hlg==
+
+kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-3.2.2.tgz#31ea21a734bab9bbb0f32466d893aea51e4a3c64"
+  integrity sha1-MeohpzS6ubuw8yRm2JOupR5KPGQ=
+>>>>>>> 5dd6fbc9 (add kbar package)
   dependencies:
     array-includes "^3.1.3"
     object.assign "^4.1.2"
