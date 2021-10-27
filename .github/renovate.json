@@ -1,8 +1,6 @@
 {
 	"extends": ["config:base"],
-	"semanticCommits": true,
-	"stabilityDays": 3,
-	"prCreation": "not-pending",
+	"semanticCommits": false,
 	"labels": ["Renovate"],
-	"baseBranches": ["main"]
+	"baseBranches": ["trunk"]
 }
