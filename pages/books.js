@@ -7,13 +7,13 @@ import {
   useColorMode,
   Flex,
   Heading,
-  Link,
   ListItem,
   Stack,
   Text,
 } from '@chakra-ui/react';
 
 import Container from '@/components/Container';
+import Link from '@/components/Link';
 
 const url = 'https://rgllm.com/books';
 const title = 'Books – Rogério Moreira';

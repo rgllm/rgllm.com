@@ -6,15 +6,15 @@ import {
   Flex,
   Heading,
   Divider,
-  Image,
-  Link,
   Stack,
   Text,
   useColorMode
 } from '@chakra-ui/react';
+import Image from 'next/image'
 
 import Container from '@/components/Container';
 import Item from '@/components/Item';
+import Link from '@/components/Link';
 
 const url = 'https://rgllm.com/about';
 const title = 'About Me – Rogério Moreira';
@@ -49,13 +49,17 @@ const About = () => {
             maxWidth="700px"
             textAlign="left"
           >
-            <Image
-              objectFit="cover"
-              src="/static/images/rogerio-full.jpg"
-              borderRadius="0.5rem"
-              alt="Rogério Moreira"
-              marginBottom="3rem"
-            />
+            <div style={{ marginBottom: '3rem' }}>
+              <Image
+                layout="intrinsic"
+                objectFit="cover"
+                src="/static/images/rogerio-full.jpg"
+                alt="Rogério Moreira"
+                width={800}
+                height={500}
+                priority
+              />
+            </div>
             <Text marginBottom="1.5rem" color={colorMode === 'light' ? 'gray.900' : 'white'}>
               👋 I’m a software engineer, writer, and maker, currently living in Braga, Portugal.
             </Text>
