@@ -13,7 +13,7 @@
 		"url": "git+https://github.com/rgllm/rgllm.com.git"
 	},
 	"engines": {
-		"node": ">= 12.19"
+		"node": ">= 14.18"
 	},
 	"scripts": {
 		"start": "next dev",
@@ -35,7 +35,7 @@
 		"framer-motion": "3.10.0",
 		"gray-matter": "4.0.2",
 		"html-react-parser": "1.2.4",
-		"next": "10.0.8",
+		"next": "12.0.1",
 		"next-google-fonts": "2.0.0",
 		"next-seo": "4.20.0",
 		"prismjs": "1.23.0",
