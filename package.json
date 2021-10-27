@@ -52,7 +52,7 @@
 		"@commitlint/config-conventional": "12.0.1",
 		"babel-eslint": "10.1.0",
 		"babel-loader": "8.2.3",
-		"babel-plugin-prismjs": "2.0.1",
+		"babel-plugin-prismjs": "2.1.0",
 		"babel-preset-react-app": "10.0.0",
 		"commitizen": "4.2.4",
 		"cz-conventional-changelog": "3.3.0",
