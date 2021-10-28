@@ -80,7 +80,7 @@
 		"stylelint-config-standard": "21.0.0",
 		"stylelint-prettier": "1.2.0",
 		"stylelint-scss": "3.21.0",
-		"webpack-notifier": "1.13.0"
+		"webpack-notifier": "1.14.1"
 	},
 	"config": {
 		"commitizen": {
