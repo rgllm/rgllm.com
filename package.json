@@ -28,7 +28,7 @@
 		"@emotion/styled": "11.3.0",
 		"date-fns": "2.25.0",
 		"eslint-import-resolver-alias": "1.1.2",
-		"eslint-plugin-import": "2.25.2",
+		"eslint-plugin-import": "2.25.3",
 		"eslint-plugin-react": "7.27.0",
 		"framer-motion": "5.3.0",
 		"gray-matter": "4.0.3",
