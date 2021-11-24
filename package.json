@@ -19,8 +19,7 @@
 		"start:prod": "next start",
 		"lint": "npm-run-all --parallel lint:*",
 		"lint:scripts": "eslint --ext js,jsx,ts,tsx .",
-		"lint:fix": "eslint --fix --ext .js ./",
-		"commit": "git-cz"
+		"lint:fix": "eslint --fix --ext .js ./"
 	},
 	"dependencies": {
 		"@chakra-ui/react": "1.7.2",
@@ -52,8 +51,6 @@
 		"babel-loader": "8.2.3",
 		"babel-plugin-prismjs": "2.1.0",
 		"babel-preset-react-app": "10.0.0",
-		"commitizen": "4.2.4",
-		"cz-conventional-changelog": "3.3.0",
 		"eslint": "7.32.0",
 		"eslint-plugin-jsx-a11y": "6.5.1",
 		"eslint-plugin-react-hooks": "4.3.0",
@@ -69,7 +66,6 @@
 		"regenerator-runtime": "0.13.9",
 		"sass": "1.43.4",
 		"sass-loader": "12.3.0",
-		"semantic-release": "18.0.1",
 		"start-server-and-test": "1.12.0",
 		"stylelint": "14.1.0",
 		"stylelint-config-css-modules": "2.3.0",
@@ -79,10 +75,5 @@
 		"stylelint-prettier": "2.0.0",
 		"stylelint-scss": "4.0.0",
 		"webpack-notifier": "1.14.1"
-	},
-	"config": {
-		"commitizen": {
-			"path": "cz-conventional-changelog"
-		}
 	}
 }
