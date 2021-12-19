@@ -74,6 +74,6 @@
 		"stylelint-config-standard": "24.0.0",
 		"stylelint-prettier": "2.0.0",
 		"stylelint-scss": "4.0.1",
-		"webpack-notifier": "1.14.1"
+		"webpack-notifier": "1.15.0"
 	}
 }
