@@ -1,5 +1,5 @@
 ---
-title: 'Como autenticar no Automóvel Online no macOS'
+title: 'Como autenticar no Automóvel Online em macOS'
 date: '2022-01-10T00:00:00.322Z'
 excerpt: 'Fazer a autenticação no Automóvel online usando macOS e Firefox'
 image: '/static/images/automovelonline.png'
