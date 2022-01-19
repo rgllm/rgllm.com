@@ -5321,10 +5321,10 @@ next-google-fonts@2.2.0:
   resolved "https://registry.yarnpkg.com/next-google-fonts/-/next-google-fonts-2.2.0.tgz#b7ef8d1ba880a81ddf4303c4615b51a17e16ee6f"
   integrity sha512-TCtNp+uu0vof2X8Xfptfw96Unc3zsUekBY2l4g2mGAX+U8QO/yfAaEioGhFCwU05M8NbMgwP5C8V40Vtwp87iQ==
 
-next-seo@4.28.1:
-  version "4.28.1"
-  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-4.28.1.tgz#c98ee559c8ab7196c62d0f6903afd7a8cde47a03"
-  integrity sha512-WZgwdM+UhpNF3A37zFllzmPhnOVJ9vYeYlc0n3Z/kYfz/QQgy8NEdncNNggS9dU4JD8xriaCcyknhy5OsrFsJw==
+next-seo@4.29.0:
+  version "4.29.0"
+  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-4.29.0.tgz#d281e95ba47914117cc99e9e468599f0547d9b9b"
+  integrity sha512-xmwzcz4uHaYJ8glbuhs6FSBQ7z3irmdPYdJJ5saWm72Uy3o+mPKGaPCXQetTCE6/xxVnpoDV4yFtFlEjUcljSg==
 
 next@12.0.8:
   version "12.0.8"
