@@ -31,7 +31,7 @@
 		"eslint-plugin-react": "7.28.0",
 		"framer-motion": "6.2.3",
 		"gray-matter": "4.0.3",
-		"html-react-parser": "1.4.5",
+		"html-react-parser": "1.4.6",
 		"next": "12.0.9",
 		"next-google-fonts": "2.2.0",
 		"next-seo": "4.29.0",
