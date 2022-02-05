@@ -4392,21 +4392,21 @@ hosted-git-info@^3.0.6:
   dependencies:
     lru-cache "^6.0.0"
 
-html-dom-parser@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/html-dom-parser/-/html-dom-parser-1.0.4.tgz#84878b54e1d434f25e611e44254b49d39340a81b"
-  integrity sha512-ThM/vK/18R5/cVB9UsqhNqbJU7LE2BmSA7C/FjYV88wIDW75GSUpvSE/JxE4mJ8bOuU6Kp15/I1giM2JbD+ieA==
+html-dom-parser@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/html-dom-parser/-/html-dom-parser-1.1.0.tgz#daf0ff559bb0c4ffe7543d507baeaf1e2ca14e2c"
+  integrity sha512-x3MOz8S8BkihGgggtp2N0U+JAWlD9iGERbjuBJH+gIGF9B1kGQh5x489IQ0YPqi8HyMIWCRLdJY1q3IaQlqG/Q==
   dependencies:
     domhandler "4.3.0"
     htmlparser2 "7.2.0"
 
-html-react-parser@1.4.6:
-  version "1.4.6"
-  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-1.4.6.tgz#ad1ddf25f473377058c0580410e5f9c68ced6a49"
-  integrity sha512-tbKIw/aPsOmTZUs7sTSDDzfnBSAfHu8RpoNY8QhHloB//lr9eEM7qkzNbf/eXo4XIdo8ykZpB7ECQp3k+Iz10A==
+html-react-parser@1.4.7:
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-1.4.7.tgz#5917741a4759dbb7bb25d242f68843cc912197b4"
+  integrity sha512-g3A8rROo0RpH7LoktkeFa1Ta1PjQUs7PNbrnLLfQBmyaZbNDSz1oIoGzN9dUS+4zV4X62316wyqsCWP3dfindw==
   dependencies:
     domhandler "4.3.0"
-    html-dom-parser "1.0.4"
+    html-dom-parser "1.1.0"
     react-property "2.0.0"
     style-to-js "1.1.0"
 
