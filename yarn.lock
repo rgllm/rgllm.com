@@ -4382,10 +4382,10 @@ html-dom-parser@1.1.0:
     domhandler "4.3.0"
     htmlparser2 "7.2.0"
 
-html-react-parser@1.4.7:
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-1.4.7.tgz#5917741a4759dbb7bb25d242f68843cc912197b4"
-  integrity sha512-g3A8rROo0RpH7LoktkeFa1Ta1PjQUs7PNbrnLLfQBmyaZbNDSz1oIoGzN9dUS+4zV4X62316wyqsCWP3dfindw==
+html-react-parser@1.4.8:
+  version "1.4.8"
+  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-1.4.8.tgz#27bc0f9dc294c875daeca8a21a48d5b845a1364e"
+  integrity sha512-5XsBdFVhJLxdtRp7tWwZ6DwqOt6fJ+2lJc0lctwjX1yaxWNB41S5uzqii7vJcSCaabM+CK28U75e5f4wIMqdSg==
   dependencies:
     domhandler "4.3.0"
     html-dom-parser "1.1.0"
