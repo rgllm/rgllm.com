@@ -67,7 +67,7 @@
 		"sass": "1.49.9",
 		"sass-loader": "12.6.0",
 		"start-server-and-test": "1.14.0",
-		"stylelint": "14.5.3",
+		"stylelint": "14.6.0",
 		"stylelint-config-css-modules": "4.0.1",
 		"stylelint-config-prettier": "9.0.3",
 		"stylelint-config-recess-order": "3.0.0",
