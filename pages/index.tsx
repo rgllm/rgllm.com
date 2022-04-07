@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
-import Container from '../components/Container'
+import Container from 'components/Container'
 
-export default function Home() {
+export default function Home(props) {
 	return (
 		<Container>
 			<div className="flex flex-col items-start justify-center max-w-2xl pb-16 mx-auto border-gray-200">
@@ -33,7 +33,7 @@ export default function Home() {
 							alt="Rogério Moreira"
 							height={130}
 							width={130}
-							src="/static/images/avatar.jpg"
+							src="/images/avatar.jpg"
 							className="transition-all rounded-full grayscale-0 hover:filter hover:grayscale"
 						/>
 					</div>

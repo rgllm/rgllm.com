@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import prisma from 'lib/prisma'
 import { getDescription, getFavicon, getTitle } from 'lib/crawler'
-import toJson from 'lib/toJson'
+import toJson from 'lib/to-json'
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
 	if (req.method === 'GET') {

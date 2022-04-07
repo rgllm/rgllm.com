@@ -35,47 +35,47 @@
 		},
 		{
 			"source": "/wp-content(.*)",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 		},
 		{
 			"source": "/ads.txt",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 		},
 		{
 			"source": "/(.*).php",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 		},
 		{
 			"source": "/(.*).env",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 		},
 		{
 			"source": "/php(.*)",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 		},
 		{
 			"source": "/db(.*)",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 		},
 		{
 			"source": "/.git(.*)",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 		},
 		{
 			"source": "/console(.*)",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 		},
 		{
 			"source": "/config(.*)",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 		},
 		{
 			"source": "(.*)/wp-includes/(.*)",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 		},
 		{
 			"source": "/photo",
-			"destination": "https://rgllm.com/static/images/avatar.jpg" 
+			"destination": "https://rgllm.com/images/avatar.jpg"
 		}
 	],
 	"headers": [

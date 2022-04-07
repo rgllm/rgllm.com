@@ -33,6 +33,9 @@ const securityHeaders = [
 module.exports = {
 	swcMinify: true,
 	reactStrictMode: true,
+	images: {
+		domains: ['rgllm.com', 't1.gstatic.com', 'camo.githubusercontent.com', 'user-images.githubusercontent.com'],
+	},
 	async headers() {
 		return [
 			{

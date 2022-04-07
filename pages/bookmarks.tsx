@@ -1,18 +1,22 @@
 import { FiArrowRight } from 'react-icons/fi'
+import Image from 'next/image'
 
 import prisma from 'lib/prisma'
 import Container from 'components/Container'
+import { InferGetStaticPropsType } from 'next'
 
-export default function About({ bookmarks }) {
+export default function About({ bookmarks }: InferGetStaticPropsType<typeof getStaticProps>) {
 	return (
-		<Container>
+		<Container
+			title="Bookmarks - Rogério Moreira"
+			description="A collection of random links saved by me over the years. Mainly for me, feel free to follow this also.">
 			<div className="flex flex-row items-center justify-center w-full max-w-2xl pb-16 mx-auto my-0 border-gray-200">
 				<ul role="list" className="w-full -my-5 divide-y divide-gray-200">
 					{bookmarks?.map((bookmark) => (
 						<li key={bookmark.id} className="py-4">
 							<div className="flex items-center space-x-4">
 								<div className="flex-shrink-0">
-									<img className="w-8 h-8 rounded" src={bookmark.favicon} alt="" />
+									<Image width={25} height={25} className="w-8 h-8 rounded" src={bookmark.favicon} alt="" />
 								</div>
 								<div className="flex-1 min-w-0">
 									<p className="text-sm font-medium text-gray-900 truncate">{bookmark.title}</p>
