@@ -32,7 +32,7 @@ export async function getStaticProps() {
 
 	return {
 		props: {
-			page: page,
+			page,
 		},
 		revalidate: 60,
 	}

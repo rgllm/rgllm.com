@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import NextLink from 'next/link'
+import Link from 'next/link'
 import cn from 'classnames'
 
 import Footer from 'components/Footer'
@@ -10,7 +10,7 @@ function NavItem({ href, text }) {
 	const isActive = router.asPath === href
 
 	return (
-		<NextLink href={href}>
+		<Link href={href}>
 			<a
 				className={cn(
 					isActive ? 'font-semibold text-gray-800' : 'font-normal text-gray-600',
@@ -18,7 +18,7 @@ function NavItem({ href, text }) {
 				)}>
 				<span className="capsize">{text}</span>
 			</a>
-		</NextLink>
+		</Link>
 	)
 }
 

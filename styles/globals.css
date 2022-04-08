@@ -236,3 +236,7 @@ table {
 		display: none;
 	}
 }
+
+.notfound {
+	background-image: url('https://source.unsplash.com/random/?textures');
+}
