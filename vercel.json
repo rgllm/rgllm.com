@@ -7,11 +7,7 @@
 		},
 		{
 			"source": "/cv",
-			"destination": "/cv.pdf"
-		},
-		{
-			"source": "/curriculo",
-			"destination": "/cv.pdf"
+			"destination": "/resume"
 		},
 		{
 			"source": "/thesis",
@@ -24,14 +20,6 @@
 		{
 			"source": "/post",
 			"destination": "/blog"
-		},
-		{
-			"source": "/resume",
-			"destination": "/about"
-		},
-		{
-			"source": "/covid",
-			"destination": "/"
 		},
 		{
 			"source": "/wp-content(.*)",

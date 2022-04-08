@@ -230,3 +230,9 @@ table {
 .prose .callout > p {
 	margin: 0 !important;
 }
+
+@media print {
+	.hideonprint {
+		display: none;
+	}
+}

@@ -10,6 +10,9 @@ export default function About({ bookmarks }: InferGetStaticPropsType<typeof getS
 		<Container
 			title="Bookmarks - Rogério Moreira"
 			description="A collection of random links saved by me over the years. Mainly for me, feel free to follow this also.">
+			<div className="flex w-full max-w-2xl mx-auto mt-0 mb-16">
+				<h1 className="text-3xl font-bold tracking-tight text-black md:text-5xl">Bookmarks</h1>
+			</div>
 			<div className="flex flex-row items-center justify-center w-full max-w-2xl pb-16 mx-auto my-0 border-gray-200">
 				<ul role="list" className="w-full -my-5 divide-y divide-gray-200">
 					{bookmarks?.map((bookmark) => (
