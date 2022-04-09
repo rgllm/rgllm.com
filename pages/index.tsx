@@ -66,7 +66,7 @@ export default function Home({ bookmarks, posts }: InferGetStaticPropsType<typeo
 					<h2 className="mb-6 text-2xl font-bold tracking-tight text-black md:text-4xl">Personal Projects</h2>
 					<ul role="list" className="w-full divide-y divide-gray-200">
 						{projects.map((project) => (
-							<ProjectCard {...project} />
+							<ProjectCard key={project.name} {...project} />
 						))}
 					</ul>
 				</div>
