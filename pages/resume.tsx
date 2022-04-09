@@ -1,9 +1,9 @@
-import { useRef, useCallback, useState } from 'react'
-import ReactToPrint from 'react-to-print'
 import { InferGetStaticPropsType } from 'next'
+import { useRef, useCallback } from 'react'
+import ReactToPrint from 'react-to-print'
 
-import Container from 'components/Container'
 import { getPage } from 'lib/get-pages'
+import Container from 'components/Container'
 import convertToComponents from 'lib/parse-html'
 
 export default function Resume(props: InferGetStaticPropsType<typeof getStaticProps>) {
@@ -48,6 +48,6 @@ export async function getStaticProps() {
 		props: {
 			page,
 		},
-		revalidate: 60,
+		revalidate: 120,
 	}
 }

@@ -1,6 +1,7 @@
 import axios from 'axios'
 import slugify from 'slugify'
-import toJson from './to-json'
+
+import toJson from 'lib/to-json'
 
 export const getPage = async (slug: string) => {
 	try {

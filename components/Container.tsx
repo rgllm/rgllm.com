@@ -4,6 +4,7 @@ import Link from 'next/link'
 import cn from 'classnames'
 
 import Footer from 'components/Footer'
+import MobileMenu from 'components/MobileMenu'
 
 function NavItem({ href, text }) {
 	const router = useRouter()
@@ -59,6 +60,7 @@ export default function Container(props) {
 						Skip to content
 					</a>
 					<div className="ml-[-0.60rem]">
+						<MobileMenu />
 						<NavItem href="/" text="Home" />
 						<NavItem href="/about" text="About" />
 						<NavItem href="/blog" text="Writing" />

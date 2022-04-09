@@ -1,7 +1,8 @@
-import prisma from 'lib/prisma'
-import Container from 'components/Container'
 import { InferGetStaticPropsType } from 'next'
+
 import BookmarksList from 'components/BookmarksList'
+import Container from 'components/Container'
+import prisma from 'lib/prisma'
 
 export default function About({ bookmarks }: InferGetStaticPropsType<typeof getStaticProps>) {
 	return (
@@ -38,6 +39,6 @@ export async function getStaticProps() {
 		props: {
 			bookmarks,
 		},
-		revalidate: 60,
+		revalidate: 30,
 	}
 }

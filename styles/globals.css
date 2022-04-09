@@ -240,3 +240,11 @@ table {
 .notfound {
 	background-image: url('https://source.unsplash.com/random/?textures');
 }
+
+.animatedArrow .arrow {
+	transition: transform 300ms ease-in-out 25ms;
+}
+
+.animatedArrow:hover .arrow {
+	transform: translateX(4px);
+}

@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Highlight from 'react-highlight'
 
 export const CustomLink = (props) => {
 	const href = props.href

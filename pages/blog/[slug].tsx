@@ -1,7 +1,7 @@
 import { InferGetStaticPropsType } from 'next'
 
-import Container from 'components/Container'
 import { getAllPosts, getPost } from 'lib/get-posts'
+import Container from 'components/Container'
 import convertToComponents from 'lib/parse-html'
 
 export default function Blog({ post }: InferGetStaticPropsType<typeof getStaticProps>) {

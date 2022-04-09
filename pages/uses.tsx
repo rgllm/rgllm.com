@@ -1,7 +1,7 @@
 import { InferGetStaticPropsType } from 'next'
 
-import Container from 'components/Container'
 import { getPage } from 'lib/get-pages'
+import Container from 'components/Container'
 import convertToComponents from 'lib/parse-html'
 
 export default function Uses(props: InferGetStaticPropsType<typeof getStaticProps>) {
@@ -25,6 +25,6 @@ export async function getStaticProps() {
 		props: {
 			page,
 		},
-		revalidate: 60,
+		revalidate: 120,
 	}
 }

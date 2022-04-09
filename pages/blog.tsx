@@ -1,8 +1,9 @@
-import BlogPost from 'components/BlogPost'
-import Container from 'components/Container'
-import { getAllPosts } from 'lib/get-posts'
 import { useState } from 'react'
 import { InferGetStaticPropsType } from 'next'
+
+import { getAllPosts } from 'lib/get-posts'
+import BlogPost from 'components/BlogPost'
+import Container from 'components/Container'
 
 export default function Blog({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
 	const [searchValue, setSearchValue] = useState('')
@@ -18,10 +19,10 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
 				</p>
 				<div className="relative w-full mb-4">
 					<input
-						aria-label="Search articles"
+						aria-label="Search posts"
 						type="text"
 						onChange={(e) => setSearchValue(e.target.value)}
-						placeholder="Search articles"
+						placeholder="Search posts"
 						className="block w-full px-4 py-2 text-gray-900 bg-white border border-gray-200 rounded-md focus:ring-blue-500 focus:border-blue-500 "
 					/>
 					<svg

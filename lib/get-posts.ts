@@ -1,5 +1,6 @@
 import axios from 'axios'
 import slugify from 'slugify'
+
 import toJson from './to-json'
 
 const addExtraDataToPost = (post) => {
