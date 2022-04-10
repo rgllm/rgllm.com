@@ -5,6 +5,8 @@ import Container from 'components/Container'
 import convertToComponents from 'lib/parse-html'
 
 export default function Blog({ post }: InferGetStaticPropsType<typeof getStaticProps>) {
+	if (!post?.title) return <></>
+
 	const { title, bodyHTML } = post
 	const parsedBody = convertToComponents(bodyHTML)
 
