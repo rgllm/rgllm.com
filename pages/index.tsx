@@ -39,7 +39,7 @@ export default function Home({ bookmarks, posts }: InferGetStaticPropsType<typeo
 							. I occasionally blog too.
 						</p>
 					</div>
-					<div className="w-[80px] sm:w-[130px] relative mb-8 sm:mb-0 mr-auto">
+					<div className="w-[80px] h-[80px] sm:w-[130px] sm:h-[130px] relative mb-8 sm:mb-0 mr-auto">
 						<Image
 							height={130}
 							width={130}
