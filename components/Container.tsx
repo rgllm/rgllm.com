@@ -28,7 +28,7 @@ export default function Container(props) {
 	const router = useRouter()
 	const meta = {
 		title: 'Rogério Moreira',
-		description: `Software Engineer, focused on frontend development, living and working from Braga, Portugal.`,
+		description: `Software Engineer, focused on front-end development, living and working from Braga, Portugal.`,
 		image: 'https://rgllm.com/images/og.png',
 		type: 'website',
 		...customMeta,

@@ -24,7 +24,7 @@ export default function Resume(props: InferGetStaticPropsType<typeof getStaticPr
 	}, [])
 
 	return (
-		<Container>
+		<Container title="Resume - Rogério Moreira">
 			<div ref={componentRef} className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
 				<div className="flex flex-row-reverse">
 					<ReactToPrint

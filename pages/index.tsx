@@ -15,7 +15,7 @@ import ProjectCard from 'components/ProjectCard'
 export default function Home({ bookmarks, posts }: InferGetStaticPropsType<typeof getStaticProps>) {
 	const postColors = shuffleArray(['bg-green-300', 'bg-red-300', 'bg-blue-300'])
 	return (
-		<Container>
+		<Container title="Rogério Moreira - Software Engineer, focused on front-end development, living and working from Braga, Portugal.">
 			<div className="flex flex-col items-start justify-center max-w-2xl pb-16 md:mx-auto">
 				<div className="flex flex-col-reverse items-start sm:flex-row">
 					<div className="flex flex-col pr-8">

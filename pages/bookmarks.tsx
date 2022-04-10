@@ -8,9 +8,12 @@ export default function About({ bookmarks }: InferGetStaticPropsType<typeof getS
 	return (
 		<Container
 			title="Bookmarks - Rogério Moreira"
-			description="A collection of random links saved by me over the years. Mainly for me, feel free to follow this also.">
-			<div className="flex w-full max-w-2xl mx-auto mt-0 mb-16">
-				<h1 className="text-3xl font-bold tracking-tight text-black md:text-5xl">Bookmarks</h1>
+			description="A collection of random links I saved over the years. Mainly for me, feel free to follow this also.">
+			<div className="flex flex-col w-full max-w-2xl mx-auto mt-0 mb-16">
+				<h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl">Bookmarks</h1>
+				<p className="text-gray-600 ">
+					A collection of random links I saved over the years. Mainly for me, feel free to follow this also.
+				</p>
 			</div>
 			<div className="flex flex-row items-center justify-center w-full max-w-2xl pb-16 mx-auto my-0 border-gray-200">
 				<BookmarksList bookmarks={bookmarks} />

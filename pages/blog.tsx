@@ -10,9 +10,9 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
 	const filteredBlogPosts = posts.filter((post) => post.title.toLowerCase().includes(searchValue.toLowerCase()))
 
 	return (
-		<Container>
+		<Container title="Blog - Rogério Moreira">
 			<div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
-				<h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl ">All Posts</h1>
+				<h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl">All Posts</h1>
 				<p className="mb-4 text-gray-600 ">
 					Thinking out loud about software engineering, product development and life in general. No writer can generate
 					profound insights on a fixed schedule, so you won't find here frequent updates.
