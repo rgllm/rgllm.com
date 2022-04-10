@@ -23,12 +23,12 @@ export async function getStaticPaths() {
 
 	return {
 		paths: posts.map((p) => ({ params: { slug: p.slug } })),
-		fallback: false,
+		fallback: true,
 	}
 }
 
 export async function getStaticProps({ params }) {
 	const post = await getPost(params.slug)
 
-	return { props: { post } }
+	return { props: { post }, revalidate: 60 }
 }
