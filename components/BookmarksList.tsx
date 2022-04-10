@@ -6,7 +6,7 @@ export default function BookmarksList({ bookmarks }) {
 	return (
 		<ul role="list" className="w-full -my-5 divide-y divide-gray-200">
 			{bookmarks?.map((bookmark) => (
-				<li key={bookmark.id} className="py-4 cursor-pointer animatedArrow">
+				<li key={bookmark.id} className="py-4">
 					<div className="flex items-center space-x-4">
 						<div className="flex items-center justify-center">
 							<Image width={25} height={25} className="w-8 h-8 rounded" src={bookmark.favicon} alt={bookmark.title} />
@@ -20,7 +20,7 @@ export default function BookmarksList({ bookmarks }) {
 								<a
 									target="_blank"
 									rel="noopener noreferrer"
-									className="inline-flex items-center px-2.5 py-0.5 leading-5 font-medium text-gray-700">
+									className="animatedArrow inline-flex items-center px-2.5 py-0.5 leading-5 font-medium text-gray-700 cursor-pointer">
 									View <FiArrowRight className="arrow text-gray-700 mt-[2px] ml-[4px] max-w-[18px]" />
 								</a>
 							</Link>
