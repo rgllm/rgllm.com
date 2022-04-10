@@ -2,5 +2,3 @@ Sitemap: https://rgllm.com/sitemap.xml
 
 User-agent: *
 Allow: /*
-
-Disallow: /api/*

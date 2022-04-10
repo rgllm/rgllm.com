@@ -4,14 +4,7 @@ import prettier from 'prettier'
 
 async function generate() {
 	const prettierConfig = await prettier.resolveConfig('./.prettierrc.js')
-	const pages = await globby([
-		'pages/*.tsx',
-		'data/**/*.mdx',
-		'!data/*.mdx',
-		'!pages/_*.tsx',
-		'!pages/api',
-		'!pages/404.tsx',
-	])
+	const pages = await globby(['pages/*.tsx', '!pages/_*.tsx', '!pages/api', '!pages/404.tsx'])
 
 	const sitemap = `
     <?xml version="1.0" encoding="UTF-8"?>

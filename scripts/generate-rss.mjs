@@ -1,9 +1,12 @@
 import { writeFileSync } from 'fs'
 import RSS from 'rss'
-import { allBlogs } from '../.contentlayer/generated/allBlogs.mjs'
+
+import { getAllPosts } from '/lib/get-posts.ts'
 
 async function generate() {
-	const feed = new RSS({
+	const posts = await getAllPosts()
+
+	const blogFeed = new RSS({
 		title: 'Rogério Moreira',
 		site_url: 'https://rgllm.com',
 		feed_url: 'https://rgllm.com/feed.xml',
@@ -13,8 +16,8 @@ async function generate() {
 		feed.item({
 			title: post.title,
 			url: `https://rgllm.com/blog/${post.slug}`,
-			date: post.publishedAt,
-			description: post.summary,
+			date: post.date,
+			description: post.description,
 		})
 	})
 
