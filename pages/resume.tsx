@@ -13,7 +13,7 @@ export default function Resume(props: InferGetStaticPropsType<typeof getStaticPr
 
 	const reactToPrintContent = useCallback(() => {
 		return componentRef.current
-	}, [componentRef.current])
+	}, [])
 
 	const reactToPrintTrigger = useCallback(() => {
 		return (

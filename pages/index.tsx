@@ -46,6 +46,7 @@ export default function Home({ bookmarks, posts }: InferGetStaticPropsType<typeo
 							width={500}
 							src="/images/avatar.jpg"
 							className="transition-all rounded-full grayscale-0 hover:filter hover:grayscale"
+							alt="Photo of Rogério Moreira"
 						/>
 					</div>
 				</div>

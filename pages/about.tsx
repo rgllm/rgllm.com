@@ -20,6 +20,7 @@ export default function About(props: InferGetStaticPropsType<typeof getStaticPro
 					height={1229}
 					priority
 					src="/images/rogerio-full.jpg"
+					alt="Photo of Rogério Moreira"
 				/>
 				<div className="prose">{parsedBody}</div>
 			</div>

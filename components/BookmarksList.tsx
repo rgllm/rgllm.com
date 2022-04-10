@@ -9,7 +9,7 @@ export default function BookmarksList({ bookmarks }) {
 				<li key={bookmark.id} className="py-4 cursor-pointer animatedArrow">
 					<div className="flex items-center space-x-4">
 						<div className="flex items-center justify-center">
-							<Image width={25} height={25} className="w-8 h-8 rounded" src={bookmark.favicon} alt="" />
+							<Image width={25} height={25} className="w-8 h-8 rounded" src={bookmark.favicon} alt={bookmark.title} />
 						</div>
 						<div className="flex-1 min-w-0">
 							<p className="font-medium text-gray-900 truncate">{bookmark.title}</p>

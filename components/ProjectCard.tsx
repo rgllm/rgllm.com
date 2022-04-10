@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function ProjectCard({ href, name, icon, description }) {
 	return (
-		<Link href={href}>
+		<Link href={href} passHref>
 			<li className="w-full mb-4 cursor-pointer transform hover:scale-[1.01] transition-all">
 				<div className="flex p-4 pl-0 border-0 border-gray-600 border-solid rounded-lg align-center">
 					<div className="flex flex-col justify-center mr-4 align-center">{icon}</div>
