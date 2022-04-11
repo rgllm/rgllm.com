@@ -27,7 +27,8 @@ export default function Footer() {
 					</a>
 				</Link>
 			</div>
-			<script async defer src="https://itsyou.rgllm.com/latest.js"></script>
+			<script async src="https://itsyou.rgllm.com/latest.js" />
+			<script async src="https://itsyou.rgllm.com/auto-events.js" />
 			<noscript>
 				<img src="https://itsyou.rgllm.com/noscript.gif" alt="" referrerPolicy="no-referrer-when-downgrade" />
 			</noscript>
