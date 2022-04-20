@@ -19,5 +19,6 @@ export async function getDescription(websiteUrl) {
 }
 
 export function getFavicon(websiteUrl) {
-	return `https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${websiteUrl}&size=180`
+	const domain = new URL(websiteUrl).hostname
+	return `https://icons.duckduckgo.com/ip3/${domain}.ico`
 }
