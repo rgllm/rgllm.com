@@ -14,8 +14,8 @@ function NavItem({ href, text }) {
 		<Link href={href}>
 			<a
 				className={cn(
-					isActive ? 'font-semibold text-gray-800' : 'font-normal text-gray-600',
-					'hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:text-black transition-all'
+					isActive ? 'font-semibold text-[#24292f]' : 'font-normal text-[#24292f]',
+					'hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg transition-all hover:bg-[#ededed] duration-120'
 				)}>
 				<span className="capsize">{text}</span>
 			</a>
