@@ -1,3 +1,5 @@
+const { parser } = require('html-metadata-parser')
+
 export async function getHtml(websiteUrl) {
 	const response = await fetch(websiteUrl)
 	const html = await response.text()
@@ -5,17 +7,13 @@ export async function getHtml(websiteUrl) {
 }
 
 export async function getTitle(websiteUrl) {
-	const html = await getHtml(websiteUrl)
-	const title = html?.match(/<title>(.*?)<\/title>/)?.[1]
-
-	return title ? title : 'No title'
+	const metadata = await parser(websiteUrl)
+	return metadata?.meta?.title || metadata?.og?.title || ''
 }
 
 export async function getDescription(websiteUrl) {
-	const html = await getHtml(websiteUrl)
-	const description = html?.match(/<meta[^>]*property="description"[^>]*content="([^"]+)"/)?.[1]
-
-	return description ? description : ''
+	const metadata = await parser(websiteUrl)
+	return metadata?.meta?.description || metadata?.og?.description || ''
 }
 
 export function getFavicon(websiteUrl) {

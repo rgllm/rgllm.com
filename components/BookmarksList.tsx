@@ -13,7 +13,7 @@ export default function BookmarksList({ bookmarks }) {
 						</div>
 						<div className="flex-1 min-w-0">
 							<p className="font-medium text-gray-900 truncate">{bookmark.title}</p>
-							<p className="text-gray-500 max-w-[500px]">{bookmark.description}</p>
+							<p className="text-gray-500 max-w-[500px] text-sm">{bookmark.description}</p>
 						</div>
 						<div>
 							<Link href={bookmark.link}>
