@@ -10,7 +10,7 @@ jobs:
       - name: Install modules
         run: yarn install
       - name: Run eslint
-        uses: tj-actions/eslint-changed-files@v8.4
+        uses: tj-actions/eslint-changed-files@v8.6
         with:
           config_path: "./.eslintrc.js"
           ignore_path: "./.eslintignore"
