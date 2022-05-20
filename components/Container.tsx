@@ -1,38 +1,41 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router'
-import Link from 'next/link'
-import cn from 'classnames'
+import Head from "next/head";
+import { useRouter } from "next/router";
+import Link from "next/link";
+import cn from "classnames";
 
-import Footer from 'components/Footer'
-import MobileMenu from 'components/MobileMenu'
+import Footer from "components/Footer";
+import MobileMenu from "components/MobileMenu";
 
 function NavItem({ href, text }) {
-	const router = useRouter()
-	const isActive = router.asPath === href
+	const router = useRouter();
+	const isActive = router.asPath === href;
 
 	return (
 		<Link href={href}>
 			<a
 				className={cn(
-					isActive ? 'font-semibold text-[#24292f]' : 'font-normal text-[#24292f]',
-					'hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg transition-all hover:bg-[#ededed] duration-120'
-				)}>
+					isActive
+						? "font-semibold text-[#24292f]"
+						: "font-normal text-[#24292f]",
+					"hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg transition-all hover:bg-[#ededed] duration-120"
+				)}
+			>
 				<span className="capsize">{text}</span>
 			</a>
 		</Link>
-	)
+	);
 }
 
 export default function Container(props) {
-	const { children, ...customMeta } = props
-	const router = useRouter()
+	const { children, ...customMeta } = props;
+	const router = useRouter();
 	const meta = {
-		title: 'Rogério Moreira',
+		title: "Rogério Moreira",
 		description: `Software Engineer, focused on front-end development, living and working from Braga, Portugal.`,
-		image: 'https://rgllm.com/images/og.png',
-		type: 'website',
+		image: "https://rgllm.com/images/og.png",
+		type: "website",
 		...customMeta,
-	}
+	};
 
 	return (
 		<div className="bg-gray-50 ">
@@ -52,7 +55,9 @@ export default function Container(props) {
 				<meta name="twitter:title" content={meta.title} />
 				<meta name="twitter:description" content={meta.description} />
 				<meta name="twitter:image" content={meta.image} />
-				{meta.date && <meta property="article:published_time" content={meta.date} />}
+				{meta.date && (
+					<meta property="article:published_time" content={meta.date} />
+				)}
 			</Head>
 			<div className="flex flex-col justify-center px-8">
 				<nav className="relative flex items-center justify-between w-full max-w-2xl pt-8 pb-8 mx-auto text-gray-900 border-gray-200 sm:pb-16 bg-gray-50 bg-opacity-60">
@@ -73,5 +78,5 @@ export default function Container(props) {
 				<Footer />
 			</main>
 		</div>
-	)
+	);
 }

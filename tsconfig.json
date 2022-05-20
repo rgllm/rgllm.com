@@ -1,20 +1,24 @@
 {
 	"compilerOptions": {
-		"target": "es5",
+		"target": "es2020",
+		"module": "es2020",
+		"baseUrl": ".",
+		"forceConsistentCasingInFileNames": true,
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
-		"skipLibCheck": true,
-		"strict": false,
-		"forceConsistentCasingInFileNames": true,
-		"noEmit": true,
+		"paths": {
+			"~/*": ["./components/*", "./lib/*", "./pages/*"]
+		},
 		"esModuleInterop": true,
-		"module": "esnext",
-		"moduleResolution": "node",
-		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"jsx": "preserve",
-		"baseUrl": ".",
-		"incremental": true
+		"strict": false,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"noEmit": true,
+		"incremental": true,
+		"skipLibCheck": true,
+		"noUncheckedIndexedAccess": true
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
 	"exclude": ["node_modules"]
