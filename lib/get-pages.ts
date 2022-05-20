@@ -1,13 +1,13 @@
-import axios from 'axios'
-import slugify from 'slugify'
+import axios from "axios";
+import slugify from "slugify";
 
-import toJson from 'lib/to-json'
+import toJson from "lib/to-json";
 
 export const getPage = async (slug: string) => {
 	try {
 		const result = await axios({
-			url: 'https://api.github.com/graphql',
-			method: 'POST',
+			url: "https://api.github.com/graphql",
+			method: "POST",
 			headers: {
 				Authorization: `bearer ${process.env.GH_TOKEN}`,
 			},
@@ -33,12 +33,16 @@ export const getPage = async (slug: string) => {
         }
         }`,
 			},
-		})
+		});
 
-		const allPages = JSON.parse(toJson(result.data.data.repository.discussions.nodes))
+		const allPages = JSON.parse(
+			toJson(result.data.data.repository.discussions.nodes)
+		);
 
-		return allPages.filter((post) => slugify(post.title, { lower: true }) === slug)[0]
+		return allPages.filter(
+			(post) => slugify(post.title, { lower: true }) === slug
+		)[0];
 	} catch (error) {
-		return null
+		return null;
 	}
-}
+};

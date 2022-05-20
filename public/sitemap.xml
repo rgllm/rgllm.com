@@ -1,42 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>https://rgllm.com/about</loc>
-	</url>
+  <url>
+    <loc>https://rgllm.com/about</loc>
+  </url>
 
-	<url>
-		<loc>https://rgllm.com/blog</loc>
-	</url>
+  <url>
+    <loc>https://rgllm.com/blog</loc>
+  </url>
 
-	<url>
-		<loc>https://rgllm.com/bookmarks</loc>
-	</url>
+  <url>
+    <loc>https://rgllm.com/bookmarks</loc>
+  </url>
 
-	<url>
-		<loc>https://rgllm.com</loc>
-	</url>
+  <url>
+    <loc>https://rgllm.com</loc>
+  </url>
 
-	<url>
-		<loc>https://rgllm.com/resume</loc>
-	</url>
+  <url>
+    <loc>https://rgllm.com/photos</loc>
+  </url>
 
-	<url>
-		<loc>https://rgllm.com/uses</loc>
-	</url>
+  <url>
+    <loc>https://rgllm.com/resume</loc>
+  </url>
 
-	<url>
-		<loc>https://rgllm.com/blog/como-autenticar-no-automovel-online-em-macos</loc>
-	</url>
+  <url>
+    <loc>https://rgllm.com/uses</loc>
+  </url>
 
-	<url>
-		<loc>https://rgllm.com/blog/how-i-added-google-analytics-real-time-visitors-to-my-macbook-touchbar</loc>
-	</url>
+  <url>
+    <loc
+      >https://rgllm.com/blog/como-autenticar-no-automovel-online-em-macos</loc
+    >
+  </url>
 
-	<url>
-		<loc>https://rgllm.com/blog/from-monolithic-to-headless:-how-and-why-you-should-adapt-your-wordpress-stack</loc>
-	</url>
+  <url>
+    <loc
+      >https://rgllm.com/blog/how-i-added-google-analytics-real-time-visitors-to-my-macbook-touchbar</loc
+    >
+  </url>
 
-	<url>
-		<loc>https://rgllm.com/blog/every-developer-should-have-a-blog-so-this-is-mine</loc>
-	</url>
+  <url>
+    <loc
+      >https://rgllm.com/blog/from-monolithic-to-headless:-how-and-why-you-should-adapt-your-wordpress-stack</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://rgllm.com/blog/every-developer-should-have-a-blog-so-this-is-mine</loc
+    >
+  </url>
 </urlset>

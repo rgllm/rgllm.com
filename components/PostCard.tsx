@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import cn from 'classnames'
+import Link from "next/link";
+import cn from "classnames";
 
 export default function PostCard({ title, slug, bgColor }) {
 	return (
@@ -12,8 +12,13 @@ export default function PostCard({ title, slug, bgColor }) {
 						</h4>
 					</div>
 				</div>
-				<div className={cn('absolute w-full h-full rounded-xl -left-[5px] -top-[5px]', bgColor)}></div>
+				<div
+					className={cn(
+						"absolute w-full h-full rounded-xl -left-[5px] -top-[5px]",
+						bgColor
+					)}
+				></div>
 			</a>
 		</Link>
-	)
+	);
 }
