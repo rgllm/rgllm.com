@@ -1,4 +1,4 @@
-name: Unit tests
+name: Integration tests
 on: pull_request
 jobs:
   build:
@@ -8,4 +8,7 @@ jobs:
       - name: Install modules
         run: yarn
       - name: Run tests
-        run: yarn test:unit
+        run: yarn test:integration
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}

@@ -1,4 +1,4 @@
-name: Prettier check
+name: Check Prettier
 
 # This action works with pull requests and pushes on the main branch
 on:
