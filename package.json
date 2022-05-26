@@ -1,59 +1,63 @@
 {
-	"name": "rgllm.com",
-	"version": "4.0.0",
-	"private": true,
-	"author": {
-		"name": "Rogério Moreira",
-		"email": "r@rgllm.com",
-		"url": "https://rgllm.com"
-	},
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/rgllm/rgllm.com.git"
-	},
-	"scripts": {
-		"dev": "next dev",
-		"start": "next dev",
-		"prebuild": "yarn clean && echo All clean ✨",
-		"build": "next build",
-		"start:prod": "next start",
-		"lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --ext js,jsx,ts,tsx .",
-		"postbuild": "NODE_OPTIONS='--experimental-json-modules' node ./scripts/generate-rss.mjs && node ./scripts/generate-sitemap.mjs",
-		"clean": "rimraf ./node_modules/.cache ./server/dist ./build ./public/build \"./app/styles/**/*.css\"",
-		"format": "prettier --ignore-path .gitignore --write \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md)\""
-	},
-	"dependencies": {
-		"@prisma/client": "3.14.0",
-		"@tailwindcss/typography": "0.5.2",
-		"axios": "0.27.2",
-		"classnames": "2.3.1",
-		"date-fns": "2.28.0",
-		"himalaya": "1.1.0",
-		"html-attribute-to-react": "0.0.5",
-		"html-metadata-parser": "2.0.4",
-		"next": "12.1.6",
-		"next-auth": "4.3.4",
-		"react": "18.1.0",
-		"react-dom": "18.1.0",
-		"react-icons": "4.3.1",
-		"react-to-print": "2.14.7",
-		"slugify": "1.6.5",
-		"swr": "1.3.0",
-		"tailwindcss": "3.0.24",
-		"use-delayed-render": "0.0.7"
-	},
-	"devDependencies": {
-		"@types/node": "17.0.23",
-		"@types/react": "18.0.9",
-		"autoprefixer": "10.4.7",
-		"eslint": "8.16.0",
-		"eslint-config-next": "12.1.6",
-		"globby": "13.1.1",
-		"postcss": "8.4.14",
-		"prettier": "2.6.2",
-		"prisma": "3.14.0",
-		"rss": "1.2.2",
-		"typescript": "4.7.2"
-	}
+  "name": "rgllm.com",
+  "version": "5.0.0",
+  "private": true,
+  "author": {
+    "name": "Rogério Moreira",
+    "email": "r@rgllm.com",
+    "url": "https://rgllm.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgllm/rgllm.com.git"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "start": "next dev",
+    "prebuild": "yarn clean && echo All clean ✨",
+    "build": "next build",
+    "start:prod": "next start",
+    "lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --ext js,jsx,ts,tsx .",
+    "postbuild": "NODE_OPTIONS='--experimental-json-modules' node ./scripts/generate-rss.mjs && node ./scripts/generate-sitemap.mjs",
+    "clean": "rimraf ./node_modules/.cache ./server/dist ./build ./public/build \"./app/styles/**/*.css\"",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md)\"",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@prisma/client": "3.14.0",
+    "@tailwindcss/typography": "0.5.2",
+    "axios": "0.27.2",
+    "classnames": "2.3.1",
+    "date-fns": "2.28.0",
+    "himalaya": "1.1.0",
+    "html-attribute-to-react": "0.0.5",
+    "html-metadata-parser": "2.0.4",
+    "next": "12.1.6",
+    "next-auth": "4.3.4",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-icons": "4.3.1",
+    "react-to-print": "2.14.7",
+    "slugify": "1.6.5",
+    "swr": "1.3.0",
+    "tailwindcss": "3.0.24",
+    "use-delayed-render": "0.0.7"
+  },
+  "devDependencies": {
+    "@types/jest": "27.5.1",
+    "@types/node": "17.0.23",
+    "@types/react": "18.0.9",
+    "autoprefixer": "10.4.7",
+    "eslint": "8.16.0",
+    "eslint-config-next": "12.1.6",
+    "globby": "13.1.1",
+    "jest": "28.1.0",
+    "node-mocks-http": "^1.11.0",
+    "postcss": "8.4.14",
+    "prettier": "2.6.2",
+    "prisma": "3.14.0",
+    "rss": "1.2.2",
+    "typescript": "4.7.2"
+  }
 }

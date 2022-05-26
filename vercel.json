@@ -1,97 +1,97 @@
 {
-	"cleanUrls": true,
-	"redirects": [
-		{
-			"source": "/curriculo.pdf",
-			"destination": "/cv.pdf"
-		},
-		{
-			"source": "/cv",
-			"destination": "/resume"
-		},
-		{
-			"source": "/thesis",
-			"destination": "/msc-thesis.pdf"
-		},
-		{
-			"source": "/articles",
-			"destination": "/blog"
-		},
-		{
-			"source": "/post",
-			"destination": "/blog"
-		},
-		{
-			"source": "/wp-content(.*)",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-		},
-		{
-			"source": "/ads.txt",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-		},
-		{
-			"source": "/(.*).php",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-		},
-		{
-			"source": "/(.*).env",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-		},
-		{
-			"source": "/php(.*)",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-		},
-		{
-			"source": "/db(.*)",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-		},
-		{
-			"source": "/.git(.*)",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-		},
-		{
-			"source": "/console(.*)",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-		},
-		{
-			"source": "/config(.*)",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-		},
-		{
-			"source": "(.*)/wp-includes/(.*)",
-			"destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-		},
-		{
-			"source": "/photo",
-			"destination": "https://rgllm.com/images/avatar.jpg"
-		}
-	],
-	"headers": [
-		{
-			"source": "/service-worker.js",
-			"headers": [
-				{
-					"key": "Cache-Control",
-					"value": "public, max-age=0, must-revalidate"
-				}
-			]
-		},
-		{
-			"source": "/(.*)",
-			"headers": [
-				{
-					"key": "X-Content-Type-Options",
-					"value": "nosniff"
-				},
-				{
-					"key": "X-Frame-Options",
-					"value": "DENY"
-				},
-				{
-					"key": "X-XSS-Protection",
-					"value": "1; mode=block"
-				}
-			]
-		}
-	]
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/curriculo.pdf",
+      "destination": "/cv.pdf"
+    },
+    {
+      "source": "/cv",
+      "destination": "/resume"
+    },
+    {
+      "source": "/thesis",
+      "destination": "/msc-thesis.pdf"
+    },
+    {
+      "source": "/articles",
+      "destination": "/blog"
+    },
+    {
+      "source": "/post",
+      "destination": "/blog"
+    },
+    {
+      "source": "/wp-content(.*)",
+      "destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "source": "/ads.txt",
+      "destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "source": "/(.*).php",
+      "destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "source": "/(.*).env",
+      "destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "source": "/php(.*)",
+      "destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "source": "/db(.*)",
+      "destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "source": "/.git(.*)",
+      "destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "source": "/console(.*)",
+      "destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "source": "/config(.*)",
+      "destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "source": "(.*)/wp-includes/(.*)",
+      "destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "source": "/photo",
+      "destination": "https://rgllm.com/images/avatar.jpg"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/service-worker.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ]
 }
