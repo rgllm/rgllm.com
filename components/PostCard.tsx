@@ -1,7 +1,7 @@
-import Link from "next/link";
-import cn from "classnames";
+import Link from 'next/link'
+import cn from 'classnames'
 
-export default function PostCard({ title, slug, bgColor }) {
+export default function PostCard({title, slug, bgColor}) {
   return (
     <Link href={`/blog/${slug}`}>
       <a className="transform hover:scale-[1.01] transition-all w-full rounded-lg md:w-1/3 p-1">
@@ -13,12 +13,9 @@ export default function PostCard({ title, slug, bgColor }) {
           </div>
         </div>
         <div
-          className={cn(
-            "absolute w-full h-full rounded-xl -left-[5px] -top-[5px]",
-            bgColor
-          )}
+          className={cn('absolute w-full h-full rounded-xl -left-[5px] -top-[5px]', bgColor)}
         ></div>
       </a>
     </Link>
-  );
+  )
 }

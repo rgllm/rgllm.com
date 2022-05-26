@@ -1,4 +1,4 @@
-import Container from "components/Container";
+import Container from 'components/Container'
 
 export default function NotFound(props) {
   return (
@@ -11,5 +11,5 @@ export default function NotFound(props) {
         </div>
       </div>
     </Container>
-  );
+  )
 }

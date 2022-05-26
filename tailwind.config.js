@@ -1,52 +1,52 @@
-const { spacing, fontFamily } = require("tailwindcss/defaultTheme");
+const {spacing, fontFamily} = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: ["./pages/**/*.tsx", "./components/**/*.tsx"],
-  darkMode: "class",
+  content: ['./pages/**/*.tsx', './components/**/*.tsx'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        "blue-opaque": "rgb(13 42 148 / 18%)",
+        'blue-opaque': 'rgb(13 42 148 / 18%)',
         gray: {
-          0: "#fff",
-          100: "#fafafa",
-          200: "#eaeaea",
-          300: "#999999",
-          400: "#888888",
-          500: "#666666",
-          600: "#444444",
-          700: "#333333",
-          800: "#222222",
-          900: "#111111",
+          0: '#fff',
+          100: '#fafafa',
+          200: '#eaeaea',
+          300: '#999999',
+          400: '#888888',
+          500: '#666666',
+          600: '#444444',
+          700: '#333333',
+          800: '#222222',
+          900: '#111111',
         },
       },
       fontFamily: {
-        sans: ["IBM Plex Sans", ...fontFamily.sans],
+        sans: ['IBM Plex Sans', ...fontFamily.sans],
       },
-      typography: (theme) => ({
+      typography: theme => ({
         DEFAULT: {
           css: {
-            color: theme("colors.gray.700"),
+            color: theme('colors.gray.700'),
             a: {
-              color: theme("colors.blue.500"),
-              "&:hover": {
-                color: theme("colors.blue.700"),
+              color: theme('colors.blue.500'),
+              '&:hover': {
+                color: theme('colors.blue.700'),
               },
-              code: { color: theme("colors.blue.400") },
+              code: {color: theme('colors.blue.400')},
             },
-            "h2,h3,h4": {
-              "scroll-margin-top": spacing[32],
+            'h2,h3,h4': {
+              'scroll-margin-top': spacing[32],
             },
             thead: {
-              borderBottomColor: theme("colors.gray.200"),
+              borderBottomColor: theme('colors.gray.200'),
             },
-            code: { color: theme("colors.pink.500") },
-            "blockquote p:first-of-type::before": false,
-            "blockquote p:last-of-type::after": false,
+            code: {color: theme('colors.pink.500')},
+            'blockquote p:first-of-type::before': false,
+            'blockquote p:last-of-type::after': false,
           },
         },
       }),
     },
   },
-  plugins: [require("@tailwindcss/typography")],
-};
+  plugins: [require('@tailwindcss/typography')],
+}
