@@ -1,34 +1,30 @@
-import { useState } from "react";
+import {useState} from 'react'
 
-import { getAllPosts } from "lib/get-posts";
-import BlogPost from "components/BlogPost";
-import Container from "components/Container";
-import type { InferGetStaticPropsType } from "next";
+import {getAllPosts} from 'lib/get-posts'
+import BlogPost from 'components/BlogPost'
+import Container from 'components/Container'
+import type {InferGetStaticPropsType} from 'next'
 
-export default function Blog({
-  posts,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
-  const [searchValue, setSearchValue] = useState("");
+export default function Blog({posts}: InferGetStaticPropsType<typeof getStaticProps>) {
+  const [searchValue, setSearchValue] = useState('')
   const filteredBlogPosts = posts.filter((post: any) =>
-    post.title.toLowerCase().includes(searchValue.toLowerCase())
-  );
+    post.title.toLowerCase().includes(searchValue.toLowerCase()),
+  )
 
   return (
     <Container title="Blog - Rogério Moreira">
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
-        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl">
-          All Posts
-        </h1>
+        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl">All Posts</h1>
         <p className="mb-4 text-gray-600 ">
-          Thinking out loud about software engineering, product development and
-          life in general. No writer can generate profound insights on a fixed
-          schedule, so you won't find here frequent updates.
+          Thinking out loud about software engineering, product development and life in general. No
+          writer can generate profound insights on a fixed schedule, so you won't find here frequent
+          updates.
         </p>
         <div className="relative w-full mb-4">
           <input
             aria-label="Search posts"
             type="text"
-            onChange={(e) => setSearchValue(e.target.value)}
+            onChange={e => setSearchValue(e.target.value)}
             placeholder="Search posts"
             className="block w-full px-4 py-2 text-gray-900 bg-white border border-gray-200 rounded-md focus:ring-blue-500 focus:border-blue-500 "
           />
@@ -47,24 +43,22 @@ export default function Blog({
             />
           </svg>
         </div>
-        {!filteredBlogPosts.length && (
-          <p className="mb-4 text-gray-600">No posts found.</p>
-        )}
+        {!filteredBlogPosts.length && <p className="mb-4 text-gray-600">No posts found.</p>}
         {filteredBlogPosts.map((post: any) => (
           <BlogPost key={post.id} {...post} />
         ))}
       </div>
     </Container>
-  );
+  )
 }
 
 export async function getStaticProps() {
-  const posts = await getAllPosts();
+  const posts = await getAllPosts()
 
   return {
     props: {
       posts,
     },
     revalidate: 60,
-  };
+  }
 }

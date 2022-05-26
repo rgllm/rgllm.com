@@ -1,4 +1,4 @@
-name: Run ESLint
+name: Check ESLint
 on: pull_request
 
 jobs:
@@ -12,6 +12,6 @@ jobs:
       - name: Run eslint
         uses: tj-actions/eslint-changed-files@v10.2
         with:
-          config_path: "./.eslintrc.js"
-          ignore_path: "./.eslintignore"
-          extra_args: "--max-warnings=0"
+          config_path: './.eslintrc.js'
+          ignore_path: './.eslintignore'
+          extra_args: '--max-warnings=0'

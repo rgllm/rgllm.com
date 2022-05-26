@@ -1,26 +1,19 @@
-import { FiArrowRight } from "react-icons/fi";
-import Image from "next/image";
-import Link from "next/link";
+import {FiArrowRight} from 'react-icons/fi'
+import Image from 'next/image'
+import Link from 'next/link'
 
-import { getAllPosts } from "lib/get-posts";
-import { InferGetStaticPropsType } from "next";
-import { projects } from "data/projects";
-import { shuffleArray } from "lib/shuffle";
-import BookmarksList from "components/BookmarksList";
-import Container from "components/Container";
-import PostCard from "components/PostCard";
-import prisma from "lib/prisma";
-import ProjectCard from "components/ProjectCard";
+import {getAllPosts} from 'lib/get-posts'
+import {InferGetStaticPropsType} from 'next'
+import {projects} from 'data/projects'
+import {shuffleArray} from 'lib/shuffle'
+import BookmarksList from 'components/BookmarksList'
+import Container from 'components/Container'
+import PostCard from 'components/PostCard'
+import prisma from 'lib/prisma'
+import ProjectCard from 'components/ProjectCard'
 
-export default function Home({
-  bookmarks,
-  posts,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
-  const postColors = shuffleArray([
-    "bg-green-300",
-    "bg-red-300",
-    "bg-blue-300",
-  ]);
+export default function Home({bookmarks, posts}: InferGetStaticPropsType<typeof getStaticProps>) {
+  const postColors = shuffleArray(['bg-green-300', 'bg-red-300', 'bg-blue-300'])
   return (
     <Container title="Rogério Moreira - Software Engineer, focused on front-end development, living and working from Braga, Portugal.">
       <div className="flex flex-col items-start justify-center max-w-2xl pb-16 md:mx-auto">
@@ -30,32 +23,19 @@ export default function Home({
               Rogério Moreira
             </h1>
             <h2 className="mb-4 text-gray-700">
-              Software Engineer. Writing code at{" "}
-              <span className="font-semibold">Mindera</span>.
+              Software Engineer. Writing code at <span className="font-semibold">Mindera</span>.
             </h2>
             <p className="mb-16 text-gray-600 md:max-w-[460px]">
-              Currently based in Braga, Portugal. You can follow me on{" "}
-              <a
-                href="https://twitter.com/rgllm"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              Currently based in Braga, Portugal. You can follow me on{' '}
+              <a href="https://twitter.com/rgllm" target="_blank" rel="noopener noreferrer">
                 Twitter
               </a>
-              , see my code on{" "}
-              <a
-                href="https://github.com/rgllm"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              , see my code on{' '}
+              <a href="https://github.com/rgllm" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
-              , or check my{" "}
-              <a
-                href="https://linkedin.com/in/rgllm"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              , or check my{' '}
+              <a href="https://linkedin.com/in/rgllm" target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </a>
               . I occasionally blog too.
@@ -82,7 +62,7 @@ export default function Home({
           </div>
           <Link href="/blog">
             <a className="inline-flex items-center pt-5 font-medium leading-5 text-gray-700 animatedArrow">
-              View all posts{" "}
+              View all posts{' '}
               <FiArrowRight className="arrow text-gray-700 mt-[2px] ml-[4px] max-w-[18px]" />
             </a>
           </Link>
@@ -92,7 +72,7 @@ export default function Home({
             Personal Projects
           </h2>
           <ul role="list" className="w-full divide-y divide-gray-200">
-            {projects.map((project) => (
+            {projects.map(project => (
               <ProjectCard key={project.name} {...project} />
             ))}
           </ul>
@@ -104,33 +84,33 @@ export default function Home({
           <BookmarksList bookmarks={bookmarks} />
           <Link href="/blog">
             <a className="inline-flex items-center pt-10 font-medium leading-5 text-gray-700 animatedArrow">
-              View all bookmarks{" "}
+              View all bookmarks{' '}
               <FiArrowRight className="arrow text-gray-700 mt-[2px] ml-[4px] max-w-[18px]" />
             </a>
           </Link>
         </div>
       </div>
     </Container>
-  );
+  )
 }
 
 export async function getStaticProps() {
-  const posts = await getAllPosts();
+  const posts = await getAllPosts()
   const bookmarks = await prisma.bookmark.findMany({
     take: 5,
     orderBy: {
-      id: "desc",
+      id: 'desc',
     },
-  });
+  })
 
-  const parsedBookmarks = bookmarks.map((entry) => ({
+  const parsedBookmarks = bookmarks.map(entry => ({
     id: entry.id.toString(),
     created_at: entry.created_at.toString(),
     title: entry.title,
     description: entry.description,
     favicon: entry.favicon,
     link: entry.link,
-  }));
+  }))
 
   return {
     props: {
@@ -138,5 +118,5 @@ export async function getStaticProps() {
       bookmarks: parsedBookmarks,
     },
     revalidate: 30,
-  };
+  }
 }

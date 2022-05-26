@@ -1,8 +1,8 @@
-import { PropsWithChildren } from "react";
+import {PropsWithChildren} from 'react'
 
-import Container from "./Container";
+import Container from './Container'
 
-export default function BlogLayout({ children, post }: PropsWithChildren<any>) {
+export default function BlogLayout({children, post}: PropsWithChildren<any>) {
   return (
     <Container
       title={`${post.title} – Rogério Moreira`}
@@ -17,5 +17,5 @@ export default function BlogLayout({ children, post }: PropsWithChildren<any>) {
         <div className="w-full mt-4 prose max-w-none">{children}</div>
       </article>
     </Container>
-  );
+  )
 }

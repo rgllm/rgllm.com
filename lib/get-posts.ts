@@ -1,10 +1,10 @@
-import axios from "axios";
-import slugify from "slugify";
+import axios from 'axios'
+import slugify from 'slugify'
 
-import toJson from "./to-json";
+import toJson from './to-json'
 
-const addExtraDataToPost = (post) => {
-  const { id, bodyHTML, title, publishedAt, body, bodyText } = post;
+const addExtraDataToPost = post => {
+  const {id, bodyHTML, title, publishedAt, body, bodyText} = post
 
   return {
     id,
@@ -12,16 +12,16 @@ const addExtraDataToPost = (post) => {
     title,
     body,
     bodyHTML,
-    slug: slugify(title, { lower: true }),
-    description: bodyText.split(".")[0] + ".",
-  };
-};
+    slug: slugify(title, {lower: true}),
+    description: bodyText.split('.')[0] + '.',
+  }
+}
 
 export const getAllPosts = async () => {
   try {
     const result = await axios({
-      url: "https://api.github.com/graphql",
-      method: "POST",
+      url: 'https://api.github.com/graphql',
+      method: 'POST',
       headers: {
         Authorization: `bearer ${process.env.GH_TOKEN}`,
       },
@@ -47,23 +47,21 @@ export const getAllPosts = async () => {
         }
         }`,
       },
-    });
+    })
 
-    const allPosts = JSON.parse(
-      toJson(result.data.data.repository.discussions.nodes)
-    );
+    const allPosts = JSON.parse(toJson(result.data.data.repository.discussions.nodes))
 
-    return allPosts.map((post) => addExtraDataToPost(post));
+    return allPosts.map(post => addExtraDataToPost(post))
   } catch (error) {
-    return null;
+    return null
   }
-};
+}
 
 export const getPost = async (slug: string) => {
   try {
     const result = await axios({
-      url: "https://api.github.com/graphql",
-      method: "POST",
+      url: 'https://api.github.com/graphql',
+      method: 'POST',
       headers: {
         Authorization: `bearer ${process.env.GH_TOKEN}`,
       },
@@ -89,17 +87,13 @@ export const getPost = async (slug: string) => {
         }
         }`,
       },
-    });
+    })
 
-    const allPosts = JSON.parse(
-      toJson(result.data.data.repository.discussions.nodes)
-    );
-    const postToReturn = allPosts.filter(
-      (post) => slugify(post.title, { lower: true }) === slug
-    )[0];
+    const allPosts = JSON.parse(toJson(result.data.data.repository.discussions.nodes))
+    const postToReturn = allPosts.filter(post => slugify(post.title, {lower: true}) === slug)[0]
 
-    return addExtraDataToPost(postToReturn);
+    return addExtraDataToPost(postToReturn)
   } catch (error) {
-    return null;
+    return null
   }
-};
+}

@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { FiTwitter, FiGithub, FiLinkedin } from "react-icons/fi";
-import { HiOutlineMail } from "react-icons/hi";
+import Link from 'next/link'
+import {FiTwitter, FiGithub, FiLinkedin} from 'react-icons/fi'
+import {HiOutlineMail} from 'react-icons/hi'
 
 export default function Footer() {
   return (
@@ -30,5 +30,5 @@ export default function Footer() {
       <script async src="https://itsyou.rgllm.com/latest.js" />
       <script async src="https://itsyou.rgllm.com/auto-events.js" />
     </footer>
-  );
+  )
 }
