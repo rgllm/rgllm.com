@@ -7,17 +7,21 @@ export default function Footer() {
     <footer className="flex flex-col items-center mb-4 bg-gray-50">
       <div className="flex flex-row">
         <Link href="https://twitter.com/rgllm">
-          <a className="mr-4" target="_blank" rel="noopener noreferrer">
+          <a className="mr-4 umami--click--footertwitter" target="_blank" rel="noopener noreferrer">
             <FiTwitter />
           </a>
         </Link>
         <Link href="https://github.com/rgllm">
-          <a className="mr-4" target="_blank" rel="noopener noreferrer">
+          <a className="mr-4 umami--click--footergithub" target="_blank" rel="noopener noreferrer">
             <FiGithub />
           </a>
         </Link>
         <Link href="https://linkedin.com/in/rgllm">
-          <a className="mr-4" target="_blank" rel="noopener noreferrer">
+          <a
+            className="mr-4 umami--click--footerlinkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FiLinkedin />
           </a>
         </Link>
