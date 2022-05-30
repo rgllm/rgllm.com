@@ -6,7 +6,7 @@ export default function BlogPost({title, description}) {
 
   return (
     <Link href={`/blog/${slug}`}>
-      <a className="w-full">
+      <a className={`w-full umami--click--blog-${slug}`}>
         <div className="w-full mb-8">
           <div className="flex flex-col justify-between md:flex-row">
             <h2 className="w-full mb-2 text-lg font-medium text-gray-900 md:text-lg">{title}</h2>

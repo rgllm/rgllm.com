@@ -16,6 +16,7 @@ function NavItem({href, text}) {
         className={cn(
           isActive ? 'font-semibold text-[#24292f]' : 'font-normal text-[#24292f]',
           'hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg transition-all hover:bg-[#ededed] duration-120',
+          `umami--click--menu-${text.toLowerCase()}`,
         )}
       >
         <span className="capsize">{text}</span>

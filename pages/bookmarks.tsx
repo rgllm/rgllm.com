@@ -28,7 +28,7 @@ export default function About({bookmarks}: InferGetStaticPropsType<typeof getSta
             type="text"
             onChange={e => setSearchValue(e.target.value)}
             placeholder="Search bookmarks"
-            className="block w-full px-4 py-2 text-gray-900 bg-white border border-gray-200 rounded-md focus:ring-blue-500 focus:border-blue-500 umami--input--bookmarkssearch"
+            className="block w-full px-4 py-2 text-gray-900 bg-white border border-gray-200 rounded-md focus:ring-blue-500 focus:border-blue-500 umami--input--bookmark-search"
           />
           <svg
             className="absolute w-5 h-5 text-gray-400 right-3 top-3 "
