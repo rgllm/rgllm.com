@@ -27,15 +27,30 @@ export default function Home({bookmarks, posts}: InferGetStaticPropsType<typeof 
             </h2>
             <p className="mb-16 text-gray-600 md:max-w-[460px]">
               Currently based in Braga, Portugal. You can follow me on{' '}
-              <a href="https://twitter.com/rgllm" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://twitter.com/rgllm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="umami--click--homepage-twitter"
+              >
                 Twitter
               </a>
               , see my code on{' '}
-              <a href="https://github.com/rgllm" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/rgllm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="umami--click--homepage-github"
+              >
                 GitHub
               </a>
               , or check my{' '}
-              <a href="https://linkedin.com/in/rgllm" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://linkedin.com/in/rgllm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="umami--click--homepage-linkedin"
+              >
                 LinkedIn
               </a>
               . I occasionally blog too.
@@ -61,7 +76,7 @@ export default function Home({bookmarks, posts}: InferGetStaticPropsType<typeof 
             <PostCard bgColor={postColors[2]} {...posts?.[2]} />
           </div>
           <Link href="/blog">
-            <a className="inline-flex items-center pt-5 font-medium leading-5 text-gray-700 animatedArrow">
+            <a className="inline-flex items-center pt-5 font-medium leading-5 text-gray-700 animatedArrow umami--click--home-view-all-posts">
               View all posts{' '}
               <FiArrowRight className="arrow text-gray-700 mt-[2px] ml-[4px] max-w-[18px]" />
             </a>

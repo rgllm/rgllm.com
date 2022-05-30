@@ -6,6 +6,7 @@ import Link from 'next/link'
 import useDelayedRender from 'use-delayed-render'
 
 import styles from 'styles/mobile-menu.module.css'
+import {trackEvent} from 'lib/analytics'
 
 export default function MobileMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -17,9 +18,11 @@ export default function MobileMenu() {
   function toggleMenu() {
     if (isMenuOpen) {
       setIsMenuOpen(false)
+      trackEvent(`Mobile Menu closed`, 'navigate')
       document.body.style.overflow = ''
     } else {
       setIsMenuOpen(true)
+      trackEvent(`Mobile Menu open`, 'navigate')
       document.body.style.overflow = 'hidden'
     }
   }
@@ -54,7 +57,7 @@ export default function MobileMenu() {
             style={{transitionDelay: '150ms'}}
           >
             <Link href="/">
-              <a className="flex w-auto pb-4">Home</a>
+              <a className="flex w-auto pb-4 umami--click--mobile-menu-home">Home</a>
             </Link>
           </li>
           <li
@@ -62,7 +65,7 @@ export default function MobileMenu() {
             style={{transitionDelay: '175ms'}}
           >
             <Link href="/about">
-              <a className="flex w-auto pb-4">About</a>
+              <a className="flex w-auto pb-4 umami--click--mobile-menu-about">About</a>
             </Link>
           </li>
           <li
@@ -70,7 +73,7 @@ export default function MobileMenu() {
             style={{transitionDelay: '200ms'}}
           >
             <Link href="/blog">
-              <a className="flex w-auto pb-4">Writing</a>
+              <a className="flex w-auto pb-4 umami--click--mobile-menu-writing">Writing</a>
             </Link>
           </li>
           <li
@@ -78,7 +81,7 @@ export default function MobileMenu() {
             style={{transitionDelay: '250ms'}}
           >
             <Link href="/bookmarks">
-              <a className="flex w-auto pb-4">Bookmarks</a>
+              <a className="flex w-auto pb-4 umami--click--mobile-menu-bookmarks">Bookmarks</a>
             </Link>
           </li>
         </ul>

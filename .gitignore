@@ -160,5 +160,5 @@ dist
 # End of https://www.toptal.com/developers/gitignore/api/now,yarn,node,macos
 
 # Generated files
-sitemap.xml
-feed.xml
+public/sitemap.xml
+public/feed.xml
