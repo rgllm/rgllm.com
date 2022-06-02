@@ -47,7 +47,7 @@
     "use-delayed-render": "0.0.7"
   },
   "devDependencies": {
-    "@types/jest": "27.5.1",
+    "@types/jest": "28.1.0",
     "@types/node": "17.0.23",
     "@types/react": "18.0.10",
     "autoprefixer": "10.4.7",
