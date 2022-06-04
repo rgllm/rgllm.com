@@ -19,6 +19,7 @@ export default function About(props: InferGetStaticPropsType<typeof getStaticPro
           width={2038}
           height={1229}
           priority
+          loading="eager"
           src="/images/rogerio-full.jpg"
           alt="Photo of Rogério Moreira"
         />
