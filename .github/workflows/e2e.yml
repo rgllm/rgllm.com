@@ -17,6 +17,7 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          UMAMI_WEBSITE_ID: test
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v3

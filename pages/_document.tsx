@@ -1,4 +1,5 @@
 import {Html, Head, Main, NextScript} from 'next/document'
+import Script from 'next/script'
 
 export default function Document(props) {
   return (
@@ -14,6 +15,13 @@ export default function Document(props) {
       <body>
         <Main />
         <NextScript />
+        <Script
+          async
+          defer
+          data-website-id={process.env.UMAMI_WEBSITE_ID}
+          src="https://analytics.rgllm.com/umami.js"
+          strategy="worker"
+        ></Script>
       </body>
     </Html>
   )
