@@ -35,12 +35,14 @@ export default function Footer() {
           </a>
         </Link>
       </div>
-      <script
-        async
-        defer
-        data-website-id="4d1665d2-5554-4c2d-8fa1-87f11512a9cd"
-        src="https://analytics.rgllm.com/umami.js"
-      ></script>
+      {process.env.NODE_ENV === 'production' && (
+        <script
+          async
+          defer
+          data-website-id="4d1665d2-5554-4c2d-8fa1-87f11512a9cd"
+          src="https://analytics.rgllm.com/umami.js"
+        ></script>
+      )}
     </footer>
   )
 }

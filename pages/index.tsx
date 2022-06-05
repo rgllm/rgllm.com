@@ -97,8 +97,8 @@ export default function Home({bookmarks, posts}: InferGetStaticPropsType<typeof 
             Latest Bookmarks
           </h2>
           <BookmarksList bookmarks={bookmarks} />
-          <Link href="/blog">
-            <a className="inline-flex items-center pt-10 font-medium leading-5 text-gray-700 animatedArrow">
+          <Link href="/bookmarks">
+            <a className="inline-flex items-center pt-10 font-medium leading-5 text-gray-700 animatedArrow umami--click--home-view-all-bookmarks">
               View all bookmarks{' '}
               <FiArrowRight className="arrow text-gray-700 mt-[2px] ml-[4px] max-w-[18px]" />
             </a>
