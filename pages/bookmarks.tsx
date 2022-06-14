@@ -47,7 +47,9 @@ export default function About({bookmarks}: InferGetStaticPropsType<typeof getSta
         </div>
       </div>
       <div className="flex flex-row items-center justify-center w-full max-w-2xl pb-16 mx-auto my-0 border-gray-200">
-        {!filteredBookmarks.length && <p className="mb-4 text-gray-600">No bookmarks found.</p>}
+        {!filteredBookmarks.length && (
+          <p className="w-full mb-4 text-gray-600">No bookmarks found.</p>
+        )}
         <BookmarksList bookmarks={filteredBookmarks} />
       </div>
     </Container>
