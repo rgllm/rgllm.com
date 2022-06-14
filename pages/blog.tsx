@@ -43,7 +43,7 @@ export default function Blog({posts}: InferGetStaticPropsType<typeof getStaticPr
             />
           </svg>
         </div>
-        {!filteredBlogPosts.length && <p className="mb-4 text-gray-600">No posts found.</p>}
+        {!filteredBlogPosts.length && <p className="w-full mb-4 text-gray-600">No posts found.</p>}
         {filteredBlogPosts.map((post: any) => (
           <BlogPost key={post.id} {...post} />
         ))}

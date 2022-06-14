@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import {FiArrowRight} from 'react-icons/fi'
+import {truncateText} from 'lib/truncate'
 
 export default function BookmarksList({bookmarks}) {
   return (
@@ -19,7 +20,9 @@ export default function BookmarksList({bookmarks}) {
             </div>
             <div className="flex-1 min-w-0">
               <p className="font-medium text-gray-900 truncate">{bookmark.title}</p>
-              <p className="text-gray-500 max-w-[500px] text-sm">{bookmark.description}</p>
+              <p className="text-gray-500 max-w-[500px] text-sm">
+                {truncateText(bookmark.description, 140)}
+              </p>
             </div>
             <div>
               <Link href={bookmark.link}>
