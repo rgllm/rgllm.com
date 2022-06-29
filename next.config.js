@@ -33,6 +33,12 @@ const securityHeaders = [
 module.exports = {
   swcMinify: true,
   reactStrictMode: true,
+  experimental: {
+    runtime: 'experimental-edge',
+    images: {
+      allowFutureImage: true,
+    },
+  },
   images: {
     domains: [
       'rgllm.com',
