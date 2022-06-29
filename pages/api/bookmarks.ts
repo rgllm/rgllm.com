@@ -1,39 +1,22 @@
-import {type NextRequest} from 'next/server'
+import type {NextApiRequest, NextApiResponse} from 'next'
 import prisma from 'lib/prisma'
 import {getDescription, getFavicon, getTitle} from 'lib/crawler'
 import toJson from 'lib/to-json'
 
-export default async function handler(req: NextRequest) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'GET') {
     try {
       const allBookmarks = await prisma.bookmark.findMany()
 
-      return new Response(toJson(allBookmarks), {
-        status: 200,
-        headers: {
-          'content-type': 'application/json',
-          'cache-control': 'public, s-maxage=1200, stale-while-revalidate=600',
-        },
-      })
+      return res.status(200).json(toJson(allBookmarks))
     } catch (e) {
-      return new Response(
-        JSON.stringify({
-          error: e.message,
-        }),
-        {
-          status: 500,
-          headers: {
-            'content-type': 'application/json',
-          },
-        },
-      )
+      return res.status(500).json({message: e.message})
     }
   }
 
   if (req.method === 'POST') {
     try {
-      const {searchParams} = new URL(req.url)
-      const websiteUrl = searchParams.get('link')
+      const websiteUrl = req?.body?.link
 
       if (!websiteUrl) {
         throw Error('No link provided')
@@ -61,51 +44,18 @@ export default async function handler(req: NextRequest) {
         },
       })
 
-      return new Response(
-        JSON.stringify({
-          id: newEntry.id.toString(),
-          created_at: newEntry.created_at.toString(),
-          title: newEntry.title,
-          description: newEntry.description,
-          favicon: newEntry.favicon,
-          link: newEntry.link,
-        }),
-        {
-          status: 200,
-          headers: {
-            'content-type': 'application/json',
-            'cache-control': 'public, s-maxage=1200, stale-while-revalidate=600',
-          },
-        },
-      )
+      return res.status(200).json({
+        id: newEntry.id.toString(),
+        created_at: newEntry.created_at.toString(),
+        title: newEntry.title,
+        description: newEntry.description,
+        favicon: newEntry.favicon,
+        link: newEntry.link,
+      })
     } catch (e) {
-      return new Response(
-        JSON.stringify({
-          error: e.message,
-        }),
-        {
-          status: 500,
-          headers: {
-            'content-type': 'application/json',
-          },
-        },
-      )
+      return res.status(500).json({message: e.message})
     }
   }
 
-  return new Response(
-    JSON.stringify({
-      error: 'Method not allowed',
-    }),
-    {
-      status: 400,
-      headers: {
-        'content-type': 'application/json',
-      },
-    },
-  )
-}
-
-export const config = {
-  runtime: 'experimental-edge',
+  return res.send('Method not allowed.')
 }

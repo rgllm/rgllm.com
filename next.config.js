@@ -34,7 +34,6 @@ module.exports = {
   swcMinify: true,
   reactStrictMode: true,
   experimental: {
-    runtime: 'experimental-edge',
     images: {
       allowFutureImage: true,
     },
