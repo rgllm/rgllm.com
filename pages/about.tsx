@@ -15,7 +15,6 @@ export default function About(props: InferGetStaticPropsType<typeof getStaticPro
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl ">About Me</h1>
         <Image
           className="rounded-lg"
-          layout="intrinsic"
           width={2038}
           height={1229}
           priority
