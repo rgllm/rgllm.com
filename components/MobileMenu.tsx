@@ -56,32 +56,35 @@ export default function MobileMenu() {
             className="text-sm font-semibold text-gray-900 border-b border-gray-300"
             style={{transitionDelay: '150ms'}}
           >
-            <Link href="/">
-              <a className="flex w-auto pb-4 umami--click--mobile-menu-home">Home</a>
+            <Link href="/" className="flex w-auto pb-4 umami--click--mobile-menu-home">
+              Home
             </Link>
           </li>
           <li
             className="text-sm font-semibold text-gray-900 border-b border-gray-300"
             style={{transitionDelay: '175ms'}}
           >
-            <Link href="/about">
-              <a className="flex w-auto pb-4 umami--click--mobile-menu-about">About</a>
+            <Link href="/about" className="flex w-auto pb-4 umami--click--mobile-menu-about">
+              About
             </Link>
           </li>
           <li
             className="text-sm font-semibold text-gray-900 border-b border-gray-300"
             style={{transitionDelay: '200ms'}}
           >
-            <Link href="/blog">
-              <a className="flex w-auto pb-4 umami--click--mobile-menu-writing">Writing</a>
+            <Link href="/blog" className="flex w-auto pb-4 umami--click--mobile-menu-writing">
+              Writing
             </Link>
           </li>
           <li
             className="text-sm font-semibold text-gray-900 border-b border-gray-300"
             style={{transitionDelay: '250ms'}}
           >
-            <Link href="/bookmarks">
-              <a className="flex w-auto pb-4 umami--click--mobile-menu-bookmarks">Bookmarks</a>
+            <Link
+              href="/bookmarks"
+              className="flex w-auto pb-4 umami--click--mobile-menu-bookmarks"
+            >
+              Bookmarks
             </Link>
           </li>
         </ul>

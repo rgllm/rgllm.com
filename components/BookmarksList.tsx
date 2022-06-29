@@ -25,15 +25,16 @@ export default function BookmarksList({bookmarks}) {
               </p>
             </div>
             <div>
-              <Link href={bookmark.link}>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`animatedArrow inline-flex items-center px-2.5 py-0.5 leading-5 font-medium text-gray-700 cursor-pointer umami--click--bookmark-${bookmark.id}`}
-                >
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`animatedArrow inline-flex items-center px-2.5 py-0.5 leading-5 font-medium text-gray-700 cursor-pointer umami--click--bookmark-${bookmark.id}`}
+                href={bookmark.link}
+              >
+                <>
                   View{' '}
                   <FiArrowRight className="arrow text-gray-700 mt-[2px] ml-[4px] max-w-[18px]" />
-                </a>
+                </>
               </Link>
             </div>
           </div>

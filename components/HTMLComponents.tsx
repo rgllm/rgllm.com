@@ -3,17 +3,26 @@ import Image from 'next/image'
 
 export const CustomLink = props => {
   const href = props.href
+
+  if (!href) {
+    return props.children
+  }
+
   const isInternalLink = href && (href.startsWith('/') || href.startsWith('#'))
 
   if (isInternalLink) {
     return (
-      <Link href={href}>
-        <a {...props}>{props.children}</a>
+      <Link href={href} {...props}>
+        <>{props.children}</>
       </Link>
     )
   }
 
-  return <a target="_blank" rel="noopener noreferrer" {...props} />
+  return (
+    <Link target="_blank" rel="noopener noreferrer" {...props}>
+      <>{props.children}</>
+    </Link>
+  )
 }
 
 export const RoundedImage = props => {

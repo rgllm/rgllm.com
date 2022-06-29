@@ -34,17 +34,24 @@ module.exports = {
   swcMinify: true,
   reactStrictMode: true,
   experimental: {
-    runtime: 'experimental-edge',
     images: {
       allowFutureImage: true,
     },
   },
   images: {
-    domains: [
-      'rgllm.com',
-      't1.gstatic.com',
-      'camo.githubusercontent.com',
-      'user-images.githubusercontent.com',
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.githubusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.gstatic.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'rgllm.com',
+      },
     ],
   },
   async headers() {
