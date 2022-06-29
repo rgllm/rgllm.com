@@ -75,14 +75,11 @@ export default function Home({bookmarks, posts}: InferGetStaticPropsType<typeof 
             <PostCard bgColor={postColors[1]} {...posts?.[1]} />
             <PostCard bgColor={postColors[2]} {...posts?.[2]} />
           </div>
-          <Link
-            href="/blog"
-            className="inline-flex items-center pt-5 font-medium leading-5 text-gray-700 animatedArrow umami--click--home-view-all-posts"
-          >
-            <>
+          <Link href="/blog">
+            <a className="inline-flex items-center pt-5 font-medium leading-5 text-gray-700 animatedArrow umami--click--home-view-all-posts">
               View all posts{' '}
               <FiArrowRight className="arrow text-gray-700 mt-[2px] ml-[4px] max-w-[18px]" />
-            </>
+            </a>
           </Link>
         </div>
         <div className="flex flex-col w-full mb-8">
@@ -100,14 +97,11 @@ export default function Home({bookmarks, posts}: InferGetStaticPropsType<typeof 
             Latest Bookmarks
           </h2>
           <BookmarksList bookmarks={bookmarks} />
-          <Link
-            href="/bookmarks"
-            className="inline-flex items-center pt-10 font-medium leading-5 text-gray-700 animatedArrow umami--click--home-view-all-bookmarks"
-          >
-            <>
+          <Link href="/bookmarks">
+            <a className="inline-flex items-center pt-10 font-medium leading-5 text-gray-700 animatedArrow umami--click--home-view-all-bookmarks">
               View all bookmarks{' '}
               <FiArrowRight className="arrow text-gray-700 mt-[2px] ml-[4px] max-w-[18px]" />
-            </>
+            </a>
           </Link>
         </div>
       </div>
