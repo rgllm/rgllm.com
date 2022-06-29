@@ -33,6 +33,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         },
       })
 
+      await res.revalidate('/blog')
       return res.status(200).json({body: result?.data?.data?.repository})
     } catch (error) {
       return res.status(500).json({error: error.message})
