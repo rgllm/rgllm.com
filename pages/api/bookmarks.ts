@@ -22,25 +22,27 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         throw Error('No link provided')
       }
 
+      const websiteUrlWithoutParameters = websiteUrl.split('?')[0]
+
       const title = await getTitle(websiteUrl)
       const description = await getDescription(websiteUrl)
       const favicon = getFavicon(websiteUrl)
 
       const newEntry = await prisma.bookmark.upsert({
         where: {
-          link: websiteUrl,
+          link: websiteUrlWithoutParameters,
         },
         update: {
           title: title,
           description: description,
           favicon: favicon,
-          link: websiteUrl,
+          link: websiteUrlWithoutParameters,
         },
         create: {
           title: title,
           description: description,
           favicon: favicon,
-          link: websiteUrl,
+          link: websiteUrlWithoutParameters,
         },
       })
 
