@@ -11,7 +11,7 @@ export default function About(props: InferGetStaticPropsType<typeof getStaticPro
 
   return (
     <Container title="About Me - Rogério Moreira">
-      <div className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
+      <div className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl ">About Me</h1>
         <Image
           className="rounded-lg"

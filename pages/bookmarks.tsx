@@ -4,12 +4,15 @@ import {InferGetStaticPropsType} from 'next'
 import BookmarksList from 'components/BookmarksList'
 import Container from 'components/Container'
 import prisma from 'lib/prisma'
+import PageNavigation from 'components/PageNavigation'
+import usePagination from 'lib/usePagination'
 
 export default function About({bookmarks}: InferGetStaticPropsType<typeof getStaticProps>) {
   const [searchValue, setSearchValue] = useState('')
   const filteredBookmarks = bookmarks.filter(bookmark =>
     bookmark.title.toLowerCase().includes(searchValue.toLowerCase()),
   )
+  const pagination = usePagination(filteredBookmarks, 10)
 
   return (
     <Container
@@ -46,12 +49,20 @@ export default function About({bookmarks}: InferGetStaticPropsType<typeof getSta
           </svg>
         </div>
       </div>
-      <div className="flex flex-row items-center justify-center w-full max-w-2xl pb-16 mx-auto my-0 border-gray-200">
-        {!filteredBookmarks.length && (
+      <div className="flex flex-row items-center justify-center w-full max-w-2xl pb-8 mx-auto my-0 border-gray-200">
+        {!pagination.currentData().length && (
           <p className="w-full mb-4 text-gray-600">No bookmarks found.</p>
         )}
-        <BookmarksList bookmarks={filteredBookmarks} />
+        <BookmarksList bookmarks={pagination.currentData()} />
       </div>
+      {pagination.numberOfPages > 1 && (
+        <PageNavigation
+          currentPage={pagination.currentPage}
+          lastPage={pagination.numberOfPages}
+          setPrev={pagination.prev}
+          setNext={pagination.next}
+        />
+      )}
     </Container>
   )
 }
