@@ -4,7 +4,7 @@ import {HiOutlineMail} from 'react-icons/hi'
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center mb-4 bg-gray-50">
+    <footer className="flex flex-col items-center pt-16 mb-4 bg-gray-50">
       <div className="flex flex-row">
         <Link href="https://twitter.com/rgllm">
           <a

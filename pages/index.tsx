@@ -16,7 +16,7 @@ export default function Home({bookmarks, posts}: InferGetStaticPropsType<typeof 
   const postColors = shuffleArray(['bg-green-300', 'bg-red-300', 'bg-blue-300'])
   return (
     <Container title="Rogério Moreira - Software Engineer, focused on front-end development, living and working from Braga, Portugal.">
-      <div className="flex flex-col items-start justify-center max-w-2xl pb-16 md:mx-auto">
+      <div className="flex flex-col items-start justify-center max-w-2xl md:mx-auto">
         <div className="flex flex-col-reverse items-start sm:flex-row">
           <div className="flex flex-col pr-8">
             <h1 className="mb-1 text-3xl font-bold tracking-tight text-black md:text-5xl">
