@@ -1,13 +1,13 @@
-import {type NextRequest} from 'next/server'
+import {NextApiRequest, NextApiResponse} from 'next'
 
 const axios = require('axios')
 
 const bearer_token = process.env.WEATHER_BEARER_TOKEN
 const api_url = process.env.WEATHER_API_URL
 
-export default async function handler(req: NextRequest) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
-    const result = await axios({
+    const response = await await axios({
       url: api_url,
       method: 'GET',
       headers: {
@@ -15,34 +15,19 @@ export default async function handler(req: NextRequest) {
         'Content-Type': 'application/json',
       },
     })
-
-    return new Response(
+    res.statusCode = 200
+    res.setHeader('Content-Type', 'application/json')
+    res.end(
       JSON.stringify({
-        temperature: result?.data?.attributes?.temperature,
-        pressure: result?.data?.attributes?.pressure,
-        humidity: result?.data?.attributes?.humidity,
-        unit_of_measurement: result?.data?.attributes?.unit_of_measurement,
-        updated: result?.data?.last_updated,
+        temperature: response?.data?.attributes?.temperature,
+        pressure: response?.data?.attributes?.pressure,
+        humidity: response?.data?.attributes?.humidity,
+        unit_of_measurement: response?.data?.attributes?.unit_of_measurement,
+        updated: response?.data?.last_updated,
       }),
-      {
-        status: 200,
-        headers: {
-          'content-type': 'application/json',
-          'cache-control': 'public, s-maxage=1200, stale-while-revalidate=600',
-        },
-      },
     )
   } catch (error) {
-    return new Response(
-      JSON.stringify({
-        error: error.message,
-      }),
-      {
-        status: 500,
-        headers: {
-          'content-type': 'application/json',
-        },
-      },
-    )
+    res.json(error)
+    res.status(500).end()
   }
 }
