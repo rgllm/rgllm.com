@@ -4,4 +4,7 @@ export type Weather = {
   humidity: number
   unit_of_measurement: string
   updated: string
+  condition: string
+  wind_speed: number
+  wind_bearing: number
 }
