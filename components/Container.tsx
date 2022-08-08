@@ -5,6 +5,7 @@ import cn from 'classnames'
 
 import Footer from 'components/Footer'
 import MobileMenu from 'components/MobileMenu'
+import Weather from './Weather'
 
 function NavItem({href, text}) {
   const router = useRouter()
@@ -68,6 +69,7 @@ export default function Container(props) {
             <NavItem href="/blog" text="Writing" />
             <NavItem href="/bookmarks" text="Bookmarks" />
           </div>
+          <Weather />
         </nav>
       </div>
       <main id="skip" className="flex flex-col justify-center px-8 bg-gray-50">
