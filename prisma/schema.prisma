@@ -21,9 +21,17 @@ model Bookmark {
 
 model Weather {
   time  DateTime @id   @default(now())
+<<<<<<< HEAD
   temperature Int
   humidity   Int
   pressure Int
   wind_speed Int
   wind_bearing Int
+=======
+  temperature Float
+  humidity   Float
+  pressure Float
+  wind_speed Float
+  wind_bearing Float
+>>>>>>> cd009808 (Add Weather add API (#706))
 }
