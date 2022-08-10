@@ -20,7 +20,7 @@ function iconRenderSwitch(param) {
 }
 
 export default function Weather() {
-  const {data} = useSWR<Weather>('/api/weather/get/get', fetcher)
+  const {data} = useSWR<Weather>('/api/weather/get', fetcher)
   const {temperature, condition} = data || {}
   const icon = condition?.includes('night')
     ? 'night'

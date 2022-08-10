@@ -9,10 +9,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       await prisma.weather.create({
         data: {
           temperature: body?.temperature,
-          humidity: body?.temperature,
-          pressure: body?.temperature,
-          wind_speed: body?.temperature,
-          wind_bearing: body?.temperature,
+          humidity: body?.humidity,
+          pressure: body?.pressure,
+          wind_speed: body?.wind_speed,
+          wind_bearing: body?.wind_bearing,
         },
       })
 
