@@ -11,12 +11,12 @@ export default function Document(props) {
         <meta content="/favicons/browserconfig.xml" name="msapplication-config" />
         <link href="/favicons/favicon.ico" rel="shortcut icon" />
         <link href="/favicons/manifest.json" rel="manifest" />
-        <link rel="preconnect" href="https://analytics.rgllm.com" crossOrigin="" />
+        <link rel="preconnect" href="https://ai.rgllm.com" crossOrigin="" />
         <script
           async
           defer
           data-website-id={process.env.UMAMI_WEBSITE_ID}
-          src="https://analytics.rgllm.com/umami.js"
+          src="https://ai.rgllm.com/umami.js"
         ></script>
       </Head>
       <body>
