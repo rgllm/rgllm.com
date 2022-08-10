@@ -45,6 +45,7 @@ export default function Container(props) {
         <meta content={meta.description} name="description" />
         <meta property="og:url" content={`https://rgllm.com${router.asPath}`} />
         <link rel="canonical" href={`https://rgllm.com${router.asPath}`} />
+        <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Rogério Moreira" />
         <meta property="og:description" content={meta.description} />
