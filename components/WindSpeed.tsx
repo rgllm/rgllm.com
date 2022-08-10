@@ -5,7 +5,7 @@ import {Weather} from 'lib/types'
 import Card from 'components/Card'
 
 export default function WindSpeed() {
-  const {data} = useSWR<Weather>('/api/weather', fetcher)
+  const {data} = useSWR<Weather>('/api/weather/get', fetcher)
 
   const windSpeed = data?.wind_speed
 
