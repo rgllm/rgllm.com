@@ -47,7 +47,7 @@
     "@playwright/test": "1.25.0",
     "@tailwindcss/typography": "0.5.4",
     "@testing-library/react-hooks": "8.0.1",
-    "@types/jest": "28.1.6",
+    "@types/jest": "28.1.7",
     "@types/node": "17.0.23",
     "@types/react": "18.0.17",
     "autoprefixer": "10.4.8",
