@@ -1,6 +1,6 @@
 import {PropsWithChildren} from 'react'
 
-import Container from './Container'
+import Container from './Container.server'
 
 export default function BlogLayout({children, post}: PropsWithChildren<any>) {
   return (

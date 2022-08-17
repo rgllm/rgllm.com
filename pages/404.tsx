@@ -1,4 +1,4 @@
-import Container from 'components/Container'
+import Container from 'components/Container.server'
 
 export default function NotFound(props) {
   return (

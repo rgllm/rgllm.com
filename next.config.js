@@ -37,6 +37,8 @@ module.exports = {
     images: {
       allowFutureImage: true,
     },
+    runtime: 'nodejs',
+    serverComponents: true,
   },
   images: {
     domains: [

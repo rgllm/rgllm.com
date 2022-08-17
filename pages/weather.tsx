@@ -1,4 +1,4 @@
-import Container from 'components/Container'
+import Container from 'components/Container.server'
 import Temperature from 'components/Temperature'
 import Humidity from 'components/Humidity'
 import Pressure from 'components/Pressure'
