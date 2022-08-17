@@ -1,3 +1,4 @@
+import {Suspense} from 'react'
 import Head from 'next/head'
 import {useRouter} from 'next/router'
 import Link from 'next/link'
@@ -70,7 +71,9 @@ export default function Container(props) {
             <NavItem href="/blog" text="Writing" />
             <NavItem href="/bookmarks" text="Bookmarks" />
           </div>
-          <Weather />
+          <Suspense>
+            <Weather />
+          </Suspense>
         </nav>
       </div>
       <main id="skip" className="flex flex-col justify-center px-8 bg-gray-50">

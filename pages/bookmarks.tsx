@@ -2,7 +2,7 @@ import {useState} from 'react'
 import {InferGetStaticPropsType} from 'next'
 
 import BookmarksList from 'components/BookmarksList'
-import Container from 'components/Container'
+import Container from 'components/Container.server'
 import prisma from 'lib/prisma'
 import PageNavigation from 'components/PageNavigation'
 import usePagination from 'lib/usePagination'

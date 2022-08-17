@@ -2,7 +2,7 @@ import {InferGetStaticPropsType} from 'next'
 import Image from 'next/image'
 
 import {getPage} from 'lib/get-pages'
-import Container from 'components/Container'
+import Container from 'components/Container.server'
 import convertToComponents from 'lib/parse-html'
 
 export default function About(props: InferGetStaticPropsType<typeof getStaticProps>) {
