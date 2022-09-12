@@ -51,7 +51,7 @@
     "@types/jest": "29.0.1",
     "@types/node": "17.0.23",
     "@types/react": "18.0.19",
-    "autoprefixer": "10.4.8",
+    "autoprefixer": "10.4.9",
     "eslint": "8.23.0",
     "eslint-config-next": "12.3.0",
     "globby": "13.1.2",
