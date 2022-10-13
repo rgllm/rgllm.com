@@ -15,16 +15,9 @@ const fontBold = fetch(new URL('../../public/fonts/IBMPlexSans-Bold.ttf', import
   res => res.arrayBuffer(),
 )
 
-function getPath(url, defaults) {
-  var reUrlPath = /(?:\w+:)?\/\/[^\/]+([^?#]+)/
-  var urlParts = url.match(reUrlPath) || [url, defaults]
-  return urlParts.pop()
-}
-
 export default async function handler(req: NextRequest) {
   const fontRegularData = await fontRegular
   const fontBoldData = await fontBold
-  const path = getPath(req.url, 'unknown')
 
   try {
     return new ImageResponse(
