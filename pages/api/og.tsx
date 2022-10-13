@@ -59,17 +59,6 @@ export default async function handler(req: NextRequest) {
               Currently based in Braga, Portugal. You can follow me on Twitter, see my code on
               GitHub, or check my LinkedIn.
             </span>
-            <span
-              style={{
-                fontSize: 12,
-                maxWidth: '500px',
-                fontFamily: '"IBM Plex Sans Regular"',
-                textAlign: 'left',
-                marginTop: '20px',
-              }}
-            >
-              {path}
-            </span>
           </div>
           <img
             width="180"
