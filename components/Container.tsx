@@ -55,7 +55,7 @@ export default function Container(props) {
         <meta name="twitter:site" content="@rgllm" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:image" content={meta.image} />
+        <meta property="twitter:image" content="https://rgllm.com/api/og" />
         {meta.date && <meta property="article:published_time" content={meta.date} />}
       </Head>
       <div className="flex flex-col justify-center px-8">
