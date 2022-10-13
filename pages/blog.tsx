@@ -2,7 +2,7 @@ import {useState} from 'react'
 
 import {getAllPosts} from 'lib/get-posts'
 import BlogPost from 'components/BlogPost'
-import Container from 'components/Container.server'
+import Container from '~/Container'
 import type {InferGetStaticPropsType} from 'next'
 
 export default function Blog({posts}: InferGetStaticPropsType<typeof getStaticProps>) {

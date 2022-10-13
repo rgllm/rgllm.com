@@ -34,11 +34,7 @@ module.exports = {
   swcMinify: true,
   reactStrictMode: true,
   experimental: {
-    images: {
-      allowFutureImage: true,
-    },
     runtime: 'nodejs',
-    serverComponents: true,
   },
   images: {
     domains: [

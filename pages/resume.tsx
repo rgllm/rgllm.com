@@ -3,7 +3,7 @@ import {useRef, useCallback} from 'react'
 import ReactToPrint from 'react-to-print'
 
 import {getPage} from 'lib/get-pages'
-import Container from 'components/Container.server'
+import Container from '~/Container'
 import convertToComponents from 'lib/parse-html'
 import {trackEvent} from 'lib/analytics'
 
