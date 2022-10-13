@@ -38,9 +38,6 @@ export default async function handler(req: NextRequest) {
         >
           <div style={{display: 'flex', flexDirection: 'column'}}>
             <span style={{fontSize: 60, fontFamily: '"IBM Plex Sans Bold"'}}>Rogério Moreira</span>
-            <span style={{fontSize: 17, fontFamily: '"IBM Plex Sans Regular"'}}>
-              Software Engineer. Writing code at Mindera.
-            </span>
             <span
               style={{
                 fontSize: 17,
@@ -49,8 +46,8 @@ export default async function handler(req: NextRequest) {
                 textAlign: 'left',
               }}
             >
-              Currently based in Braga, Portugal. You can follow me on Twitter, see my code on
-              GitHub, or check my LinkedIn.
+              Software Engineer, focused on front-end development, living and working from Braga,
+              Portugal.
             </span>
           </div>
           <img
