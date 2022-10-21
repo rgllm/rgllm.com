@@ -13,8 +13,8 @@ export default function BookmarksList({bookmarks}) {
               <Image
                 width={25}
                 height={25}
-                className="w-8 h-8 rounded"
-                src={bookmark.favicon}
+                className="w-8 h-8 rounded grayscale"
+                src={bookmark.favicon || ''}
                 alt={bookmark.title}
               />
             </div>
