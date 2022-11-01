@@ -34,22 +34,23 @@ module.exports = {
   swcMinify: true,
   reactStrictMode: true,
   experimental: {
-    runtime: 'nodejs',
-  },
-  images: {
-    domains: [
-      'rgllm.com',
-      't1.gstatic.com',
-      'camo.githubusercontent.com',
-      'user-images.githubusercontent.com',
-    ],
-  },
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: securityHeaders,
-      },
-    ]
+    appDir: true,
   },
 }
+
+// images: {
+//   domains: [
+//     'rgllm.com',
+//     't1.gstatic.com',
+//     'camo.githubusercontent.com',
+//     'user-images.githubusercontent.com',
+//   ],
+// },
+// async headers() {
+//   return [
+//     {
+//       source: '/(.*)',
+//       headers: securityHeaders,
+//     },
+//   ]
+// },

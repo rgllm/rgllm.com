@@ -64,8 +64,8 @@ export default function MobileMenu() {
             className="text-sm font-semibold text-gray-900 border-b border-gray-300"
             style={{transitionDelay: '175ms'}}
           >
-            <Link href="/about">
-              <a className="flex w-auto pb-4 umami--click--mobile-menu-about">About</a>
+            <Link className="flex w-auto pb-4 umami--click--mobile-menu-about" href="/about">
+              About
             </Link>
           </li>
           <li

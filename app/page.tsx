@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import {getAllPosts} from 'lib/get-posts'
-import {InferGetStaticPropsType} from 'next'
 import {projects} from 'data/projects'
 import {shuffleArray} from 'lib/shuffle'
 import BookmarksList from 'components/BookmarksList'
@@ -12,7 +11,33 @@ import PostCard from 'components/PostCard'
 import prisma from 'lib/prisma'
 import ProjectCard from 'components/ProjectCard'
 
-export default function Home({bookmarks, posts}: InferGetStaticPropsType<typeof getStaticProps>) {
+async function fetchData() {
+  const posts = await getAllPosts()
+  const bookmarks = await prisma.bookmark.findMany({
+    take: 5,
+    orderBy: {
+      id: 'desc',
+    },
+  })
+
+  const parsedBookmarks = bookmarks.map(entry => ({
+    id: entry.id.toString(),
+    created_at: entry.created_at.toString(),
+    title: entry.title,
+    description: entry.description,
+    favicon: entry.favicon,
+    link: entry.link,
+  }))
+
+  return {
+    posts: posts.slice(0, 3),
+    bookmarks: parsedBookmarks,
+  }
+}
+
+export default async function Home() {
+  const {bookmarks, posts} = await fetchData()
+
   const postColors = shuffleArray(['bg-green-300', 'bg-red-300', 'bg-blue-300'])
   return (
     <Container title="Rogério Moreira - Software Engineer, focused on front-end development, living and working from Braga, Portugal.">
@@ -107,31 +132,4 @@ export default function Home({bookmarks, posts}: InferGetStaticPropsType<typeof 
       </div>
     </Container>
   )
-}
-
-export async function getStaticProps() {
-  const posts = await getAllPosts()
-  const bookmarks = await prisma.bookmark.findMany({
-    take: 5,
-    orderBy: {
-      id: 'desc',
-    },
-  })
-
-  const parsedBookmarks = bookmarks.map(entry => ({
-    id: entry.id.toString(),
-    created_at: entry.created_at.toString(),
-    title: entry.title,
-    description: entry.description,
-    favicon: entry.favicon,
-    link: entry.link,
-  }))
-
-  return {
-    props: {
-      posts: posts.slice(0, 3),
-      bookmarks: parsedBookmarks,
-    },
-    revalidate: 30,
-  }
 }
