@@ -1,7 +1,8 @@
+'use client'
+
 import {useState} from 'react'
 
 import BookmarksList from 'components/BookmarksList'
-import Container from '~/Container'
 import prisma from 'lib/prisma'
 import PageNavigation from 'components/PageNavigation'
 import usePagination from 'lib/usePagination'
@@ -27,17 +28,18 @@ async function fetchBookmarks() {
 
 export default async function About() {
   const bookmarks = await fetchBookmarks()
+
+  if (!bookmarks) return null
+
   const [searchValue, setSearchValue] = useState('')
   const filteredBookmarks = bookmarks.filter(bookmark =>
     bookmark.title.toLowerCase().includes(searchValue.toLowerCase()),
   )
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const pagination = usePagination(filteredBookmarks, 10)
 
   return (
-    <Container
-      title="Bookmarks - Rogério Moreira"
-      description="A collection of random links I saved over the years. Mainly for me, feel free to follow this also."
-    >
+    <>
       <div className="flex flex-col w-full max-w-2xl mx-auto mt-0 mb-8">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl">Bookmarks</h1>
         <p className="mb-4 text-gray-600">
@@ -82,6 +84,6 @@ export default async function About() {
           setNext={pagination.next}
         />
       )}
-    </Container>
+    </>
   )
 }

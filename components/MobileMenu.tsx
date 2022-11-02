@@ -1,3 +1,5 @@
+'use client'
+
 import {AiOutlineMenu} from 'react-icons/ai'
 import {GrClose} from 'react-icons/gr'
 import {useState, useEffect} from 'react'
@@ -56,8 +58,8 @@ export default function MobileMenu() {
             className="text-sm font-semibold text-gray-900 border-b border-gray-300"
             style={{transitionDelay: '150ms'}}
           >
-            <Link href="/">
-              <a className="flex w-auto pb-4 umami--click--mobile-menu-home">Home</a>
+            <Link href="/" className="flex w-auto pb-4 umami--click--mobile-menu-home">
+              Home
             </Link>
           </li>
           <li
@@ -72,16 +74,19 @@ export default function MobileMenu() {
             className="text-sm font-semibold text-gray-900 border-b border-gray-300"
             style={{transitionDelay: '200ms'}}
           >
-            <Link href="/blog">
-              <a className="flex w-auto pb-4 umami--click--mobile-menu-writing">Writing</a>
+            <Link href="/blog" className="flex w-auto pb-4 umami--click--mobile-menu-writing">
+              Writing
             </Link>
           </li>
           <li
             className="text-sm font-semibold text-gray-900 border-b border-gray-300"
             style={{transitionDelay: '250ms'}}
           >
-            <Link href="/bookmarks">
-              <a className="flex w-auto pb-4 umami--click--mobile-menu-bookmarks">Bookmarks</a>
+            <Link
+              href="/bookmarks"
+              className="flex w-auto pb-4 umami--click--mobile-menu-bookmarks"
+            >
+              Bookmarks
             </Link>
           </li>
         </ul>

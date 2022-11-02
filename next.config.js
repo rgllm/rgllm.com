@@ -36,21 +36,20 @@ module.exports = {
   experimental: {
     appDir: true,
   },
+  images: {
+    domains: [
+      'rgllm.com',
+      't1.gstatic.com',
+      'camo.githubusercontent.com',
+      'user-images.githubusercontent.com',
+    ],
+  },
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: securityHeaders,
+      },
+    ]
+  },
 }
-
-// images: {
-//   domains: [
-//     'rgllm.com',
-//     't1.gstatic.com',
-//     'camo.githubusercontent.com',
-//     'user-images.githubusercontent.com',
-//   ],
-// },
-// async headers() {
-//   return [
-//     {
-//       source: '/(.*)',
-//       headers: securityHeaders,
-//     },
-//   ]
-// },
