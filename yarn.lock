@@ -3713,10 +3713,10 @@ negotiator@0.6.3:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
-next-auth@4.18.1:
-  version "4.18.1"
-  resolved "https://registry.yarnpkg.com/next-auth/-/next-auth-4.18.1.tgz#139df845bae0c9e0fc1401d28e016b50ea51688a"
-  integrity sha512-9EP53GD+rh+yi73jjFj2Lz3iq42LeHRuL/0QTNL/qguaGWkrCHbIXn+L8q+x82r4havkseQSuoVZ5niHJHhGuw==
+next-auth@4.18.3:
+  version "4.18.3"
+  resolved "https://registry.yarnpkg.com/next-auth/-/next-auth-4.18.3.tgz#d5e9fa8649567877632cd3bdb6adfa63c75ebc0b"
+  integrity sha512-oZrTPnaF7YCMm4T6+FY47+1wHacE7V6YX+MCuvRTZMca7zHAc2WPMdTED6eV3hkqp2znEdilhD4aXQ5BuCpYIw==
   dependencies:
     "@babel/runtime" "^7.16.3"
     "@panva/hkdf" "^1.0.1"
