@@ -31,11 +31,13 @@ export default function Weather() {
   if (!temperature || !condition) return null
 
   return (
-    <Link href="/weather">
-      <a className="flex flex-row items-center umami--click--weather">
-        {iconRenderSwitch(icon)}
-        <span className="font-normal text-[#24292f]">{Math.ceil(temperature)} ºC</span>
-      </a>
-    </Link>
-  )
+    (<Link
+      href="/weather"
+      className="flex flex-row items-center umami--click--weather">
+
+      {iconRenderSwitch(icon)}
+      <span className="font-normal text-[#24292f]">{Math.ceil(temperature)} ºC</span>
+
+    </Link>)
+  );
 }

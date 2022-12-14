@@ -33,59 +33,63 @@ export default function MobileMenu() {
     }
   }, [])
 
-  return (
-    <>
-      <button
-        className={cn(styles.burger, 'visible md:hidden')}
-        aria-label="Toggle menu"
-        type="button"
-        onClick={toggleMenu}
+  return <>
+    <button
+      className={cn(styles.burger, 'visible md:hidden')}
+      aria-label="Toggle menu"
+      type="button"
+      onClick={toggleMenu}
+    >
+      <AiOutlineMenu className="absolute w-5 h-5 text-gray-900" data-hide={isMenuOpen} />
+      <GrClose className="absolute w-5 h-5 text-gray-900" data-hide={!isMenuOpen} />
+    </button>
+    {isMenuMounted && (
+      <ul
+        className={cn(
+          styles.menu,
+          'flex flex-col absolute bg-gray-100',
+          isMenuRendered && styles.menuRendered,
+        )}
       >
-        <AiOutlineMenu className="absolute w-5 h-5 text-gray-900" data-hide={isMenuOpen} />
-        <GrClose className="absolute w-5 h-5 text-gray-900" data-hide={!isMenuOpen} />
-      </button>
-      {isMenuMounted && (
-        <ul
-          className={cn(
-            styles.menu,
-            'flex flex-col absolute bg-gray-100',
-            isMenuRendered && styles.menuRendered,
-          )}
+        <li
+          className="text-sm font-semibold text-gray-900 border-b border-gray-300"
+          style={{transitionDelay: '150ms'}}
         >
-          <li
-            className="text-sm font-semibold text-gray-900 border-b border-gray-300"
-            style={{transitionDelay: '150ms'}}
-          >
-            <Link href="/">
-              <a className="flex w-auto pb-4 umami--click--mobile-menu-home">Home</a>
-            </Link>
-          </li>
-          <li
-            className="text-sm font-semibold text-gray-900 border-b border-gray-300"
-            style={{transitionDelay: '175ms'}}
-          >
-            <Link href="/about">
-              <a className="flex w-auto pb-4 umami--click--mobile-menu-about">About</a>
-            </Link>
-          </li>
-          <li
-            className="text-sm font-semibold text-gray-900 border-b border-gray-300"
-            style={{transitionDelay: '200ms'}}
-          >
-            <Link href="/blog">
-              <a className="flex w-auto pb-4 umami--click--mobile-menu-writing">Writing</a>
-            </Link>
-          </li>
-          <li
-            className="text-sm font-semibold text-gray-900 border-b border-gray-300"
-            style={{transitionDelay: '250ms'}}
-          >
-            <Link href="/bookmarks">
-              <a className="flex w-auto pb-4 umami--click--mobile-menu-bookmarks">Bookmarks</a>
-            </Link>
-          </li>
-        </ul>
-      )}
-    </>
-  )
+          <Link href="/" className="flex w-auto pb-4 umami--click--mobile-menu-home">
+            Home
+          </Link>
+        </li>
+        <li
+          className="text-sm font-semibold text-gray-900 border-b border-gray-300"
+          style={{transitionDelay: '175ms'}}
+        >
+          <Link
+            href="/about"
+            className="flex w-auto pb-4 umami--click--mobile-menu-about">
+            About
+          </Link>
+        </li>
+        <li
+          className="text-sm font-semibold text-gray-900 border-b border-gray-300"
+          style={{transitionDelay: '200ms'}}
+        >
+          <Link
+            href="/blog"
+            className="flex w-auto pb-4 umami--click--mobile-menu-writing">
+            Writing
+          </Link>
+        </li>
+        <li
+          className="text-sm font-semibold text-gray-900 border-b border-gray-300"
+          style={{transitionDelay: '250ms'}}
+        >
+          <Link
+            href="/bookmarks"
+            className="flex w-auto pb-4 umami--click--mobile-menu-bookmarks">
+            Bookmarks
+          </Link>
+        </li>
+      </ul>
+    )}
+  </>;
 }

@@ -35,6 +35,7 @@ module.exports = {
   reactStrictMode: true,
   experimental: {
     runtime: 'nodejs',
+    fontLoaders: [{loader: '@next/font/google', options: {subsets: ['latin']}}],
   },
   images: {
     domains: [

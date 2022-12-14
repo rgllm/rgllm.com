@@ -6,14 +6,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v2
         with:
-          node-version: '16'
+          version: latest
       - name: Install dependencies
-        run: yarn
+        run: pnpm i
       - name: Install Playwright
         run: npx playwright install --with-deps
       - name: Run your tests
-        run: yarn test:e2e
+        run: pnpm test:e2e
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
