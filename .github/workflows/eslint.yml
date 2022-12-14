@@ -5,10 +5,12 @@ jobs:
   linter:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: latest
       - name: Install modules
-        run: yarn install
+        run: pnpm i
       - name: Run eslint
         uses: tj-actions/eslint-changed-files@v13.3
         with:
