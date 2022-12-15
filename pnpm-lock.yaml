@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@next/font': 13.0.6
+  '@next/font': 13.0.7
   '@playwright/test': 1.28.1
   '@prisma/client': 4.7.1
   '@tailwindcss/typography': 0.5.8
@@ -42,7 +42,7 @@ specifiers:
   use-delayed-render: 0.0.7
 
 dependencies:
-  '@next/font': 13.0.6
+  '@next/font': 13.0.7
   '@prisma/client': 4.7.1_prisma@4.7.1
   '@vercel/analytics': 0.1.6_react@18.2.0
   '@vercel/og': 0.0.21
@@ -753,8 +753,8 @@ packages:
       glob: 7.1.7
     dev: true
 
-  /@next/font/13.0.6:
-    resolution: {integrity: sha512-5vxNmvnV0CbYjQGtztD5Axft9C7npKihbQpiFhnDwdb99f9K/QSFfcJqxz0E5QBkf67O2niVGJ5lApJDu78w0w==}
+  /@next/font/13.0.7:
+    resolution: {integrity: sha512-39SzuoMI6jbrIzPs3KtXdKX03OrVp6Y7kRHcoVmOg69spiBzruPJ5x5DQSfN+OXqznbvVBNZBXnmdnSqs3qXiA==}
     dev: false
 
   /@next/swc-android-arm-eabi/13.0.6:
