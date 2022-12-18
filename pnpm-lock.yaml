@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@next/font': 13.0.7
-  '@playwright/test': 1.28.1
+  '@playwright/test': 1.29.0
   '@prisma/client': 4.7.1
   '@tailwindcss/typography': 0.5.8
   '@testing-library/react-hooks': 8.0.1
@@ -64,7 +64,7 @@ dependencies:
   use-delayed-render: 0.0.7_react@18.2.0
 
 devDependencies:
-  '@playwright/test': 1.28.1
+  '@playwright/test': 1.29.0
   '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
   '@testing-library/react-hooks': 8.0.1_ib3m5ricvtkl2cll7qpr2f6lvq
   '@types/jest': 29.2.4
@@ -911,13 +911,13 @@ packages:
       tslib: 2.4.1
     dev: true
 
-  /@playwright/test/1.28.1:
-    resolution: {integrity: sha512-xN6spdqrNlwSn9KabIhqfZR7IWjPpFK1835tFNgjrlysaSezuX8PYUwaz38V/yI8TJLG9PkAMEXoHRXYXlpTPQ==}
+  /@playwright/test/1.29.0:
+    resolution: {integrity: sha512-gp5PVBenxTJsm2bATWDNc2CCnrL5OaA/MXQdJwwkGQtqTjmY+ZOqAdLqo49O9MLTDh2vYh+tHWDnmFsILnWaeA==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
       '@types/node': 18.11.17
-      playwright-core: 1.28.1
+      playwright-core: 1.29.0
     dev: true
 
   /@prisma/client/4.7.1_prisma@4.7.1:
@@ -4249,8 +4249,8 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /playwright-core/1.28.1:
-    resolution: {integrity: sha512-3PixLnGPno0E8rSBJjtwqTwJe3Yw72QwBBBxNoukIj3lEeBNXwbNiKrNuB1oyQgTBw5QHUhNO3SteEtHaMK6ag==}
+  /playwright-core/1.29.0:
+    resolution: {integrity: sha512-pboOm1m0RD6z1GtwAbEH60PYRfF87vKdzOSRw2RyO0Y0a7utrMyWN2Au1ojGvQr4umuBMODkKTv607YIRypDSQ==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
