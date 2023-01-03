@@ -32,7 +32,7 @@ specifiers:
   react: ^18.2.0
   react-dom: ^18.2.0
   react-icons: 4.7.1
-  react-to-print: 2.14.10
+  react-to-print: 2.14.11
   recharts: 2.2.0
   rss: 1.2.2
   slugify: 1.6.5
@@ -57,7 +57,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.7.1_react@18.2.0
-  react-to-print: 2.14.10_biqbaboplfbrettd7655fr4n2y
+  react-to-print: 2.14.11_biqbaboplfbrettd7655fr4n2y
   recharts: 2.2.0_biqbaboplfbrettd7655fr4n2y
   slugify: 1.6.5
   swr: 2.0.0_react@18.2.0
@@ -4503,8 +4503,8 @@ packages:
       react-transition-group: 2.9.0_biqbaboplfbrettd7655fr4n2y
     dev: false
 
-  /react-to-print/2.14.10_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-XJyhDWH/xxgHy5nIBYPXjVidoroq0qRHqTrVF5QbfohPkMx3q8x3H3+Lv7gSq9uA0csAbjkSU0J4mWgj64f6yQ==}
+  /react-to-print/2.14.11_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-sePHBaCtZLp8/g4d/gRyI9XQZkveZq6xoukanAHfkzlXOa7sTuXCEQOYq37lIa5MkUoxySdJxYuyClaXPa9Zpg==}
     peerDependencies:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
       react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
