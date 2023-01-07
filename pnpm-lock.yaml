@@ -27,7 +27,7 @@ specifiers:
   next-auth: 4.18.8
   node-mocks-http: 1.12.1
   postcss: 8.4.21
-  prettier: 2.8.1
+  prettier: 2.8.2
   prisma: 4.8.1
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -78,7 +78,7 @@ devDependencies:
   jest-environment-jsdom: 29.3.1
   node-mocks-http: 1.12.1
   postcss: 8.4.21
-  prettier: 2.8.1
+  prettier: 2.8.2
   prisma: 4.8.1
   rss: 1.2.2
   tailwindcss: 3.2.4_postcss@8.4.21
@@ -4368,8 +4368,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.8.1:
-    resolution: {integrity: sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==}
+  /prettier/2.8.2:
+    resolution: {integrity: sha512-BtRV9BcncDyI2tsuS19zzhzoxD8Dh8LiCx7j7tHzrkz8GFXAexeWFdi22mjE1d16dftH2qNaytVxqiRTGlMfpw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
