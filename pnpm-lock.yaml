@@ -4,7 +4,7 @@ specifiers:
   '@next/font': 13.1.1
   '@playwright/test': 1.29.2
   '@prisma/client': 4.8.1
-  '@tailwindcss/typography': 0.5.8
+  '@tailwindcss/typography': 0.5.9
   '@testing-library/react-hooks': 8.0.1
   '@types/jest': 29.2.5
   '@types/node': 18.11.18
@@ -65,7 +65,7 @@ dependencies:
 
 devDependencies:
   '@playwright/test': 1.29.2
-  '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
+  '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
   '@testing-library/react-hooks': 8.0.1_ib3m5ricvtkl2cll7qpr2f6lvq
   '@types/jest': 29.2.5
   '@types/node': 18.11.18
@@ -982,8 +982,8 @@ packages:
       tslib: 2.4.1
     dev: false
 
-  /@tailwindcss/typography/0.5.8_tailwindcss@3.2.4:
-    resolution: {integrity: sha512-xGQEp8KXN8Sd8m6R4xYmwxghmswrd0cPnNI2Lc6fmrC3OojysTBJJGSIVwPV56q4t6THFUK3HJ0EaWwpglSxWw==}
+  /@tailwindcss/typography/0.5.9_tailwindcss@3.2.4:
+    resolution: {integrity: sha512-t8Sg3DyynFysV9f4JDOVISGsjazNb48AeIYQwcL+Bsq5uf4RYL75C1giZ43KISjeDGBaTN3Kxh7Xj/vRSMJUUg==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
     dependencies:
