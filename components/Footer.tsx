@@ -10,35 +10,27 @@ export default function Footer() {
           href="https://twitter.com/rgllm"
           className="mr-4 umami--click--footer-twitter"
           target="_blank"
-          rel="noopener noreferrer">
-
+          rel="noopener noreferrer"
+        >
           <FiTwitter />
-
         </Link>
         <Link
           href="https://github.com/rgllm"
           className="mr-4 umami--click--footer-github"
           target="_blank"
-          rel="noopener noreferrer">
-
+          rel="noopener noreferrer"
+        >
           <FiGithub />
-
         </Link>
         <Link
           href="https://linkedin.com/in/rgllm"
           className="mr-4 umami--click--footer-linkedin"
           target="_blank"
-          rel="noopener noreferrer">
-
+          rel="noopener noreferrer"
+        >
           <FiLinkedin />
-
-        </Link>
-        <Link href="mailto:r@rgllm.com">
-
-          <HiOutlineMail />
-
         </Link>
       </div>
     </footer>
-  );
+  )
 }

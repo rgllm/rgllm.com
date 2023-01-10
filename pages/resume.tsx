@@ -38,7 +38,7 @@ export default function Resume(props: InferGetStaticPropsType<typeof getStaticPr
             removeAfterPrint
             trigger={reactToPrintTrigger}
           />
-          <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl">
+          <h1 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-5xl">
             Rogério Moreira
           </h1>
         </div>

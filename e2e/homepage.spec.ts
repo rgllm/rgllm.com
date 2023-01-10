@@ -13,7 +13,7 @@ test('should navigate to the blog page', async ({page}) => {
   await page.locator('.umami--click--home-view-all-posts').click()
 
   await expect(page).toHaveURL('http://localhost:3000/blog')
-  await expect(page.locator('h1')).toContainText('All Posts')
+  await expect(page.locator('h1')).toContainText('Writing')
 })
 
 test('should navigate to the bookmarks page', async ({page}) => {
