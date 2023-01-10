@@ -20,7 +20,9 @@ export default function About({bookmarks}: InferGetStaticPropsType<typeof getSta
       description="A collection of random links I saved over the years. Mainly for me, feel free to follow this also."
     >
       <div className="flex flex-col w-full max-w-2xl mx-auto mt-0 mb-8">
-        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl">Bookmarks</h1>
+        <h1 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-5xl">
+          Bookmarks
+        </h1>
         <p className="mb-4 text-gray-600">
           A collection of random links I saved over the years. Mainly for me, feel free to follow
           this also.
