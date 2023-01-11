@@ -10,7 +10,7 @@ specifiers:
   '@types/node': 18.11.18
   '@types/react': 18.0.26
   '@vercel/analytics': 0.1.6
-  '@vercel/og': 0.0.23
+  '@vercel/og': 0.0.25
   autoprefixer: 10.4.13
   axios: 1.2.2
   classnames: 2.3.2
@@ -45,7 +45,7 @@ dependencies:
   '@next/font': 13.1.1
   '@prisma/client': 4.8.1_prisma@4.8.1
   '@vercel/analytics': 0.1.6_react@18.2.0
-  '@vercel/og': 0.0.23
+  '@vercel/og': 0.0.25
   axios: 1.2.2
   classnames: 2.3.2
   date-fns: 2.29.3
@@ -1234,8 +1234,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@vercel/og/0.0.23:
-    resolution: {integrity: sha512-spVm1JL1FwZNSv9i389gVVu9pfjWS3RPvKQHdDjgbmToIu3MvOEIJzEKT2mZ6JlZvZKubGRf/lv8Wsya47iJXw==}
+  /@vercel/og/0.0.25:
+    resolution: {integrity: sha512-Zirui1w0CjiOqHrMTOIDptghiEyxhiyVEdgUnJAeQYaXYrtQPUWLDWBIh5J+xHxIstWhT0C6DIw0iMGfHSXTNQ==}
     engines: {node: '>=16'}
     dependencies:
       '@resvg/resvg-wasm': 2.0.0-alpha.4
