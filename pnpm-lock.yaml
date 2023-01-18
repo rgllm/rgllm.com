@@ -12,7 +12,7 @@ specifiers:
   '@vercel/analytics': 0.1.8
   '@vercel/og': 0.0.27
   autoprefixer: 10.4.13
-  axios: 1.2.2
+  axios: 1.2.3
   classnames: 2.3.2
   date-fns: 2.29.3
   eslint: 8.32.0
@@ -46,7 +46,7 @@ dependencies:
   '@prisma/client': 4.8.1_prisma@4.8.1
   '@vercel/analytics': 0.1.8_react@18.2.0
   '@vercel/og': 0.0.27
-  axios: 1.2.2
+  axios: 1.2.3
   classnames: 2.3.2
   date-fns: 2.29.3
   himalaya: 1.1.0
@@ -1473,8 +1473,8 @@ packages:
       - debug
     dev: false
 
-  /axios/1.2.2:
-    resolution: {integrity: sha512-bz/J4gS2S3I7mpN/YZfGFTqhXTYzRho8Ay38w2otuuDR322KzFIWm/4W2K6gIwvWaws5n+mnb7D1lN9uD+QH6Q==}
+  /axios/1.2.3:
+    resolution: {integrity: sha512-pdDkMYJeuXLZ6Xj/Q5J3Phpe+jbGdsSzlQaFVkMQzRUL05+6+tetX8TV3p4HrU4kzuO9bt+io/yGQxuyxA/xcw==}
     dependencies:
       follow-redirects: 1.15.2
       form-data: 4.0.0
