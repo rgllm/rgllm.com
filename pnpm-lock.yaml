@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@next/font': 13.1.5
-  '@playwright/test': 1.29.2
+  '@playwright/test': 1.30.0
   '@prisma/client': 4.9.0
   '@tailwindcss/typography': 0.5.9
   '@testing-library/react-hooks': 8.0.1
@@ -64,7 +64,7 @@ dependencies:
   use-delayed-render: 0.0.7_react@18.2.0
 
 devDependencies:
-  '@playwright/test': 1.29.2
+  '@playwright/test': 1.30.0
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
   '@testing-library/react-hooks': 8.0.1_5ndqzdd6t4rivxsukjv3i3ak2q
   '@types/jest': 29.2.6
@@ -911,13 +911,13 @@ packages:
       tslib: 2.4.1
     dev: true
 
-  /@playwright/test/1.29.2:
-    resolution: {integrity: sha512-+3/GPwOgcoF0xLz/opTnahel1/y42PdcgZ4hs+BZGIUjtmEFSXGg+nFoaH3NSmuc7a6GSFwXDJ5L7VXpqzigNg==}
+  /@playwright/test/1.30.0:
+    resolution: {integrity: sha512-SVxkQw1xvn/Wk/EvBnqWIq6NLo1AppwbYOjNLmyU0R1RoQ3rLEBtmjTnElcnz8VEtn11fptj1ECxK0tgURhajw==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
       '@types/node': 18.11.18
-      playwright-core: 1.29.2
+      playwright-core: 1.30.0
     dev: true
 
   /@prisma/client/4.9.0_prisma@4.9.0:
@@ -4296,8 +4296,8 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /playwright-core/1.29.2:
-    resolution: {integrity: sha512-94QXm4PMgFoHAhlCuoWyaBYKb92yOcGVHdQLoxQ7Wjlc7Flg4aC/jbFW7xMR52OfXMVkWicue4WXE7QEegbIRA==}
+  /playwright-core/1.30.0:
+    resolution: {integrity: sha512-7AnRmTCf+GVYhHbLJsGUtskWTE33SwMZkybJ0v6rqR1boxq2x36U7p1vDRV7HO2IwTZgmycracLxPEJI49wu4g==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
