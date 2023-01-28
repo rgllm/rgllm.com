@@ -45,7 +45,7 @@
     "react-to-print": "2.14.11",
     "recharts": "2.3.2",
     "slugify": "1.6.5",
-    "swr": "2.0.2",
+    "swr": "2.0.3",
     "use-delayed-render": "0.0.7"
   },
   "devDependencies": {
