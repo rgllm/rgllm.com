@@ -24,7 +24,7 @@ specifiers:
   jest: 29.4.1
   jest-environment-jsdom: 29.4.1
   next: ^13.0.6
-  next-auth: 4.19.0
+  next-auth: 4.19.1
   node-mocks-http: 1.12.1
   postcss: 8.4.21
   prettier: 2.8.3
@@ -53,7 +53,7 @@ dependencies:
   html-attribute-to-react: 0.0.5
   html-metadata-parser: 2.0.4
   next: 13.0.6_biqbaboplfbrettd7655fr4n2y
-  next-auth: 4.19.0_6jx7hpii6hgsrmhxgqrmo3277u
+  next-auth: 4.19.1_6jx7hpii6hgsrmhxgqrmo3277u
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.7.1_react@18.2.0
@@ -3928,8 +3928,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /next-auth/4.19.0_6jx7hpii6hgsrmhxgqrmo3277u:
-    resolution: {integrity: sha512-56Pc/Ni0cxfrVDAz2KeWdj+VXvABbHF1grgFR4+ktXbRmKQOiMU9uyMwhasBQkbL+pRrWujO0Ib/bwkP0oZS4g==}
+  /next-auth/4.19.1_6jx7hpii6hgsrmhxgqrmo3277u:
+    resolution: {integrity: sha512-Wo0b1tWtEh1ORR+AzTtBHSPxAA2zKqynoMS/nQQVrT5RD/umVzpXz25fOkoRrO9t+Is+scU2DmKeyFIkhx45WQ==}
     peerDependencies:
       next: ^12.2.5 || ^13
       nodemailer: ^6.6.5
