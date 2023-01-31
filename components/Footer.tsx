@@ -1,13 +1,12 @@
 import Link from 'next/link'
 import {FiTwitter, FiGithub, FiLinkedin} from 'react-icons/fi'
-import {HiOutlineMail} from 'react-icons/hi'
 
 export default function Footer() {
   return (
     <footer className="flex flex-col items-center pt-16 mb-4 bg-gray-50">
       <div className="flex flex-row">
         <Link
-          href="https://twitter.com/rgllm"
+          href="https://twitter.com/intent/follow?screen_name=rgllm"
           className="mr-4 umami--click--footer-twitter"
           target="_blank"
           rel="noopener noreferrer"
