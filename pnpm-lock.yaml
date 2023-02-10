@@ -33,7 +33,7 @@ specifiers:
   react-dom: ^18.2.0
   react-icons: 4.7.1
   react-to-print: 2.14.11
-  recharts: 2.3.2
+  recharts: 2.4.0
   rss: 1.2.2
   slugify: 1.6.5
   swr: 2.0.3
@@ -58,7 +58,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.7.1_react@18.2.0
   react-to-print: 2.14.11_biqbaboplfbrettd7655fr4n2y
-  recharts: 2.3.2_biqbaboplfbrettd7655fr4n2y
+  recharts: 2.4.0_biqbaboplfbrettd7655fr4n2y
   slugify: 1.6.5
   swr: 2.0.3_react@18.2.0
   use-delayed-render: 0.0.7_react@18.2.0
@@ -4609,8 +4609,8 @@ packages:
       decimal.js-light: 2.5.1
     dev: false
 
-  /recharts/2.3.2_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-2II30fGzKaypHfHNQNUhCfiLMxrOS/gF0WFahDIEFgXtJkVEe2DpZWFfEfAn+RU3B7/h2V/B05Bwmqq3rTXwLw==}
+  /recharts/2.4.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-Aukj4jWPfkHNXQ9qdL15XWNACd/t6mK0UdkSmgEyeajMerzdq7UGteK48DhZ44qu+YA2tT7wBp8xVravTK6m5Q==}
     engines: {node: '>=12'}
     peerDependencies:
       prop-types: ^15.6.0
