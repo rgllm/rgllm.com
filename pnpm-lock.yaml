@@ -8,7 +8,7 @@ specifiers:
   '@testing-library/react-hooks': 8.0.1
   '@types/jest': 29.4.0
   '@types/node': 18.13.0
-  '@types/react': 18.0.27
+  '@types/react': 18.0.28
   '@vercel/analytics': 0.1.8
   '@vercel/og': 0.1.0
   autoprefixer: 10.4.13
@@ -66,10 +66,10 @@ dependencies:
 devDependencies:
   '@playwright/test': 1.30.0
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.6
-  '@testing-library/react-hooks': 8.0.1_5ndqzdd6t4rivxsukjv3i3ak2q
+  '@testing-library/react-hooks': 8.0.1_zula6vjvt3wdocc4mwcxqa6nzi
   '@types/jest': 29.4.0
   '@types/node': 18.13.0
-  '@types/react': 18.0.27
+  '@types/react': 18.0.28
   autoprefixer: 10.4.13_postcss@8.4.21
   eslint: 8.34.0
   eslint-config-next: 13.0.6_7kw3g6rralp5ps6mg3uyzz6azm
@@ -994,7 +994,7 @@ packages:
       tailwindcss: 3.2.6_postcss@8.4.21
     dev: true
 
-  /@testing-library/react-hooks/8.0.1_5ndqzdd6t4rivxsukjv3i3ak2q:
+  /@testing-library/react-hooks/8.0.1_zula6vjvt3wdocc4mwcxqa6nzi:
     resolution: {integrity: sha512-Aqhl2IVmLt8IovEVarNDFuJDVWVvhnr9/GCU6UUnrYXwgDFF9h2L2o2P9KBni1AST5sT6riAyoukFLyjQUgD/g==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -1011,7 +1011,7 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.20.6
-      '@types/react': 18.0.27
+      '@types/react': 18.0.28
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-error-boundary: 3.1.4_react@18.2.0
@@ -1146,8 +1146,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react/18.0.27:
-    resolution: {integrity: sha512-3vtRKHgVxu3Jp9t718R9BuzoD4NcQ8YJ5XRzsSKxNDiDonD2MXIT1TmSkenxuCycZJoQT5d2vE8LwWJxBC1gmA==}
+  /@types/react/18.0.28:
+    resolution: {integrity: sha512-RD0ivG1kEztNBdoAK7lekI9M+azSnitIn85h4iOiaLjaTrMjzslhaqCGaI4IyCJ1RljWiLCEu4jyrLLgqxBTew==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
