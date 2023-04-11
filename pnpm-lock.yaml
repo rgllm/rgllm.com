@@ -64,8 +64,8 @@ dependencies:
 
 devDependencies:
   '@playwright/test':
-    specifier: 1.30.0
-    version: 1.30.0
+    specifier: 1.32.3
+    version: 1.32.3
   '@tailwindcss/typography':
     specifier: 0.5.9
     version: 0.5.9(tailwindcss@3.2.7)
@@ -920,13 +920,15 @@ packages:
       tslib: 2.4.1
     dev: true
 
-  /@playwright/test@1.30.0:
-    resolution: {integrity: sha512-SVxkQw1xvn/Wk/EvBnqWIq6NLo1AppwbYOjNLmyU0R1RoQ3rLEBtmjTnElcnz8VEtn11fptj1ECxK0tgURhajw==}
+  /@playwright/test@1.32.3:
+    resolution: {integrity: sha512-BvWNvK0RfBriindxhLVabi8BRe3X0J9EVjKlcmhxjg4giWBD/xleLcg2dz7Tx0agu28rczjNIPQWznwzDwVsZQ==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
       '@types/node': 18.13.0
-      playwright-core: 1.30.0
+      playwright-core: 1.32.3
+    optionalDependencies:
+      fsevents: 2.3.2
     dev: true
 
   /@prisma/client@4.10.1(prisma@4.10.1):
@@ -4287,8 +4289,8 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /playwright-core@1.30.0:
-    resolution: {integrity: sha512-7AnRmTCf+GVYhHbLJsGUtskWTE33SwMZkybJ0v6rqR1boxq2x36U7p1vDRV7HO2IwTZgmycracLxPEJI49wu4g==}
+  /playwright-core@1.32.3:
+    resolution: {integrity: sha512-SB+cdrnu74ZIn5Ogh/8278ngEh9NEEV0vR4sJFmK04h2iZpybfbqBY0bX6+BLYWVdV12JLLI+JEFtSnYgR+mWg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
