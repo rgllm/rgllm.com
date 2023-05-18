@@ -10,14 +10,14 @@ export default function PageNavigation({currentPage, lastPage, setNext, setPrev}
         <button
           onClick={() => setPrev()}
           disabled={currentPage === 1}
-          className="relative inline-flex items-center px-4 py-2 ml-2 text-lg text-gray-700 rounded-md disabled:opacity-50 umami--click--bookmarks-previous"
+          className="relative inline-flex items-center px-4 py-2 ml-2 text-lg text-gray-700 rounded-md disabled:opacity-50"
         >
           <ImArrowLeft2 />
         </button>
         <button
           onClick={() => setNext()}
           disabled={currentPage === lastPage}
-          className="relative inline-flex items-center px-4 py-2 ml-2 text-lg text-gray-700 rounded-md disabled:opacity-50 umami--click--bookmarks-next"
+          className="relative inline-flex items-center px-4 py-2 ml-2 text-lg text-gray-700 rounded-md disabled:opacity-50"
         >
           <ImArrowRight2 />
         </button>

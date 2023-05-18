@@ -36,7 +36,7 @@ export default function Home({bookmarks, posts}: InferGetStaticPropsType<typeof 
           </div>
           <Link
             href="/blog"
-            className="inline-flex leading-5 text-gray-600 items-centerfont-medium animatedArrow umami--click--home-view-all-posts"
+            className="inline-flex leading-5 text-gray-600 items-centerfont-medium animatedArrow"
           >
             View all posts{' '}
             <FiArrowRight className="arrow text-gray-600 mt-[2px] ml-[4px] max-w-[18px]" />
@@ -47,7 +47,7 @@ export default function Home({bookmarks, posts}: InferGetStaticPropsType<typeof 
           <BookmarksList bookmarks={bookmarks} />
           <Link
             href="/bookmarks"
-            className="inline-flex items-center pt-10 font-medium leading-5 text-gray-600 animatedArrow umami--click--home-view-all-bookmarks"
+            className="inline-flex items-center pt-10 font-medium leading-5 text-gray-600 animatedArrow"
           >
             View all bookmarks{' '}
             <FiArrowRight className="arrow text-gray-600 mt-[2px] ml-[4px] max-w-[18px]" />

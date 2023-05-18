@@ -5,7 +5,6 @@ import ReactToPrint from 'react-to-print'
 import {getPage} from 'lib/get-pages'
 import Container from '~/Container'
 import convertToComponents from 'lib/parse-html'
-import {trackEvent} from 'lib/analytics'
 
 export default function Resume(props: InferGetStaticPropsType<typeof getStaticProps>) {
   const {bodyHTML} = props.page
@@ -13,7 +12,6 @@ export default function Resume(props: InferGetStaticPropsType<typeof getStaticPr
   const componentRef = useRef(null)
 
   const reactToPrintContent = useCallback(() => {
-    trackEvent('CV print', 'click')
     return componentRef.current
   }, [])
 
