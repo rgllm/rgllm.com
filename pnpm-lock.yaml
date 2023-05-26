@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@next/font':
-    specifier: 13.4.3
-    version: 13.4.3
+    specifier: 13.4.4
+    version: 13.4.4
   '@prisma/client':
     specifier: 4.14.1
     version: 4.14.1(prisma@4.14.1)
@@ -786,8 +786,8 @@ packages:
       glob: 7.1.7
     dev: true
 
-  /@next/font@13.4.3:
-    resolution: {integrity: sha512-plrCwj4s9fjjcMdkAo+MAVkKuSemRz6XLcow6RdkesEfNyfSD8eMU9+rR3khrXnCZ9zjsf9mcPG5ubvqDXU0mg==}
+  /@next/font@13.4.4:
+    resolution: {integrity: sha512-iYmL/O0rV9NS8a2UXuRoZOzImz8Q0mM8bAmxtj8nccrpwZ6iOOZlbf2d0Genczl4wtuXRXVPR8goGjJM4C2SDg==}
     dev: false
 
   /@next/swc-darwin-arm64@13.3.0:
