@@ -39,8 +39,8 @@ dependencies:
     specifier: ^13.3.0
     version: 13.3.0(@babel/core@7.20.5)(react-dom@18.2.0)(react@18.2.0)
   next-auth:
-    specifier: 4.22.3
-    version: 4.22.3(next@13.3.0)(react-dom@18.2.0)(react@18.2.0)
+    specifier: 4.22.4
+    version: 4.22.4(next@13.3.0)(react-dom@18.2.0)(react@18.2.0)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -3433,7 +3433,7 @@ packages:
       chalk: 4.1.2
       diff-sequences: 29.4.3
       jest-get-type: 29.4.3
-      pretty-format: 29.6.1
+      pretty-format: 29.6.2
     dev: true
 
   /jest-diff@29.6.2:
@@ -3538,7 +3538,7 @@ packages:
       chalk: 4.1.2
       jest-diff: 29.6.1
       jest-get-type: 29.4.3
-      pretty-format: 29.6.1
+      pretty-format: 29.6.2
     dev: true
 
   /jest-matcher-utils@29.6.2:
@@ -3561,7 +3561,7 @@ packages:
       chalk: 4.1.2
       graceful-fs: 4.2.11
       micromatch: 4.0.5
-      pretty-format: 29.6.1
+      pretty-format: 29.6.2
       slash: 3.0.0
       stack-utils: 2.0.6
     dev: true
@@ -4115,8 +4115,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /next-auth@4.22.3(next@13.3.0)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-XAgy9xV3J2eJOXrQhmxdjV6MLM29ibm6WtMXc3KY6IPZeApf+SuBuPvlqCUfbu5YsAzlg9WSw6u01dChTfeZOA==}
+  /next-auth@4.22.4(next@13.3.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-VMI6pq3z4BfvFeCZHBkYtRYa0qqGTYAi2yy3hWCB78KkN1YsSAsOLSssd4oGrQBj0z/0zg2VLzn9tSJ14AtmWw==}
     peerDependencies:
       next: ^12.2.5 || ^13
       nodemailer: ^6.6.5
