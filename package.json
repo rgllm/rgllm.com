@@ -27,7 +27,7 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@next/font": "13.4.12",
+    "@next/font": "13.4.13",
     "@prisma/client": "5.1.1",
     "@vercel/analytics": "1.0.1",
     "@vercel/og": "0.5.10",
