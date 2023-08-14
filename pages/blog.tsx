@@ -14,11 +14,13 @@ export default function Blog({posts}: InferGetStaticPropsType<typeof getStaticPr
   return (
     <Container title="Blog - Rogério Moreira">
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto">
-        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl">Writing</h1>
+        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl">Blog</h1>
         <p className="mb-4 text-gray-600 ">
-          Thinking out loud about software engineering, product development and life in general. No
-          writer can generate profound insights on a fixed schedule, so you won't find here frequent
-          updates.
+          Thinking out loud about software engineering, product development and life in general.{' '}
+          <span className="italic">
+            No writer can generate profound insights on a fixed schedule, so you won't find frequent
+            updates here.
+          </span>
         </p>
         <div className="relative w-full mb-4">
           <input

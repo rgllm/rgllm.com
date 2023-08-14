@@ -17,18 +17,15 @@ export default function Home({bookmarks, posts}: InferGetStaticPropsType<typeof 
             <h1 className="mb-1 text-lg font-semibold tracking-tight text-gray-900">
               Rogério Moreira
             </h1>
-            <p className="mt-4 mb-2 text-gray-600 text-md">
-              I'm a software engineer based in Braga, Portugal. I'm interested in front-end
-              development, web performance, and accessibility.
-            </p>
-
-            <p className="mb-8 text-gray-600 text-md">
-              I'm currently working at Mindera as a software engineer, helping to build Trainline.
+            <p className="mt-4 mb-8 text-gray-600 text-md">
+              I am a software engineer focused in front-end development, based in Braga, Portugal
+              🇵🇹. I'm currently working at Mindera as a software engineer, helping to build
+              Trainline.
             </p>
           </div>
         </div>
         <div className="flex flex-col w-full mb-8">
-          <h2 className="mb-4 text-lg font-semibold tracking-tight text-gray-900">Writing</h2>
+          <h2 className="mb-4 text-lg font-semibold tracking-tight text-gray-900">Posts</h2>
           <div>
             <PostCard {...posts?.[0]} />
             <PostCard {...posts?.[1]} />
@@ -36,7 +33,7 @@ export default function Home({bookmarks, posts}: InferGetStaticPropsType<typeof 
           </div>
           <Link
             href="/blog"
-            className="inline-flex leading-5 text-gray-600 items-centerfont-medium animatedArrow"
+            className="inline-flex items-center font-medium leading-5 text-gray-600 animatedArrow"
           >
             View all posts{' '}
             <FiArrowRight className="arrow text-gray-600 mt-[2px] ml-[4px] max-w-[18px]" />

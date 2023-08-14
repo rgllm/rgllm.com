@@ -1,4 +1,3 @@
-import {Suspense} from 'react'
 import Head from 'next/head'
 import {useRouter} from 'next/router'
 import Link from 'next/link'
@@ -6,7 +5,6 @@ import cn from 'classnames'
 
 import Footer from 'components/Footer'
 import MobileMenu from 'components/MobileMenu'
-import Weather from './Weather'
 
 function NavItem({href, text}) {
   const router = useRouter()
@@ -65,12 +63,9 @@ export default function Container(props) {
             <MobileMenu />
             <NavItem href="/" text="Home" />
             <NavItem href="/about" text="About" />
-            <NavItem href="/blog" text="Writing" />
+            <NavItem href="/blog" text="Blog" />
             <NavItem href="/bookmarks" text="Bookmarks" />
           </div>
-          <Suspense>
-            <Weather />
-          </Suspense>
         </nav>
       </div>
       <main id="skip" className="flex flex-col justify-center px-8 bg-gray-50">

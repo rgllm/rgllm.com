@@ -24,8 +24,8 @@ export default function About({bookmarks}: InferGetStaticPropsType<typeof getSta
           Bookmarks
         </h1>
         <p className="mb-4 text-gray-600">
-          A collection of random links I saved over the years. Mainly for me, feel free to follow
-          this also.
+          A collection of random links I saved over the years. Mainly for me, feel free to follow if
+          you want.
         </p>
         <div className="relative w-full">
           <input

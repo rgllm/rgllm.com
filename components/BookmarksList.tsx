@@ -13,7 +13,7 @@ export default function BookmarksList({bookmarks}) {
               <Image
                 width={25}
                 height={25}
-                className="w-8 h-8 rounded grayscale"
+                className="w-8 h-8 rounded grayscale hover:grayscale-0"
                 src={bookmark.favicon || ''}
                 alt={bookmark.title}
               />
