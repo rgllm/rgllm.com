@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@next/font':
-    specifier: 13.4.13
-    version: 13.4.13
+    specifier: 13.4.15
+    version: 13.4.15
   '@prisma/client':
     specifier: 5.1.1
     version: 5.1.1(prisma@5.1.1)
@@ -803,8 +803,8 @@ packages:
       glob: 7.1.7
     dev: true
 
-  /@next/font@13.4.13:
-    resolution: {integrity: sha512-jzjUvjO967E2XWku5aImWRVApGwsTJZPp3lY5yFNWZHMkoNNKU9fsTEAhWVcKxCOYmHmSX1n2E09VkzuFdF48Q==}
+  /@next/font@13.4.15:
+    resolution: {integrity: sha512-5eyONhTa8h3yAOtc3cosE5yCoTvURmzMN7fYqzQkmb/oTwnvkx5fDWlGCmqlgRgC7Xmddvj3L7c2iV/jKP6Zrw==}
     dev: false
 
   /@next/swc-darwin-arm64@13.3.0:
