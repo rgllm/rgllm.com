@@ -3,14 +3,26 @@
   "redirects": [
     {
       "source": "/curriculo.pdf",
-      "destination": "/cv.pdf"
+      "destination": "/resume.pdf"
+    },
+    {
+      "source": "/resume",
+      "destination": "/resume.pdf"
     },
     {
       "source": "/cv",
-      "destination": "/resume"
+      "destination": "/resume.pdf"
+    },
+    {
+      "source": "/cv.pdf",
+      "destination": "/resume.pdf"
     },
     {
       "source": "/thesis",
+      "destination": "/msc-thesis.pdf"
+    },
+    {
+      "source": "/thesis.pdf",
       "destination": "/msc-thesis.pdf"
     },
     {
@@ -19,6 +31,10 @@
     },
     {
       "source": "/post",
+      "destination": "/blog"
+    },
+    {
+      "source": "/posts",
       "destination": "/blog"
     },
     {
@@ -63,6 +79,10 @@
     },
     {
       "source": "/photo",
+      "destination": "https://rgllm.com/images/avatar.jpg"
+    },
+    {
+      "source": "/pic",
       "destination": "https://rgllm.com/images/avatar.jpg"
     }
   ],

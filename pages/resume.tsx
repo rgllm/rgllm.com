@@ -1,6 +1,5 @@
 import {InferGetStaticPropsType} from 'next'
-import {useRef, useCallback} from 'react'
-import ReactToPrint from 'react-to-print'
+import {useRef} from 'react'
 
 import {getPage} from 'lib/get-pages'
 import Container from '~/Container'
@@ -11,18 +10,6 @@ export default function Resume(props: InferGetStaticPropsType<typeof getStaticPr
   const parsedBody = convertToComponents(bodyHTML)
   const componentRef = useRef(null)
 
-  const reactToPrintContent = useCallback(() => {
-    return componentRef.current
-  }, [])
-
-  const reactToPrintTrigger = useCallback(() => {
-    return (
-      <button type="button" name="Print my CV" className="hideonprint ml-4 text-[25px]">
-        🖨️
-      </button>
-    )
-  }, [])
-
   return (
     <Container title="Resume - Rogério Moreira">
       <div
@@ -30,12 +17,6 @@ export default function Resume(props: InferGetStaticPropsType<typeof getStaticPr
         className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto"
       >
         <div className="flex flex-row-reverse">
-          <ReactToPrint
-            content={reactToPrintContent}
-            documentTitle="rogerio-cv"
-            removeAfterPrint
-            trigger={reactToPrintTrigger}
-          />
           <h1 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-5xl">
             Rogério Moreira
           </h1>

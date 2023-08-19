@@ -18,9 +18,8 @@ export default function Home({bookmarks, posts}: InferGetStaticPropsType<typeof 
               Rogério Moreira
             </h1>
             <p className="mt-4 mb-8 text-gray-600 text-md">
-              I am a software engineer focused in front-end development, based in Braga, Portugal
-              🇵🇹. I'm currently working at Mindera as a software engineer, helping to build
-              Trainline.
+              I am a software engineer focused in front-end development, based in Braga, Portugal.
+              Currently working at Mindera as a software engineer.
             </p>
           </div>
         </div>
