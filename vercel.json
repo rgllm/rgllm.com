@@ -6,10 +6,6 @@
       "destination": "/resume.pdf"
     },
     {
-      "source": "/resume",
-      "destination": "/resume.pdf"
-    },
-    {
       "source": "/cv",
       "destination": "/resume.pdf"
     },
