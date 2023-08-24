@@ -101,8 +101,8 @@ devDependencies:
     specifier: 29.6.4
     version: 29.6.4(@types/node@18.17.9)
   jest-environment-jsdom:
-    specifier: 29.6.3
-    version: 29.6.3
+    specifier: 29.6.4
+    version: 29.6.4
   node-mocks-http:
     specifier: 1.13.0
     version: 1.13.0
@@ -595,16 +595,6 @@ packages:
       - ts-node
     dev: true
 
-  /@jest/environment@29.6.3:
-    resolution: {integrity: sha512-u/u3cCztYCfgBiGHsamqP5x+XvucftOGPbf5RJQxfpeC1y4AL8pCjKvPDA3oCmdhZYPgk5AE0VOD/flweR69WA==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@jest/fake-timers': 29.6.3
-      '@jest/types': 29.6.3
-      '@types/node': 18.17.9
-      jest-mock: 29.6.3
-    dev: true
-
   /@jest/environment@29.6.4:
     resolution: {integrity: sha512-sQ0SULEjA1XUTHmkBRl7A1dyITM9yb1yb3ZNKPX3KlTd6IG7mWUe3e2yfExtC2Zz1Q+mMckOLHmL/qLiuQJrBQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -637,18 +627,6 @@ packages:
       jest-snapshot: 29.6.4
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@jest/fake-timers@29.6.3:
-    resolution: {integrity: sha512-pa1wmqvbj6eX0nMvOM2VDAWvJOI5A/Mk3l8O7n7EsAh71sMZblaKO9iT4GjIj0LwwK3CP/Jp1ypEV0x3m89RvA==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@jest/types': 29.6.3
-      '@sinonjs/fake-timers': 10.0.2
-      '@types/node': 18.17.9
-      jest-message-util: 29.6.3
-      jest-mock: 29.6.3
-      jest-util: 29.6.3
     dev: true
 
   /@jest/fake-timers@29.6.4:
@@ -3498,8 +3476,8 @@ packages:
       pretty-format: 29.6.3
     dev: true
 
-  /jest-environment-jsdom@29.6.3:
-    resolution: {integrity: sha512-nMJz/i27Moit9bv8Z323/13Melj4FEQH93yRu7GnilvBmPBMH4EGEkEfBTJXYuubyzhMO7w/VHzljIDV+Q/SeQ==}
+  /jest-environment-jsdom@29.6.4:
+    resolution: {integrity: sha512-K6wfgUJ16DoMs02JYFid9lOsqfpoVtyJxpRlnTxUHzvZWBnnh2VNGRB9EC1Cro96TQdq5TtSjb3qUjNaJP9IyA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     peerDependencies:
       canvas: ^2.5.0
@@ -3507,8 +3485,8 @@ packages:
       canvas:
         optional: true
     dependencies:
-      '@jest/environment': 29.6.3
-      '@jest/fake-timers': 29.6.3
+      '@jest/environment': 29.6.4
+      '@jest/fake-timers': 29.6.4
       '@jest/types': 29.6.3
       '@types/jsdom': 20.0.1
       '@types/node': 18.17.9
