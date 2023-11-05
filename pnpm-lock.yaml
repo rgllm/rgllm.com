@@ -75,7 +75,7 @@ devDependencies:
     version: 0.5.10(tailwindcss@3.3.5)
   '@testing-library/react-hooks':
     specifier: 8.0.1
-    version: 8.0.1(@types/react@18.2.34)(react-dom@18.2.0)(react@18.2.0)
+    version: 8.0.1(@types/react@18.2.35)(react-dom@18.2.0)(react@18.2.0)
   '@types/jest':
     specifier: 29.5.7
     version: 29.5.7
@@ -83,8 +83,8 @@ devDependencies:
     specifier: 18.18.8
     version: 18.18.8
   '@types/react':
-    specifier: 18.2.34
-    version: 18.2.34
+    specifier: 18.2.35
+    version: 18.2.35
   autoprefixer:
     specifier: 10.4.16
     version: 10.4.16(postcss@8.4.31)
@@ -1000,7 +1000,7 @@ packages:
       tailwindcss: 3.3.5
     dev: true
 
-  /@testing-library/react-hooks@8.0.1(@types/react@18.2.34)(react-dom@18.2.0)(react@18.2.0):
+  /@testing-library/react-hooks@8.0.1(@types/react@18.2.35)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Aqhl2IVmLt8IovEVarNDFuJDVWVvhnr9/GCU6UUnrYXwgDFF9h2L2o2P9KBni1AST5sT6riAyoukFLyjQUgD/g==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -1017,7 +1017,7 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.20.6
-      '@types/react': 18.2.34
+      '@types/react': 18.2.35
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-error-boundary: 3.1.4(react@18.2.0)
@@ -1150,8 +1150,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react@18.2.34:
-    resolution: {integrity: sha512-U6eW/alrRk37FU/MS2RYMjx0Va2JGIVXELTODaTIYgvWGCV4Y4TfTUzG8DdmpDNIT0Xpj/R7GfyHOJJrDttcvg==}
+  /@types/react@18.2.35:
+    resolution: {integrity: sha512-LG3xpFZ++rTndV+/XFyX5vUP7NI9yxyk+MQvBDq+CVs8I9DLSc3Ymwb1Vmw5YDoeNeHN4PDZa3HylMKJYT9PNQ==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
