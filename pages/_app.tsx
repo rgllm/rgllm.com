@@ -1,6 +1,6 @@
 import {Analytics} from '@vercel/analytics/react'
 import 'styles/globals.css'
-import {Inter} from '@next/font/google'
+import {Inter} from 'next/font/google'
 
 const interVariable = Inter({subsets: ['latin']})
 
