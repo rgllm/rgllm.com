@@ -18,8 +18,8 @@ export default function Home({bookmarks, posts}: InferGetStaticPropsType<typeof 
               Rogério Moreira
             </h1>
             <p className="mt-4 mb-8 text-gray-600 text-md">
-              I am a software engineer focused in front-end development, based in Braga, Portugal.
-              Currently working at Mindera as a software engineer.
+              I am a software engineer focused in front-end development, based in Portugal.
+              Currently working at Mindera.
             </p>
           </div>
         </div>
@@ -61,6 +61,7 @@ export async function getStaticProps() {
     orderBy: {
       id: 'desc',
     },
+    cacheStrategy: { ttl: 30 }
   })
 
   const parsedBookmarks = bookmarks.map(entry => ({

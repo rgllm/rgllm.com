@@ -33,16 +33,24 @@ const securityHeaders = [
 module.exports = {
   swcMinify: true,
   reactStrictMode: true,
-  experimental: {
-    runtime: 'nodejs',
-    fontLoaders: [{loader: '@next/font/google', options: {subsets: ['latin']}}],
-  },
   images: {
-    domains: [
-      'rgllm.com',
-      't1.gstatic.com',
-      'camo.githubusercontent.com',
-      'user-images.githubusercontent.com',
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'rgllm.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 't1.gstatic.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'camo.githubusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'rgllm.com',
+      },
     ],
   },
   async headers() {
