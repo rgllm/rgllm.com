@@ -21,7 +21,7 @@ export default function BookmarksList({bookmarks}) {
             <div className="flex-1 min-w-0">
               <p className="font-medium text-gray-900 truncate">{bookmark.title}</p>
               <p className="text-gray-500 max-w-[500px] text-sm">
-                {truncateText(bookmark.description, 140)}
+                {truncateText(bookmark.description, 300)}
               </p>
             </div>
             <div>

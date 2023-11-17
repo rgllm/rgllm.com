@@ -61,6 +61,7 @@ export async function getStaticProps() {
     orderBy: {
       id: 'desc',
     },
+    cacheStrategy: { ttl: 30 }
   })
 
   const parsedBookmarks = bookmarks.map(entry => ({
