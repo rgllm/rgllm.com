@@ -10,6 +10,14 @@
       "destination": "/resume.pdf"
     },
     {
+      "source": "/x",
+      "destination": "https://x.com/rgllm"
+    },
+    {
+      "source": "/x",
+      "destination": "https://github.com/rgllm"
+    },
+    {
       "source": "/cv.pdf",
       "destination": "/resume.pdf"
     },
