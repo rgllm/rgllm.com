@@ -31,7 +31,7 @@
     "@prisma/extension-accelerate": "^0.6.2",
     "@vercel/analytics": "1.1.2",
     "@vercel/og": "0.6.2",
-    "axios": "1.6.6",
+    "axios": "1.6.7",
     "classnames": "2.5.1",
     "date-fns": "3.3.1",
     "himalaya": "1.1.0",
