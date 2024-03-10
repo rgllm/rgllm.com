@@ -19,7 +19,7 @@ export default function Home({bookmarks, posts}: InferGetStaticPropsType<typeof 
             </h1>
             <p className="mt-4 mb-8 text-gray-600 text-md">
               I am a software engineer focused in front-end development, based in Portugal.
-              Currently working at Mindera.
+              Currently working at Blip.pt.
             </p>
           </div>
         </div>
@@ -61,7 +61,7 @@ export async function getStaticProps() {
     orderBy: {
       id: 'desc',
     },
-    cacheStrategy: { ttl: 30 }
+    cacheStrategy: {ttl: 30},
   })
 
   const parsedBookmarks = bookmarks.map(entry => ({
