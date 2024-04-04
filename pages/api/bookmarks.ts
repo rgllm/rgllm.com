@@ -6,7 +6,7 @@ import toJson from 'lib/to-json'
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'GET') {
     try {
-      const allBookmarks = await prisma.bookmark.findMany({cacheStrategy: { ttl: 60 }})
+      const allBookmarks = await prisma.bookmark.findMany({cacheStrategy: {ttl: 60}})
 
       return res.status(200).json(toJson(allBookmarks))
     } catch (e) {
