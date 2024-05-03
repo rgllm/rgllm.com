@@ -27,7 +27,7 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@prisma/client": "5.12.0",
+    "@prisma/client": "5.13.0",
     "@prisma/extension-accelerate": "^1.0.0",
     "@vercel/analytics": "1.2.2",
     "@vercel/og": "0.6.2",
@@ -64,7 +64,7 @@
     "node-mocks-http": "1.14.1",
     "postcss": "8.4.38",
     "prettier": "3.2.5",
-    "prisma": "5.12.0",
+    "prisma": "5.13.0",
     "rss": "1.2.2",
     "tailwindcss": "3.4.3",
     "typescript": "5.4.5"
