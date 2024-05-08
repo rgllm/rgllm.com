@@ -54,8 +54,8 @@ dependencies:
     specifier: 2.15.1
     version: 2.15.1(react-dom@18.3.1)(react@18.3.1)
   recharts:
-    specifier: 2.12.6
-    version: 2.12.6(react-dom@18.3.1)(react@18.3.1)
+    specifier: 2.12.7
+    version: 2.12.7(react-dom@18.3.1)(react@18.3.1)
   slugify:
     specifier: 1.6.6
     version: 1.6.6
@@ -5104,8 +5104,8 @@ packages:
       decimal.js-light: 2.5.1
     dev: false
 
-  /recharts@2.12.6(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-D+7j9WI+D0NHauah3fKHuNNcRK8bOypPW7os1DERinogGBGaHI7i6tQKJ0aUF3JXyBZ63dyfKIW2WTOPJDxJ8w==}
+  /recharts@2.12.7(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-hlLJMhPQfv4/3NBSAyq3gzGg4h2v69RJh6KU7b3pXYNNAELs9kEoXOjbkxdXpALqKBoVmVptGfLpxdaVYqjmXQ==}
     engines: {node: '>=14'}
     peerDependencies:
       react: ^16.0.0 || ^17.0.0 || ^18.0.0
