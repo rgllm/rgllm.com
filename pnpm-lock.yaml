@@ -72,7 +72,7 @@ devDependencies:
     version: 1.45.1
   '@tailwindcss/typography':
     specifier: 0.5.13
-    version: 0.5.13(tailwindcss@3.4.4)
+    version: 0.5.13(tailwindcss@3.4.5)
   '@testing-library/react-hooks':
     specifier: 8.0.1
     version: 8.0.1(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)
@@ -119,8 +119,8 @@ devDependencies:
     specifier: 1.2.2
     version: 1.2.2
   tailwindcss:
-    specifier: 3.4.4
-    version: 3.4.4
+    specifier: 3.4.5
+    version: 3.4.5
   typescript:
     specifier: 5.5.3
     version: 5.5.3
@@ -1041,7 +1041,7 @@ packages:
       tslib: 2.6.3
     dev: false
 
-  /@tailwindcss/typography@0.5.13(tailwindcss@3.4.4):
+  /@tailwindcss/typography@0.5.13(tailwindcss@3.4.5):
     resolution: {integrity: sha512-ADGcJ8dX21dVVHIwTRgzrcunY6YY9uSlAHHGVKvkA+vLc5qLwEszvKts40lx7z0qc4clpjclwLeK5rVCV2P/uw==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
@@ -1050,7 +1050,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.4.4
+      tailwindcss: 3.4.5
     dev: true
 
   /@testing-library/react-hooks@8.0.1(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1):
@@ -4346,14 +4346,6 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /micromatch@4.0.5:
-    resolution: {integrity: sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==}
-    engines: {node: '>=8.6'}
-    dependencies:
-      braces: 3.0.3
-      picomatch: 2.3.1
-    dev: true
-
   /micromatch@4.0.7:
     resolution: {integrity: sha512-LPP/3KorzCwBxfeUuZmaR6bG2kdeHSbe0P2tY3FLRU4vYrjYz5hI4QZwV0njUx3jeuKe67YukQ1LSPZBKDqO/Q==}
     engines: {node: '>=8.6'}
@@ -5643,8 +5635,8 @@ packages:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
     dev: true
 
-  /tailwindcss@3.4.4:
-    resolution: {integrity: sha512-ZoyXOdJjISB7/BcLTR6SEsLgKtDStYyYZVLsUtWChO4Ps20CBad7lfJKVDiejocV4ME1hLmyY0WJE3hSDcmQ2A==}
+  /tailwindcss@3.4.5:
+    resolution: {integrity: sha512-DlTxttYcogpDfx3tf/8jfnma1nfAYi2cBUYV2YNoPPecwmO3YGiFlOX9D8tGAu+EDF38ryBzvrDKU/BLMsUwbw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -5658,10 +5650,10 @@ packages:
       is-glob: 4.0.3
       jiti: 1.21.0
       lilconfig: 2.1.0
-      micromatch: 4.0.5
+      micromatch: 4.0.7
       normalize-path: 3.0.0
       object-hash: 3.0.0
-      picocolors: 1.0.0
+      picocolors: 1.0.1
       postcss: 8.4.39
       postcss-import: 15.1.0(postcss@8.4.39)
       postcss-js: 4.0.1(postcss@8.4.39)
