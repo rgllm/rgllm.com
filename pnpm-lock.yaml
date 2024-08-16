@@ -37,7 +37,7 @@ dependencies:
     version: 2.0.4
   next:
     specifier: ^14.0.0
-    version: 14.2.5(@babel/core@7.20.5)(@playwright/test@1.46.0)(react-dom@18.3.1)(react@18.3.1)
+    version: 14.2.5(@babel/core@7.20.5)(@playwright/test@1.46.1)(react-dom@18.3.1)(react@18.3.1)
   next-auth:
     specifier: 4.24.7
     version: 4.24.7(next@14.2.5)(react-dom@18.3.1)(react@18.3.1)
@@ -68,8 +68,8 @@ dependencies:
 
 devDependencies:
   '@playwright/test':
-    specifier: 1.46.0
-    version: 1.46.0
+    specifier: 1.46.1
+    version: 1.46.1
   '@tailwindcss/typography':
     specifier: 0.5.14
     version: 0.5.14(tailwindcss@3.4.10)
@@ -935,12 +935,12 @@ packages:
     dev: true
     optional: true
 
-  /@playwright/test@1.46.0:
-    resolution: {integrity: sha512-/QYft5VArOrGRP5pgkrfKksqsKA6CEFyGQ/gjNe6q0y4tZ1aaPfq4gIjudr1s3D+pXyrPRdsy4opKDrjBabE5w==}
+  /@playwright/test@1.46.1:
+    resolution: {integrity: sha512-Fq6SwLujA/DOIvNC2EL/SojJnkKf/rAwJ//APpJJHRyMi1PdKrY3Az+4XNQ51N4RTbItbIByQ0jgd1tayq1aeA==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
-      playwright: 1.46.0
+      playwright: 1.46.1
 
   /@prisma/client@5.18.0(prisma@5.18.0):
     resolution: {integrity: sha512-BWivkLh+af1kqC89zCJYkHsRcyWsM8/JHpsDMM76DjP3ZdEquJhXa4IeX+HkWPnwJ5FanxEJFZZDTWiDs/Kvyw==}
@@ -1369,7 +1369,7 @@ packages:
       react:
         optional: true
     dependencies:
-      next: 14.2.5(@babel/core@7.20.5)(@playwright/test@1.46.0)(react-dom@18.3.1)(react@18.3.1)
+      next: 14.2.5(@babel/core@7.20.5)(@playwright/test@1.46.1)(react-dom@18.3.1)(react@18.3.1)
       react: 18.3.1
       server-only: 0.0.1
     dev: false
@@ -4485,7 +4485,7 @@ packages:
       '@panva/hkdf': 1.0.2
       cookie: 0.5.0
       jose: 4.15.5
-      next: 14.2.5(@babel/core@7.20.5)(@playwright/test@1.46.0)(react-dom@18.3.1)(react@18.3.1)
+      next: 14.2.5(@babel/core@7.20.5)(@playwright/test@1.46.1)(react-dom@18.3.1)(react@18.3.1)
       oauth: 0.9.15
       openid-client: 5.4.0
       preact: 10.11.3
@@ -4495,7 +4495,7 @@ packages:
       uuid: 8.3.2
     dev: false
 
-  /next@14.2.5(@babel/core@7.20.5)(@playwright/test@1.46.0)(react-dom@18.3.1)(react@18.3.1):
+  /next@14.2.5(@babel/core@7.20.5)(@playwright/test@1.46.1)(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-0f8aRfBVL+mpzfBjYfQuLWh2WyAwtJXCRfkPF4UJ5qd2YwrHczsrSzXU4tRMV0OAxR8ZJZWPFn6uhSC56UTsLA==}
     engines: {node: '>=18.17.0'}
     hasBin: true
@@ -4514,7 +4514,7 @@ packages:
         optional: true
     dependencies:
       '@next/env': 14.2.5
-      '@playwright/test': 1.46.0
+      '@playwright/test': 1.46.1
       '@swc/helpers': 0.5.5
       busboy: 1.6.0
       caniuse-lite: 1.0.30001641
@@ -4878,17 +4878,17 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /playwright-core@1.46.0:
-    resolution: {integrity: sha512-9Y/d5UIwuJk8t3+lhmMSAJyNP1BUC/DqP3cQJDQQL/oWqAiuPTLgy7Q5dzglmTLwcBRdetzgNM/gni7ckfTr6A==}
+  /playwright-core@1.46.1:
+    resolution: {integrity: sha512-h9LqIQaAv+CYvWzsZ+h3RsrqCStkBHlgo6/TJlFst3cOTlLghBQlJwPOZKQJTKNaD3QIB7aAVQ+gfWbN3NXB7A==}
     engines: {node: '>=18'}
     hasBin: true
 
-  /playwright@1.46.0:
-    resolution: {integrity: sha512-XYJ5WvfefWONh1uPAUAi0H2xXV5S3vrtcnXe6uAOgdGi3aSpqOSXX08IAjXW34xitfuOJsvXU5anXZxPSEQiJw==}
+  /playwright@1.46.1:
+    resolution: {integrity: sha512-oPcr1yqoXLCkgKtD5eNUPLiN40rYEM39odNpIb6VE6S7/15gJmA1NzVv6zJYusV0e7tzvkU/utBFNa/Kpxmwng==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
-      playwright-core: 1.46.0
+      playwright-core: 1.46.1
     optionalDependencies:
       fsevents: 2.3.2
 
