@@ -13,7 +13,7 @@ importers:
         version: 5.22.0(prisma@5.22.0)
       '@prisma/extension-accelerate':
         specifier: ^1.0.0
-        version: 1.2.1(@prisma/client@5.22.0(prisma@5.22.0))
+        version: 1.2.2(@prisma/client@5.22.0(prisma@5.22.0))
       '@vercel/analytics':
         specifier: 1.5.0
         version: 1.5.0(next@15.1.7(@babel/core@7.20.5)(@playwright/test@1.50.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
@@ -682,8 +682,8 @@ packages:
   '@prisma/engines@5.22.0':
     resolution: {integrity: sha512-UNjfslWhAt06kVL3CjkuYpHAWSO6L4kDCVPegV6itt7nD1kSJavd3vhgAEhjglLJJKEdJ7oIqDJ+yHk6qO8gPA==}
 
-  '@prisma/extension-accelerate@1.2.1':
-    resolution: {integrity: sha512-QicnMeyqL226ilT3vvRsFAqPeIdqHGKR4c25CoK5zZ1tNIv8egfgpD1gCKqOGmfAz0pIKQnMuJU3eNg9KItC7A==}
+  '@prisma/extension-accelerate@1.2.2':
+    resolution: {integrity: sha512-LOlfkG6If+o8PFRzLzp26ackP/d+j2HrkTJaxuV/Wd+sdAHz/AkmzEDGbo2UpHFpxEM9hWMBe3ScSwUKYUDOXg==}
     engines: {node: '>=16'}
     peerDependencies:
       '@prisma/client': '>=4.16.1'
@@ -4143,7 +4143,7 @@ snapshots:
       '@prisma/fetch-engine': 5.22.0
       '@prisma/get-platform': 5.22.0
 
-  '@prisma/extension-accelerate@1.2.1(@prisma/client@5.22.0(prisma@5.22.0))':
+  '@prisma/extension-accelerate@1.2.2(@prisma/client@5.22.0(prisma@5.22.0))':
     dependencies:
       '@prisma/client': 5.22.0(prisma@5.22.0)
 
