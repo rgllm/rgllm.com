@@ -45,7 +45,7 @@
     "use-delayed-render": "0.0.7"
   },
   "devDependencies": {
-    "@playwright/test": "1.50.1",
+    "@playwright/test": "1.51.0",
     "@tailwindcss/typography": "0.5.16",
     "@testing-library/react-hooks": "8.0.1",
     "@types/jest": "29.5.14",
