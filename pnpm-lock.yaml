@@ -30,8 +30,8 @@ importers:
         specifier: 4.1.0
         version: 4.1.0
       himalaya:
-        specifier: 1.1.0
-        version: 1.1.0
+        specifier: 1.1.1
+        version: 1.1.1
       html-attribute-to-react:
         specifier: 0.0.5
         version: 0.0.5
@@ -2016,8 +2016,8 @@ packages:
     resolution: {integrity: sha512-Ox1pJVrDCyGHMG9CFg1tmrRUMRPRsAWYc/PinY0XzJU4K7y7vjNoLKIQ7BR5UJMCxNN8EM1MNDmHWA/B3aZUuw==}
     engines: {node: '>=6'}
 
-  himalaya@1.1.0:
-    resolution: {integrity: sha512-LLase1dHCRMel68/HZTFft0N0wti0epHr3nNY7ynpLbyZpmrKMQ8YIpiOV77TM97cNpC8Wb2n6f66IRggwdWPw==}
+  himalaya@1.1.1:
+    resolution: {integrity: sha512-mJLY5tErGWtsw8hO2fJ2vK4IpG6S1AIgVkduRo4FqFJhgI2H3XLzgemRemk45zcnFyxNNpOfrIDle2KcnJM0lA==}
 
   html-attribute-to-react@0.0.5:
     resolution: {integrity: sha512-VD07eOZirK/jTXRcRiLNBoiST3lqR5wIeql40vRy8OX0fJhJSIZ0TUDtHuJreDothSYhv9HYOWYaud9Ro2D8qQ==}
@@ -5729,7 +5729,7 @@ snapshots:
 
   hex-rgb@4.3.0: {}
 
-  himalaya@1.1.0: {}
+  himalaya@1.1.1: {}
 
   html-attribute-to-react@0.0.5: {}
 
