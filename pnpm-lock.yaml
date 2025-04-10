@@ -54,8 +54,8 @@ importers:
         specifier: 5.5.0
         version: 5.5.0(react@18.3.1)
       react-to-print:
-        specifier: 3.0.5
-        version: 3.0.5(react@18.3.1)
+        specifier: 3.0.6
+        version: 3.0.6(react@18.3.1)
       recharts:
         specifier: 2.15.2
         version: 2.15.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3015,8 +3015,8 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  react-to-print@3.0.5:
-    resolution: {integrity: sha512-Z15MwMOzYCHWi26CZeFNwflAg7Nr8uWD6FTj+EkfIOjYyjr0MXGbI0c7rF4Fgrbj3XG9hFndb1ourxpPz2RAiA==}
+  react-to-print@3.0.6:
+    resolution: {integrity: sha512-K/jFxkUifbfVnu1XyinM6AB6zAq0VMw0lH/6WJpkdlChoqqvEOE/BGOxYN2xOmu8f72isTTU5DNatK/j0Lfc+Q==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ~19
 
@@ -6922,7 +6922,7 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-transition-group: 4.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  react-to-print@3.0.5(react@18.3.1):
+  react-to-print@3.0.6(react@18.3.1):
     dependencies:
       react: 18.3.1
 
