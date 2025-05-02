@@ -7,8 +7,8 @@ export { RogerioMCP }
 type RouteHandler = () => Response | Promise<Response>
 
 const pageRoutes: Record<string, RouteHandler> = {
-  '/': indexPage,
-  '/blog/como-autenticar-no-automovel-online-em-macos': automovelonlinePage,
+	'/blog/como-autenticar-no-automovel-online-em-macos': automovelonlinePage,
+	'/': indexPage,
 }
 
 export default <ExportedHandler>{
