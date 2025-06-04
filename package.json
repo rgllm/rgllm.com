@@ -3,14 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run gen:sitemap",
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
     "build": "tailwindcss -i ./src/styles/tailwind.css -o ./public/styles.css --minify",
     "format": "biome format --write",
     "lint:fix": "biome lint --fix",
     "start": "wrangler dev",
-    "cf-typegen": "wrangler types"
+    "cf-typegen": "wrangler types",
+    "gen:sitemap": "node scripts/generate-sitemap.js"
   },
   "devDependencies": {
     "@types/node": "^22.15.3",
