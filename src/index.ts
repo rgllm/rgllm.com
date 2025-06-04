@@ -2,6 +2,8 @@ import indexPage from './pages/index';
 import automovelonlinePage from './pages/automovelonline';
 import { RogerioMCP } from './mcp'
 import { htmlResponse } from './utils/response';
+import NotFoundPage from './components/NotFoundPage';
+import { generateHtml } from './utils/generateHtml';
 export { RogerioMCP } 
 
 type RouteHandler = () => Response | Promise<Response>
@@ -30,11 +32,12 @@ export default <ExportedHandler>{
 		return env.ASSETS.fetch(request)
 	  }
   
-	  if (pathname in pageRoutes) {
-		return pageRoutes[pathname]()
-	  }
-  
-	  return htmlResponse('404', {status: 404})
-	},
+          if (pathname in pageRoutes) {
+                return pageRoutes[pathname]()
+          }
+
+          const html = await generateHtml(NotFoundPage)
+          return htmlResponse(html, {status: 404})
+        },
   }
 
