@@ -52,10 +52,14 @@
 	 * https://developers.cloudflare.com/workers/configuration/secrets/
 	 */
 
-	/**
-	 * Static Assets
-	 * https://developers.cloudflare.com/workers/static-assets/binding/
-	 */
+       /**
+        * Static Assets
+        * https://developers.cloudflare.com/workers/static-assets/binding/
+        */
+       "assets": {
+               "bucket": "./public",
+               "binding": "ASSETS"
+       },
 
 	/**
 	 * Service Bindings (communicate between multiple Workers)
