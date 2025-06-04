@@ -9,7 +9,10 @@ function NotFoundPage() {
                         canonicalUrl="https://rgllm.com/404"
                 >
                         <h2 className="text-2xl font-bold mb-4">Page Not Found</h2>
-                        <p>Sorry, the page you were looking for doesn’t exist.</p>
+                        <p className="mb-4">Sorry, the page you were looking for doesn’t exist.</p>
+                        <p>
+                                <a href="/">Go back home</a>
+                        </p>
                 </Layout>
         )
 }
