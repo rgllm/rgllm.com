@@ -1,9 +1,8 @@
 # rgllm.com
 
+This Cloudflare Worker renders small React pages. Tailwind CSS is loaded at
+runtime using the CDN version so no build step is required.
+
 ```diff
-- /* TODO: Lorem ipsum dolor sit amet, consectetur adipiscing elit. */
-- /* TODO: Id interdum velit laoreet id donec ultrices tincidunt arcu non. */
-- /* TODO: Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. */
-- /* TODO: Amet cursus sit amet dictum sit amet. */
-+ /* TODO: write a README later */
+/* TODO: write a README later */
 ```
