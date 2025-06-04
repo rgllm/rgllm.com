@@ -1,12 +1,22 @@
 {
-  "extends": ["config:base"],
-  "semanticCommits": false,
-  "labels": ["Renovate"],
-  "baseBranches": ["trunk"],
+  "extends": [
+    "config:recommended"
+  ],
+  "semanticCommits": "disabled",
+  "labels": [
+    "Renovate"
+  ],
+  "baseBranches": [
+    "trunk"
+  ],
   "packageRules": [
     {
       "description": "Automatically merge minor and patch-level updates",
-      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "digest"
+      ],
       "automerge": true,
       "automergeType": "pr",
       "automergeStrategy": "squash"
