@@ -27,10 +27,10 @@ export default <ExportedHandler>{
 		return RogerioMCP.serve('/mcp').fetch(request, env, ctx)
 	  }
   
-	  // Serve static assets (including our CSS file)
-	  if (env.ASSETS && pathname.startsWith('/styles.css')) {
-		return env.ASSETS.fetch(request)
-	  }
+          // Serve static assets (CSS, sitemap)
+          if (env.ASSETS && (pathname.startsWith('/styles.css') || pathname === '/sitemap.xml')) {
+                return env.ASSETS.fetch(request)
+          }
   
           if (pathname in pageRoutes) {
                 return pageRoutes[pathname]()
