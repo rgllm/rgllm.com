@@ -6,6 +6,7 @@
     "predeploy": "npm run gen:sitemap",
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
+    "build": "tailwindcss -i ./src/styles/tailwind.css -o ./public/styles.css --minify",
     "format": "biome format --write",
     "lint:fix": "biome lint --fix",
     "start": "wrangler dev",
