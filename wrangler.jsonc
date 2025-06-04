@@ -6,6 +6,7 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "rgllmcom",
 	"main": "src/index.ts",
+	"build": { "command": "npm run build" },
 	"compatibility_date": "2025-03-10",
 	"compatibility_flags": [
 		"nodejs_compat"
@@ -52,10 +53,14 @@
 	 * https://developers.cloudflare.com/workers/configuration/secrets/
 	 */
 
-	/**
-	 * Static Assets
-	 * https://developers.cloudflare.com/workers/static-assets/binding/
-	 */
+       /**
+        * Static Assets
+        * https://developers.cloudflare.com/workers/static-assets/binding/
+        */
+       "assets": {
+               "bucket": "./public",
+               "binding": "ASSETS"
+       },
 
 	/**
 	 * Service Bindings (communicate between multiple Workers)

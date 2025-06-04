@@ -6,4 +6,10 @@
 - /* TODO: Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. */
 - /* TODO: Amet cursus sit amet dictum sit amet. */
 + /* TODO: write a README later */
+
+Install dependencies with `npm install`.
+
+Run `npm run build` to generate `public/styles.css` using Tailwind.
+
+Deploy with `npm run deploy` or `wrangler deploy`.
 ```
