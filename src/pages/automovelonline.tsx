@@ -3,7 +3,7 @@ import { generateHtml } from '../utils/generateHtml'
 import { htmlResponse } from '../utils/response'
 
 export default async function automovelonline() {
-        const html = await generateHtml(AutomovelOnlinePage)
+        const html = generateHtml(AutomovelOnlinePage)
         return htmlResponse(html)
 }
 
