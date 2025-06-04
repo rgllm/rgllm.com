@@ -9,7 +9,7 @@
 
 Install dependencies with `npm install`.
 
-Run `npm run build` to generate `public/styles.css` using Tailwind.
+Tailwind is loaded from the CDN, so no build step is needed.
 
 Deploy with `npm run deploy` or `wrangler deploy`.
 ```

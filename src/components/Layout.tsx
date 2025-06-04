@@ -26,7 +26,16 @@ function Layout({
 				<meta name="twitter:card" content="summary" />
 				<meta name="twitter:site" content={twitterSite} />
                                <link rel="canonical" href={canonicalUrl} />
-                               <link rel="stylesheet" href="/styles.css" />
+                               <script src="https://cdn.tailwindcss.com"></script>
+                               <style>{`
+                                       a {
+                                               color: #3b82f6;
+                                               text-decoration: underline;
+                                       }
+                                       a:hover {
+                                               color: #1d4ed8;
+                                       }
+                               `}</style>
                                <title>{title}</title>
                        </head>
 			<body className="font-serif leading-relaxed text-base px-2 my-12 max-w-[650px] mx-auto">
