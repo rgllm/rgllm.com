@@ -37,4 +37,4 @@ export default <ExportedHandler>{
 	  return htmlResponse('404', {status: 404})
 	},
   }
-  
+
