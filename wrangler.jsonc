@@ -58,7 +58,7 @@
         * https://developers.cloudflare.com/workers/static-assets/binding/
         */
        "assets": {
-               "bucket": "./public",
+               "directory": "./public",
                "binding": "ASSETS"
        },
 
