@@ -29,7 +29,7 @@ importers:
     devDependencies:
       '@types/node':
         specifier: ^22.15.3
-        version: 22.15.29
+        version: 22.16.5
       '@types/react':
         specifier: ^19.1.2
         version: 19.1.6
@@ -603,8 +603,8 @@ packages:
   '@types/diff-match-patch@1.0.36':
     resolution: {integrity: sha512-xFdR6tkm0MWvBfO8xXCSsinYxHcqkQUlcHeSpMC2ukzOb6lwQAfDmW+Qt0AvlGd8HpsS28qKsB+oPeJn9I39jg==}
 
-  '@types/node@22.15.29':
-    resolution: {integrity: sha512-LNdjOkUDlU1RZb8e1kOIUpN1qQUlzGkEtbVNo53vbrwDg5om6oduhm4SiUaPW5ASTXhAiP0jInWG8Qx9fVlOeQ==}
+  '@types/node@22.16.5':
+    resolution: {integrity: sha512-bJFoMATwIGaxxx8VJPeM8TonI8t579oRvgAuT8zFugJsJZgzqv0Fu8Mhp68iecjzG7cnN3mO2dJQ5uUM2EFrgQ==}
 
   '@types/react-dom@19.1.5':
     resolution: {integrity: sha512-CMCjrWucUBZvohgZxkjd6S9h0nZxXjzus6yDfUb+xLxYM7VvjKNH1tQrE9GWLql1XoOP4/Ds3bwFqShHUYraGg==}
@@ -1821,7 +1821,7 @@ snapshots:
 
   '@types/diff-match-patch@1.0.36': {}
 
-  '@types/node@22.15.29':
+  '@types/node@22.16.5':
     dependencies:
       undici-types: 6.21.0
 
