@@ -24,8 +24,8 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
       zod:
-        specifier: ^3.24.2
-        version: 3.25.51
+        specifier: ^4.0.0
+        version: 4.0.10
     devDependencies:
       '@types/node':
         specifier: ^22.15.3
@@ -1418,6 +1418,9 @@ packages:
   zod@3.25.51:
     resolution: {integrity: sha512-TQSnBldh+XSGL+opiSIq0575wvDPqu09AqWe1F7JhUMKY+M91/aGlK4MhpVNO7MgYfHcVCB1ffwAUTJzllKJqg==}
 
+  zod@4.0.10:
+    resolution: {integrity: sha512-3vB+UU3/VmLL2lvwcY/4RV2i9z/YU0DTV/tDuYjrwmx5WeJ7hwy+rGEEx8glHp6Yxw7ibRbKSaIFBgReRPe5KA==}
+
 snapshots:
 
   '@ai-sdk/provider-utils@2.2.8(zod@3.25.51)':
@@ -2641,3 +2644,5 @@ snapshots:
   zod@3.22.3: {}
 
   zod@3.25.51: {}
+
+  zod@4.0.10: {}
