@@ -2,13 +2,12 @@
 
 import Link from 'next/link'
 import { Command, Moon, Sun } from 'lucide-react'
+
 import { Button } from '@/components/ui/button'
 import useDarkMode from '@/hooks/useDarkMode'
 import useTime from '@/hooks/useTime'
 
 interface HeaderProps {
-	darkMode: boolean
-	setDarkMode?: (value: boolean) => void
 	setShowCommandPalette?: (value: boolean) => void
 	visitorCount: number
 }
@@ -18,18 +17,16 @@ export function Header({ setShowCommandPalette, visitorCount }: HeaderProps) {
 	const { currentTime, currentHourDiffToVisitor } = useTime()
 
 	return (
-		<header className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8 gap-4 sm:gap-0 bg-amber-100">
+		<header className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8 gap-4 sm:gap-0">
 			<div className="w-full sm:w-auto">
-				<div className="relative group">
-					<Link href="/">
-						<h1 className="text-2xl sm:text-3xl font-bold mb-1 cursor-default text-black dark:text-white">
-							Rogério Moreira
-						</h1>
-					</Link>
-				</div>
+				<Link className="relative group" href="/">
+					<h1 className="text-2xl sm:text-3xl font-bold mb-1 cursor-default text-black dark:text-white">
+						Rogério Moreira
+					</h1>
+				</Link>
 
 				<div className="text-xs text-gray-500 font-mono">
-					visitor #{visitorCount.toLocaleString()} • {currentTime}
+					visitor #{visitorCount} • {currentTime}
 					{currentHourDiffToVisitor !== 0
 						? ' • ' + currentHourDiffToVisitor
 						: ''}

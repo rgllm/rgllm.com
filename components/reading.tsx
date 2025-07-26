@@ -14,7 +14,7 @@ const books: Book[] = [
 
 export function Reading() {
 	return (
-		<section>
+		<section className="mb-6 sm:mb-8">
 			<h2 className="text-base font-medium mb-3 text-black dark:text-white">
 				/currently-reading
 			</h2>

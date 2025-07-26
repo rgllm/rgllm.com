@@ -17,7 +17,7 @@ const philosophyItems = [
 
 export function Philosophy() {
 	return (
-		<section>
+		<section className="mb-6 sm:mb-8">
 			<h2 className="text-base font-medium mb-3 text-black dark:text-white">
 				/philosophy.txt
 			</h2>
@@ -25,7 +25,7 @@ export function Philosophy() {
 				{philosophyItems.map((philosophy, index) => (
 					<p
 						key={index}
-						className="hover:opacity-60 transition-opacity duration-500 cursor-default group"
+						className="hover:opacity-60 transition-opacity duration-500 cursor-default group mb-2"
 					>
 						{philosophy}
 					</p>
