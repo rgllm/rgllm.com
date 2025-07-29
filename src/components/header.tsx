@@ -9,10 +9,9 @@ import useTime from '@/hooks/useTime'
 
 interface HeaderProps {
 	setShowCommandPalette?: (value: boolean) => void
-	visitorCount: number
 }
 
-export function Header({ setShowCommandPalette, visitorCount }: HeaderProps) {
+export function Header({ setShowCommandPalette }: HeaderProps) {
 	const { toggleDarkMode, isDarkMode } = useDarkMode()
 	const { currentTime, currentHourDiffToVisitor } = useTime()
 
@@ -26,7 +25,7 @@ export function Header({ setShowCommandPalette, visitorCount }: HeaderProps) {
 				</Link>
 
 				<div className="text-xs text-gray-500 font-mono">
-					visitor #{visitorCount} • {currentTime}
+					{currentTime}
 					{currentHourDiffToVisitor !== 0
 						? ' • ' + currentHourDiffToVisitor
 						: ''}

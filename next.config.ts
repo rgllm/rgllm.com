@@ -1,19 +1,17 @@
 import type { NextConfig } from 'next'
+import createMDX from '@next/mdx'
 
-const nextConfig: NextConfig = {
+const nextConfig = {
+	pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
 	experimental: {
-		// Forward browser logs to the terminal for easier debugging
-		browserDebugInfoInTerminal: true,
-
-		// Explore route composition and segment overrides via DevTools
-		devtoolSegmentExplorer: true,
-
-		// Enable support for `global-not-found`, which allows you to more easily define a global 404 page.
-		globalNotFound: true,
+		mdxRs: true,
 	},
-}
+} satisfies NextConfig
 
-export default nextConfig
+const withMDX = createMDX({})
 
+export default withMDX(nextConfig)
+
+// added by create cloudflare to enable calling `getCloudflareContext()` in `next dev`
 import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare'
 initOpenNextCloudflareForDev()
