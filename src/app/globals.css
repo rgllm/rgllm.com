@@ -5,6 +5,23 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@layer base {
+	:root {
+		--selection-bg: #000;
+		--selection-text: #ffffff;
+	}
+
+	::selection {
+		background-color: var(--selection-bg);
+		color: var(--selection-text);
+	}
+
+	::-moz-selection {
+		background-color: var(--selection-bg);
+		color: var(--selection-text);
+	}
+}
+
 @theme inline {
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);

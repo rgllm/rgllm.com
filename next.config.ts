@@ -6,6 +6,15 @@ const nextConfig = {
 	experimental: {
 		mdxRs: true,
 	},
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	webpack: (config: any) => {
+		config.resolve.alias = {
+			...config.resolve.alias,
+			// eslint-disable-next-line @typescript-eslint/no-require-imports
+			'@/content': require('path').resolve(process.cwd(), 'content'),
+		}
+		return config
+	},
 } satisfies NextConfig
 
 const withMDX = createMDX({})

@@ -1,16 +1,7 @@
-import { PageView } from '@/types/PageView'
+import { readdirSync, readFileSync } from 'fs'
+import { join } from 'path'
 
-export async function getVisitorCount(): Promise<PageView> {
-	const response = await fetch('/api/pageview', {
-		next: { revalidate: 3600 },
-	})
-
-	if (!response.ok) {
-		throw new Error('Failed to fetch data')
-	}
-
-	return response.json()
-}
+import { Post } from '@/types/Post'
 
 export async function getLastCommitTime(): Promise<string> {
 	const headers: Record<string, string> = {
@@ -34,4 +25,32 @@ export async function getLastCommitTime(): Promise<string> {
 
 	const commits = (await response.json()) as Array<{ created_at: string }>
 	return commits?.[0]?.created_at
+}
+
+export function getNotes(nrOfPosts?: number): Post[] {
+	const contentDir = join(process.cwd(), 'content')
+	const files = readdirSync(contentDir)
+
+	const posts = files.map((file: string) => {
+		const slug = file.slice(0, -4)
+		const filePath = join(contentDir, file)
+		const content = readFileSync(filePath, 'utf8')
+		const titleMatch = content.match(/^#\s+(.+)$/m)
+		const title = titleMatch ? titleMatch[1] : slug
+		const lines = content.split('\n')
+		const firstParagraph = lines.find(
+			(line) =>
+				line.trim().length > 0 &&
+				!line.startsWith('#') &&
+				!line.startsWith('```') &&
+				!line.startsWith('>')
+		)
+		const excerpt = firstParagraph
+			? firstParagraph.substring(0, 120) + '...'
+			: ''
+
+		return { slug, title, excerpt }
+	})
+
+	return nrOfPosts ? posts.slice(0, nrOfPosts) : posts
 }

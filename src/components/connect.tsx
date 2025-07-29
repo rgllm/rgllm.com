@@ -24,13 +24,13 @@ export function Connect() {
 				/connect
 			</h2>
 			<div className="space-y-1">
-				<div className="flex items-center justify-between hover:opacity-80 p-2 -m-2 rounded transition-opacity duration-300">
-					<span className="text-sm">email</span>
+				<div className="flex items-center justify-between p-2 -m-2 rounded">
+					<span className="text-sm dark:text-gray-300">email</span>
 					<button
 						onClick={handleCopyEmail}
-						className="font-mono text-sm hover:opacity-50 transition-opacity duration-200 flex items-center gap-2 truncate"
+						className="font-mono cursor-pointer text-sm flex items-center gap-2 truncate"
 					>
-						<span className="truncate">r@rgllm.com</span>
+						<span className="truncate dark:text-gray-300">r@rgllm.com</span>
 						{copiedEmail ? (
 							<CopyCheck className="w-3 h-3 text-green-500 flex-shrink-0" />
 						) : (
@@ -38,20 +38,29 @@ export function Connect() {
 						)}
 					</button>
 				</div>
-				<div className="flex items-center justify-between hover:opacity-80 p-2 -m-2 rounded transition-opacity duration-300">
-					<span className="text-sm">github</span>
+				<div className="flex items-center justify-between p-2 -m-2 rounded transition-opacity">
+					<span className="text-sm dark:text-gray-300">github</span>
 					<Link
 						href="https://github.com/rgllm"
-						className="font-mono text-sm hover:opacity-40 transition-opacity duration-300 flex items-center gap-1 cursor-pointer"
+						className="font-mono text-sm hover:opacity-40 transition-opacity flex items-center gap-1 cursor-pointer dark:text-gray-300"
 					>
 						@rgllm <ArrowUpRight className="w-3 h-3" />
 					</Link>
 				</div>
-				<div className="flex items-center justify-between hover:opacity-80 p-2 -m-2 rounded transition-opacity duration-300">
-					<span className="text-sm">twitter</span>
+				<div className="flex items-center justify-between p-2 -m-2 rounded transition-opacity">
+					<span className="text-sm dark:text-gray-300">linkedIn</span>
+					<Link
+						href="https://linkedin.com/in/rgllm"
+						className="font-mono text-sm hover:opacity-40 transition-opacity flex items-center gap-1 cursor-pointer dark:text-gray-300"
+					>
+						/in/rgllm <ArrowUpRight className="w-3 h-3" />
+					</Link>
+				</div>
+				<div className="flex items-center justify-between p-2 -m-2 rounded transition-opacity">
+					<span className="text-sm dark:text-gray-300">x</span>
 					<Link
 						href="https://x.com/rgllm"
-						className="font-mono text-sm hover:opacity-40 transition-opacity duration-300 flex items-center gap-1 cursor-pointer"
+						className="font-mono text-sm hover:opacity-40 transition-opacity flex items-center gap-1 cursor-pointer dark:text-gray-300"
 					>
 						@rgllm <ArrowUpRight className="w-3 h-3" />
 					</Link>
