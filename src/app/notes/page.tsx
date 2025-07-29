@@ -2,18 +2,16 @@ import Link from 'next/link'
 
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
-import { getNotes } from '@/lib/data'
+import content from '../../../content/content.json'
 
 export default function NotesPage() {
-	const posts = getNotes()
-
 	return (
 		<div className="min-h-screen flex flex-col max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
 			<Header title="/notes" />
 			<main className="flex flex-col flex-1">
 				<section className="mb-6 sm:mb-8">
 					<div className="space-y-4">
-						{posts.map((post) => (
+						{content.map((post) => (
 							<Link
 								key={post.slug}
 								href={`/notes/${post.slug}`}
@@ -31,9 +29,9 @@ export default function NotesPage() {
 						))}
 					</div>
 
-					{posts.length === 0 && (
+					{content.length === 0 && (
 						<p className="text-sm text-gray-500 dark:text-gray-500 italic">
-							No posts yet.
+							No notes yet.
 						</p>
 					)}
 				</section>

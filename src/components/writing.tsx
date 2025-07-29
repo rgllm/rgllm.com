@@ -1,18 +1,14 @@
-import { Post } from '@/types/Post'
 import Link from 'next/link'
+import content from '../../content/content.json'
 
-type WritingProps = {
-	posts: Post[]
-}
-
-export function Writing({ posts }: WritingProps) {
+export function Writing() {
 	return (
 		<section className="mb-6 sm:mb-8">
 			<h2 className="text-base font-medium mb-3 text-black dark:text-white">
 				/notes
 			</h2>
 			<div className="space-y-1 text-sm">
-				{posts.map((post) => (
+				{content.map((post) => (
 					<Link
 						key={post.slug}
 						href={`/notes/${post.slug}`}
@@ -23,9 +19,9 @@ export function Writing({ posts }: WritingProps) {
 				))}
 			</div>
 
-			{posts.length === 0 && (
+			{content.length === 0 && (
 				<p className="text-sm text-gray-600 dark:text-gray-300 italic">
-					No posts.
+					No notes yet.
 				</p>
 			)}
 		</section>

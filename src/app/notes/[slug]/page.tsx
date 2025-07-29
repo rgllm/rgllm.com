@@ -1,8 +1,8 @@
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import Prose from '@/components/prose'
-import { readFileSync } from 'fs'
-import { join } from 'path'
+
+import content from '../../../../content/content.json'
 
 export default async function Page({
 	params,
@@ -10,14 +10,8 @@ export default async function Page({
 	params: Promise<{ slug: string }>
 }) {
 	const slug = (await params).slug
+	const title = content.filter((post) => post.slug === slug)?.[0]?.title
 	const { default: Post } = await import(`@/content/${slug}.mdx`)
-
-	const contentDir = join(process.cwd(), 'content')
-	const filePath = join(contentDir, `${slug}.mdx`)
-	const content = readFileSync(filePath, 'utf8')
-
-	const titleMatch = content.match(/^#\s+(.+)$/m)
-	const title = titleMatch ? titleMatch[1] : slug
 
 	return (
 		<div className="min-h-screen flex flex-col max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
@@ -37,17 +31,7 @@ export default async function Page({
 }
 
 export function generateStaticParams() {
-	// eslint-disable-next-line @typescript-eslint/no-require-imports
-	const { readdirSync } = require('fs')
-	// eslint-disable-next-line @typescript-eslint/no-require-imports
-	const { join } = require('path')
-
-	const contentDir = join(process.cwd(), 'content')
-	const files = readdirSync(contentDir)
-
-	return files
-		.filter((file: string) => file.endsWith('.mdx'))
-		.map((file: string) => ({ slug: file.slice(0, -4) }))
+	return content
 }
 
 export const dynamicParams = false
