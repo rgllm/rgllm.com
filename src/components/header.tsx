@@ -1,20 +1,17 @@
 'use client'
 
 import Link from 'next/link'
-import { Command, Moon, Sun } from 'lucide-react'
+import { Moon, Sun } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import useDarkMode from '@/hooks/useDarkMode'
+import { cn } from '@/lib/utils'
 
 interface HeaderProps {
-	setShowCommandPalette?: (value: boolean) => void
 	title?: string
 }
 
-export function Header({
-	title = 'Rogério Moreira',
-	setShowCommandPalette,
-}: HeaderProps) {
+export function Header({ title = 'Rogério Moreira' }: HeaderProps) {
 	const { toggleDarkMode, isDarkMode } = useDarkMode()
 
 	return (
@@ -41,28 +38,25 @@ export function Header({
 					</Link>
 				</nav>
 
-				<div className="flex items-center gap-2">
+				<div className="flex items-center">
 					<Button
-						variant="ghost"
-						size="sm"
-						onClick={() => setShowCommandPalette?.(true)}
-						className="flex items-center gap-1 text-xs hover:opacity-70 transition-opacity duration-200"
-					>
-						<Command className="w-3 h-3" />
-						<span className="hidden sm:inline">K</span>
-					</Button>
-
-					<Button
-						variant="ghost"
+						variant="link"
 						size="sm"
 						onClick={toggleDarkMode}
-						className="hover:opacity-70 transition-opacity duration-200"
+						className="relative w-5 h-5"
 					>
-						{isDarkMode ? (
-							<Sun className="w-4 h-4" />
-						) : (
-							<Moon className="w-4 h-4" />
-						)}
+						<Sun
+							className={cn(
+								'absolute inset-0 w-full h-full pointer-events-none transition-all duration-300 top-0.5',
+								isDarkMode ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
+							)}
+						/>
+						<Moon
+							className={cn(
+								'absolute inset-0 w-full h-full pointer-events-none transition-all duration-300 top-0.5',
+								isDarkMode ? 'opacity-0 scale-90' : 'opacity-100 scale-100'
+							)}
+						/>
 					</Button>
 				</div>
 			</div>
