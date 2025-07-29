@@ -16,7 +16,7 @@ export function Writing({ posts }: WritingProps) {
 					<Link
 						key={post.slug}
 						href={`/notes/${post.slug}`}
-						className="flex flex-col sm:flex-row sm:justify-between hover:opacity-50 p-2 -m-2 rounded transition-opacity duration-300 gap-1 sm:gap-0 dark:text-gray-300"
+						className="flex flex-col sm:flex-row sm:justify-between hover:opacity-50 p-2 -m-2 rounded transition-opacity duration-300 gap-1 sm:gap-0 text-gray-600 dark:text-gray-300"
 					>
 						<span className="truncate sm:text-clip">{post.title}</span>
 					</Link>
@@ -24,7 +24,7 @@ export function Writing({ posts }: WritingProps) {
 			</div>
 
 			{posts.length === 0 && (
-				<p className="text-sm text-gray-500 dark:text-gray-500 italic">
+				<p className="text-sm text-gray-600 dark:text-gray-300 italic">
 					No posts.
 				</p>
 			)}

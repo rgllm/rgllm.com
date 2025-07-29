@@ -30,14 +30,12 @@ export function Header({
 					<Link
 						href="/"
 						className="hover:opacity-60 transition-opacity duration-300 cursor-pointer"
-						replace
 					>
 						about
 					</Link>
 					<Link
 						href="/notes"
 						className="hover:opacity-60 transition-opacity duration-300 cursor-pointer"
-						replace
 					>
 						notes
 					</Link>

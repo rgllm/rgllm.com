@@ -27,7 +27,7 @@ export function Hero({ typedText }: HeroProps) {
 
 	return (
 		<section className="mb-6 sm:mb-8">
-			<p className="text-base sm:text-lg lg:text-xl leading-relaxed max-w-4xl">
+			<p className="text-base sm:text-md lg:text-md leading-relaxed max-w-4xl">
 				{displayedText}
 				<span className="animate-pulse text-black dark:text-white">|</span>
 			</p>

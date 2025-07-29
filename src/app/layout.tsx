@@ -7,8 +7,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: 'Rogério Moreira',
-	description:
-		'I build AI systems that understand language and solve complex problems',
+	description: 'I build things, write code, and solve problems',
+	icons: {
+		icon: '/favicon.png',
+	},
 }
 
 export default function RootLayout({
