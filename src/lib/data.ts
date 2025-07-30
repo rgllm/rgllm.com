@@ -5,10 +5,11 @@ import { slugify } from './utils'
 export async function getLastCommitTime(): Promise<string> {
 	const headers: Record<string, string> = {
 		Accept: 'application/vnd.github.v3+json',
+		'User-Agent': 'rgllm.com',
 	}
 
 	if (process.env.GITHUB_TOKEN) {
-		headers['Authorization'] = `token ${process.env.GITHUB_TOKEN}`
+		headers['Authorization'] = `Bearer ${process.env.GITHUB_TOKEN}`
 	}
 
 	const response = await fetch(
@@ -17,6 +18,7 @@ export async function getLastCommitTime(): Promise<string> {
 	)
 
 	if (!response.ok) {
+		console.error(`GitHub API error in getLastCommitTime: ${response.status}`)
 		throw new Error(`GitHub API error: ${response.status}`)
 	}
 
@@ -24,7 +26,19 @@ export async function getLastCommitTime(): Promise<string> {
 	return events[0]?.created_at
 }
 
-export async function getNotes(nrOfPosts?: number) {
+export async function getNotes(nrOfPosts?: number): Promise<Note[]> {
+	if (!process.env.GITHUB_TOKEN) {
+		console.warn('No GITHUB_TOKEN available, returning empty notes')
+		return []
+	}
+
+	if (!process.env.GITHUB_USERNAME || !process.env.GITHUB_NOTES_REPO) {
+		console.warn(
+			'Missing GITHUB_USERNAME or GITHUB_NOTES_REPO, returning empty notes'
+		)
+		return []
+	}
+
 	const query = `
 		query {
 			repository(owner: "${process.env.GITHUB_USERNAME}", name: "${process.env.GITHUB_NOTES_REPO}") {
@@ -47,19 +61,30 @@ export async function getNotes(nrOfPosts?: number) {
 		headers: {
 			Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
 			'Content-Type': 'application/json',
+			'User-Agent': 'rgllm.com',
 		},
 		body: JSON.stringify({ query }),
 	})
 
 	if (!response.ok) {
-		throw new Error(`GitHub API error: ${response.status}`)
+		console.error(`GitHub GraphQL API error: ${response.status}`)
+		if (response.status === 403) {
+			console.error('GitHub API rate limit or permissions issue')
+		}
+		return []
 	}
 
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	const data = (await response.json()) as any
 
 	if (data.errors) {
-		throw new Error(`Github GraphQL errors: ${JSON.stringify(data.errors)}`)
+		console.error('GitHub GraphQL errors:', JSON.stringify(data.errors))
+		return []
+	}
+
+	if (!data.data?.repository?.discussions?.nodes) {
+		console.warn('No discussions found in repository')
+		return []
 	}
 
 	return data.data.repository.discussions.nodes.map((node: Discussion) => {
