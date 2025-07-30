@@ -3,8 +3,8 @@
 const philosophyItems = [
 	'have fun',
 	'shipping fast beats the best strategy',
-	'documentation is a love letter',
 	'diverse teams build better products',
+	'documentation is a love letter',
 	'consistency beats brilliance.',
 	'continuous learning is the only constant in technology',
 	"good design is invisible—users shouldn't think about it",
