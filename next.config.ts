@@ -1,4 +1,14 @@
-const nextConfig = {}
+const nextConfig = {
+	async redirects() {
+		return [
+			{
+				source: '/blog/como-autenticar-no-automovel-online-em-macos',
+				destination: '/notes/como-autenticar-no-automvel-online-em-macos',
+				permanent: true,
+			},
+		]
+	},
+}
 
 export default nextConfig
 
