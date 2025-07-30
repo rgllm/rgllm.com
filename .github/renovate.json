@@ -1,8 +1,8 @@
 {
-	"extends": ["config:base"],
-	"semanticCommits": false,
+	"extends": ["config:recommended"],
+	"semanticCommits": "disabled",
 	"labels": ["Renovate"],
-	"baseBranches": ["trunk"],
+	"baseBranchPatterns": ["trunk"],
 	"packageRules": [
 		{
 			"description": "Automatically merge minor and patch-level updates",
