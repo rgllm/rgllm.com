@@ -5,9 +5,9 @@ const philosophyItems = [
 	'shipping fast beats the best strategy',
 	'diverse teams build better products',
 	'documentation is a love letter',
-	'consistency beats brilliance.',
+	'consistency beats brilliance',
+	'always try to assume good intent',
 	'continuous learning is the only constant in technology',
-	"good design is invisible—users shouldn't think about it",
 	'the most underrated skill in engineering is saying things clearly',
 ]
 
