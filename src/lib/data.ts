@@ -12,18 +12,16 @@ export async function getLastCommitTime(): Promise<string> {
 	}
 
 	const response = await fetch(
-		`https://api.github.com/users/${process.env.GITHUB_USERNAME}/events`,
-		{
-			headers,
-		}
+		`https://api.github.com/users/${process.env.GITHUB_USERNAME}/events?per_page=1`,
+		{ headers }
 	)
 
 	if (!response.ok) {
 		throw new Error(`GitHub API error: ${response.status}`)
 	}
 
-	const commits = (await response.json()) as Array<{ created_at: string }>
-	return commits?.[0]?.created_at
+	const events = (await response.json()) as Array<{ created_at: string }>
+	return events[0]?.created_at
 }
 
 export async function getNotes(nrOfPosts?: number) {

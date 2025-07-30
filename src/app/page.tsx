@@ -5,11 +5,10 @@ import { Hero } from '@/components/hero'
 import { Philosophy } from '@/components/philosophy'
 import { Notes } from '@/components/notes'
 import { Status } from '@/components/status'
-import { getNotes } from '@/lib/data'
+import { getLastCommitTime, getNotes } from '@/lib/data'
 
 export default async function Home() {
-	//TODO: fix this
-	// const lastCommitTime = await getLastCommitTime()
+	const lastCommitTime = await getLastCommitTime()
 	const notes = await getNotes(5)
 
 	return (
@@ -17,7 +16,7 @@ export default async function Home() {
 			<Header />
 			<main className="flex flex-col flex-1">
 				<Hero typedText="I build things, write code, and solve problems." />
-				<Status lastCommitTime="today" />
+				<Status lastCommitTime={lastCommitTime} />
 				<Philosophy />
 				<Notes notes={notes} />
 				<Connect />

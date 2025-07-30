@@ -7,7 +7,7 @@ type StatusProps = {
 }
 
 export function Status({ lastCommitTime }: StatusProps) {
-	const relativeLastCommitTime = getRelativeTime(lastCommitTime)
+	const relativeCommitTime = getRelativeTime(lastCommitTime)
 
 	return (
 		<section className="mb-6 sm:mb-8">
@@ -23,8 +23,7 @@ export function Status({ lastCommitTime }: StatusProps) {
 					<span className="font-mono">location:</span> portugal 🇵🇹
 				</p>
 				<p>
-					<span className="font-mono">last commit:</span>{' '}
-					{relativeLastCommitTime}
+					<span className="font-mono">last commit:</span> {relativeCommitTime}
 				</p>
 			</div>
 		</section>

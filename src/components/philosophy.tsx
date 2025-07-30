@@ -15,7 +15,7 @@ export function Philosophy() {
 	return (
 		<section className="mb-6 sm:mb-8">
 			<h2 className="text-base font-medium mb-3 text-black dark:text-white">
-				/foundations
+				/ethos
 			</h2>
 			<div className="space-y-1 text-sm text-gray-600 dark:text-gray-300 leading-snug">
 				{philosophyItems.map((philosophy, index) => (
