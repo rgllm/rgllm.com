@@ -29,8 +29,8 @@ export async function getLastCommitTime(): Promise<string> {
 export async function getNotes(nrOfPosts?: number) {
 	const query = `
 		query {
-			repository(owner: "rgllm", name: "notes") {
-				discussions(first: 100, orderBy: {field: UPDATED_AT, direction: DESC}) {
+			repository(owner: "${process.env.GITHUB_USERNAME}", name: "${process.env.GITHUB_NOTES_REPO}") {
+				discussions(first: ${nrOfPosts ? nrOfPosts : 100}, orderBy: {field: UPDATED_AT, direction: DESC}) {
 					nodes {
 						id
 						title
@@ -64,11 +64,7 @@ export async function getNotes(nrOfPosts?: number) {
 		throw new Error(`Github GraphQL errors: ${JSON.stringify(data.errors)}`)
 	}
 
-	const notes = data.data.repository.discussions.nodes.map(
-		(node: Discussion) => {
-			return { ...node, slug: slugify(node.title) }
-		}
-	) as Note[]
-
-	return nrOfPosts ? notes.slice(0, nrOfPosts) : notes
+	return data.data.repository.discussions.nodes.map((node: Discussion) => {
+		return { ...node, slug: slugify(node.title) }
+	}) as Note[]
 }
