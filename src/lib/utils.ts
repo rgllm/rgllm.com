@@ -27,3 +27,12 @@ export function getRelativeTime(timestamp: string): string {
 	if (minutes > 0) return `${minutes} minute${minutes === 1 ? '' : 's'} ago`
 	return 'just now'
 }
+
+export function slugify(text: string): string {
+	return text
+		.toLowerCase()
+		.trim()
+		.replace(/[^\w\s-]/g, '')
+		.replace(/[\s_-]+/g, '-')
+		.replace(/^-+|-+$/g, '')
+}

@@ -3,12 +3,14 @@ import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { Hero } from '@/components/hero'
 import { Philosophy } from '@/components/philosophy'
-import { Writing } from '@/components/writing'
+import { Notes } from '@/components/notes'
 import { Status } from '@/components/status'
+import { getNotes } from '@/lib/data'
 
 export default async function Home() {
 	//TODO: fix this
 	// const lastCommitTime = await getLastCommitTime()
+	const notes = await getNotes(5)
 
 	return (
 		<div className="min-h-screen flex flex-col max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
@@ -17,7 +19,7 @@ export default async function Home() {
 				<Hero typedText="I build things, write code, and solve problems." />
 				<Status lastCommitTime="today" />
 				<Philosophy />
-				<Writing />
+				<Notes notes={notes} />
 				<Connect />
 			</main>
 			<Footer />
