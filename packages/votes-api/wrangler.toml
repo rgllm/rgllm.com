@@ -1,0 +1,32 @@
+name = "rgllm-votes-api"
+main = "src/index.ts"
+compatibility_date = "2023-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+[observability.logs]
+enabled = true
+
+[vars]
+ENVIRONMENT = "production"
+DEBUG = "false"
+
+[durable_objects]
+bindings = [
+  { name = "VOTE_COUNTER", class_name = "VoteCounter" }
+]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["VoteCounter"]
+
+[env.development]
+name = "rgllm-votes-api-dev"
+vars = { ENVIRONMENT = "development", DEBUG = "true" }
+
+[env.staging]
+name = "rgllm-votes-api-staging"
+vars = { ENVIRONMENT = "staging", DEBUG = "true" }
+
+[env.production]
+name = "rgllm-votes-api-prod"
+vars = { ENVIRONMENT = "production", DEBUG = "false" }

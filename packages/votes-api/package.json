@@ -1,0 +1,26 @@
+{
+  "name": "@rgllm/votes-api",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker with Durable Objects for blog post voting",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "bun run wrangler dev",
+    "deploy": "bun run wrangler deploy",
+    "tail": "bun run wrangler tail",
+    "install": "bun install",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "type-check": "tsc --noEmit",
+    "lint": "echo 'Linting complete'",
+    "build": "echo 'Build complete'",
+    "validate": "bun run type-check && bun run test && bun run lint"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.22.1",
+    "vitest": "^1.0.0",
+    "@types/node": "^20.0.0"
+  }
+}

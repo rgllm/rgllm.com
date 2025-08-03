@@ -2,6 +2,9 @@
 	"name": "rgllm.com",
 	"version": "6.0.0",
 	"private": true,
+	"workspaces": [
+		"packages/*"
+	],
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
@@ -9,7 +12,10 @@
 		"lint": "next lint",
 		"deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy -- --keep-vars",
 		"preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-		"cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts"
+		"cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts",
+		"votes:dev": "bun --cwd packages/votes-api run dev",
+		"votes:deploy": "bun --cwd packages/votes-api run deploy",
+		"votes:test": "bun --cwd packages/votes-api run test"
 	},
 	"dependencies": {
 		"@opennextjs/cloudflare": "^1.6.1",
