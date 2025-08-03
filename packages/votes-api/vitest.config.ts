@@ -12,4 +12,7 @@ export default defineConfig({
       exclude: ['node_modules/', 'test/', '**/*.test.ts']
     }
   },
+  css: {
+    postcss: false,
+  },
 });

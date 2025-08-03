@@ -95,11 +95,14 @@ describe('request-handler', () => {
       expect(isValidMethod('POST')).toBe(true);
     });
 
+    it('should validate OPTIONS method for CORS', () => {
+      expect(isValidMethod('OPTIONS')).toBe(true);
+    });
+
     it('should reject invalid methods', () => {
       expect(isValidMethod('PUT')).toBe(false);
       expect(isValidMethod('DELETE')).toBe(false);
       expect(isValidMethod('PATCH')).toBe(false);
-      expect(isValidMethod('OPTIONS')).toBe(false);
     });
 
     it('should handle case sensitivity', () => {

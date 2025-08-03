@@ -122,25 +122,17 @@ describe('API Integration Tests', () => {
       expect(data.error).toBe('postId parameter is required');
     });
 
-    it('should handle URL-encoded postId', async () => {
+    it('should reject URL-encoded postId with invalid characters', async () => {
       const { default: worker } = await import('../../src/index');
       const { VOTE_COUNTER, mockDurableObject } = createMockEnv();
-
-      const mockResponse = new Response(JSON.stringify({
-        postId: 'post with spaces',
-        upvotes: 0,
-        downvotes: 0,
-        total: 0
-      }));
-
-      mockDurableObject.fetch.mockResolvedValue(mockResponse);
 
       const encodedPostId = encodeURIComponent('post with spaces');
       const request = createMockRequest('GET', `https://example.com/?postId=${encodedPostId}`);
       const response = await worker.fetch(request, { VOTE_COUNTER } as any, {} as any);
 
-      expect(response.status).toBe(200);
-      expect(VOTE_COUNTER.idFromName).toHaveBeenCalledWith('post with spaces');
+      expect(response.status).toBe(400);
+      const responseData = await response.json();
+      expect(responseData.error).toContain('postId can only contain letters, numbers, dots, underscores, and hyphens');
     });
 
     it('should handle errors gracefully', async () => {
